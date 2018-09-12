@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Cabin-Regular';
+    src: url(../fonts/Cabin-Regular.otf);
+}
+body{
+    width:100%;
+    font-family: 'Cabin-Regular'; font-size: 16px;
+}
+.logo{background-color: #384a64;text-align: center;padding: 15px 0;}
+.main-menu{text-align: center;}
+.main-menu ul{list-style-type: none;display: inline-flex;}
+.main-menu li{background-color: #f7f7f7;padding: 15px;}
+.main-menu li a {    
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+.linea{border-right: 1px solid #a1a7af; max-height: 90%; margin: auto 0;}
+.uno{background-color: #fff;text-align: center; color: #202f44;font-size: 1.2em;}
+.uno strong{color:#b42d38}
+.dos{background-color: #469504;color:#fff}
+.dos p{padding: 10px;}
