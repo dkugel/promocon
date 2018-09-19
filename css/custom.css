@@ -5,6 +5,8 @@
 body{
     width:100%;
     font-family: 'Cabin-Regular'; font-size: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .logo{background-color: #384a64;text-align: center;padding: 15px 0;}
 .main-menu{text-align: center;}
@@ -21,3 +23,11 @@ body{
 .uno strong{color:#b42d38}
 .dos{background-color: #469504;color:#fff}
 .dos p{padding: 10px;}
+.main-footer{text-align: center;background-color:#384a64;width: 100%;padding-top: 10px;}
+.main-footer ul{list-style-type: none;display: inline-flex;}
+.main-footer ul li{color: #fff;}
+.main-footer ul li a{text-decoration: none; color: #fff;padding: 5px}
+.sub-footer{font-size: 0.9em;}
+.form-presentation{display: inline-block;font-family:'Cabin-Regular';padding: 10px; }
+.form-presentation input{width: 100%;padding: 5px;margin: 5px;border-radius: 0px; border: 1px solid #bebebe}
+.form-presentation textarea{width: 100%;padding: 5px;margin: 5px;border-radius: 0px; border: 1px solid #bebebe}
