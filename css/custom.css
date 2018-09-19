@@ -4,30 +4,44 @@
 }
 body{
     width:100%;
-    font-family: 'Cabin-Regular'; font-size: 16px;
-    max-width: 1200px;
+    font-family: 'Cabin-Regular'; font-size: 14px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
 }
 .logo{background-color: #384a64;text-align: center;padding: 15px 0;}
-.main-menu{text-align: center;}
+.main-menu{position:absolute;left: 0;right: 0;margin: auto;z-index: 10;}
 .main-menu ul{list-style-type: none;display: inline-flex;}
 .main-menu li{background-color: #f7f7f7;padding: 15px;}
-.main-menu li a {    
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
+.main-menu li a {color: white;text-align: center;padding: 16px;text-decoration: none;}
 .linea{border-right: 1px solid #a1a7af; max-height: 90%; margin: auto 0;}
-.uno{background-color: #fff;text-align: center; color: #202f44;font-size: 1.2em;}
+.up-page{background: #384a64;text-align: center;}
+.indicators{margin-top: -22px;}
+.uno{background-color: #fff;text-align: center; color: #202f44;font-size: 1.2em;padding-bottom: 40px;padding-top: 40px;}
 .uno strong{color:#b42d38}
-.dos{background-color: #469504;color:#fff}
-.dos p{padding: 10px;}
+.dos{background-color: #469504;color:#fff;padding-bottom: 40px;}
+.dos p{padding: 20px 0;}
+.dos img{max-width:100%;}
+.dos figcaption{font-size: 0.85em;max-width: 90%; margin-left: 30px; }
+.green-aux{background-color:#357302;margin-top: -10px;border-radius: 5px; text-align: center; }
+.green-aux img{max-width: 100%;padding: 10px;}
+.colibri{background-image: url(../img/colibri-promocon.png);background-position: left;background-repeat: no-repeat;background-size: contain;}
 .main-footer{text-align: center;background-color:#384a64;width: 100%;padding-top: 10px;}
 .main-footer ul{list-style-type: none;display: inline-flex;}
 .main-footer ul li{color: #fff;}
 .main-footer ul li a{text-decoration: none; color: #fff;padding: 5px}
 .sub-footer{font-size: 0.9em;}
-.form-presentation{display: inline-block;font-family:'Cabin-Regular';padding: 10px; }
+.form-presentation{font-family:'Cabin-Regular';padding: 10px 0 50px; max-width: 100%; margin: 0 auto;background-color: #f8f8f8;color:#6b6b6b; }
 .form-presentation input{width: 100%;padding: 5px;margin: 5px;border-radius: 0px; border: 1px solid #bebebe}
 .form-presentation textarea{width: 100%;padding: 5px;margin: 5px;border-radius: 0px; border: 1px solid #bebebe}
+.contact-data{color:#182d42;line-height: 10px;text-align: left;padding: 10px 0 30px 35%; }
+.contact-data p{margin-bottom: 0;}
+.contact-data img{border-right:2px solid #c5303d; padding-right: 10px; }
+.contact-data span{padding-left: 10px;}
+.separador{max-width: 100%;}
+.separador img {max-width: 100%;}
+.btn-gn{max-width: 200px;border: none !important;border-radius: 5px !important;padding: 15px !important;}
+.btn-red{color:#ffffff;background-color: #b42d38;}
+.tel{background-image: url('../img/icono-telefono-promocon.png');background-repeat: no-repeat;background-position: left;}
+.cel{background-image: url('../img/icono-movil-promocon.png');background-repeat: no-repeat;background-position: left;}
+.mail{background-image: url('../img/icono-correo-promocon.png');background-repeat: no-repeat;background-position: left;}
+.dir{background-image: url('../img/icono-direccion-promocon.png');background-repeat: no-repeat;background-position: left;}
