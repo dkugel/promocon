@@ -2,13 +2,12 @@
     font-family: 'Cabin-Regular';
     src: url(../fonts/Cabin-Regular.otf);
 }
-body{
-    width:100%;
-    font-family: 'Cabin-Regular'; font-size: 14px;
-    /*max-width: 1200px;*/
-    margin: 0 auto;
-}
+body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;min-height: 100%;}
+.fixed-body{max-width:1366px;}
 .logo{background-color: #384a64;text-align: center;padding: 15px 0;}
+.logo-aux{text-align: center;padding: 15px 0;}
+.contacto{background-image: url('../img/contacto/header-promocon-contacto.jpg'); min-width: 100%; min-height: 300px;
+    background-repeat: no-repeat; background-position: center;}
 .main-menu{position:absolute;z-index: 10;left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%)}
 .main-menu ul{list-style-type: none;display: inline-flex;}
 .main-menu li{background-color: #f7f7f7;padding: 15px;}
@@ -30,13 +29,21 @@ body{
 .main-footer ul li{color: #fff;}
 .main-footer ul li a{text-decoration: none; color: #fff;padding: 5px}
 .sub-footer{font-size: 0.9em;}
-.form-presentation{font-family:'Cabin-Regular';padding: 10px 0 50px; max-width: 100%; margin: 0 auto;background-color: #f8f8f8;color:#6b6b6b; }
+.form-presentation{font-family:'Cabin-Regular';padding: 10px 0 50px; max-width: 100%; margin: 0 auto;background-color: #f8f8f8;color:#bebebe;
+     background: url('../img/textura-logo-promocon-771-izquierda.png') -35% no-repeat, url('../img/textura-logo-promocon-771-derecha.png') 135% no-repeat}
 .form-presentation input{width: 100%;padding: 5px;margin: 5px;border-radius: 0px; border: 1px solid #bebebe}
 .form-presentation textarea{width: 100%;padding: 5px;margin: 5px;border-radius: 0px; border: 1px solid #bebebe}
 .contact-data{color:#182d42;line-height: 10px;text-align: left;padding: 10px 0 30px 35%; }
 .contact-data p{margin-bottom: 0;}
 .contact-data img{border-right:2px solid #c5303d; padding-right: 10px; }
 .contact-data span{padding-left: 10px;}
+.contact-data-sub{color:#182d42;line-height: 10px;text-align: left;padding: 30px 0 30px 0; }
+.contact-data-sub h1{color:#c5303d;font-size: 1.2em;line-height: 0px;}
+.contact-data-sub h2{color:#bebebe;font-size: 1.4em;border-bottom: 1px solid #c5303d;padding-bottom: 5px;max-width: 70%}
+.contact-data-sub h3{color:#c5303d;font-size: 0.9em;line-height: 20px;}
+.contact-data-sub p{margin-bottom: 0;}
+.contact-data-sub img{border-right:2px solid #c5303d; padding-right: 10px; }
+.contact-data-sub span{padding-left: 10px;}
 .separador{max-width: 100%;}
 .separador img {max-width: 100%;}
 .btn-gn{max-width: 200px;border: none !important;border-radius: 5px !important;padding: 15px !important;}
