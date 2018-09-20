@@ -8,16 +8,32 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .logo-aux{text-align: center;padding: 15px 0;}
 .contacto{background-image: url('../img/contacto/header-promocon-contacto.jpg'); min-width: 100%; min-height: 300px;
     background-repeat: no-repeat; background-position: center;}
+.nosotros{background-image: url('../img/nosotros/header-promocon-nosotros.jpg'); min-width: 100%; min-height: 300px;
+    background-repeat: no-repeat; background-position: center;} 
+.servicios{background-image: url('../img/servicios/header-promocon-servicios.jpg'); min-width: 100%; min-height: 300px;
+    background-repeat: no-repeat; background-position: center;}   
 .main-menu{position:absolute;z-index: 10;left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%)}
 .main-menu ul{list-style-type: none;display: inline-flex;}
 .main-menu li{background-color: #f7f7f7;padding: 15px;}
-.main-menu li a {color: white;text-align: center;padding: 16px;text-decoration: none;}
+.main-menu li a {color: #384a64;text-align: center;padding: 16px;text-decoration: none;}
 .linea{border-right: 1px solid #a1a7af; max-height: 90%; margin: auto 0;}
 .up-page{background: #384a64;text-align: center;}
 .indicators{margin-top: -22px;}
 .uno{background-color: #fff;text-align: center; color: #202f44;font-size: 1.2em;padding-bottom: 40px;padding-top: 40px;}
+.uno h1{color: #c5303d; font-size: 1.6em;padding: 30px 0; font-weight: bold;}
+.uno h2{color:#384a64; font-size: 1.4em;}
+.uno h3{color: #c5303d; font-size: 2.5em;font-weight: bold;margin-bottom: -10px;}
 .uno strong{color:#b42d38}
+.uno span {color: #b42d38;}
+.service-bg{background-image: url('../img/servicios/textura-logo-promocon-558.png');background-repeat: no-repeat;background-position: center;}
+._01{border:1px solid #bebebe;padding:0;border-radius: 10px;margin-bottom: 20px;}
+._01 h3{color: #c5303d; font-size: 1.6em;text-align: left;padding:15px 0 0 20px;}
+._01 p {text-align: left;padding:0 20px;}
+.red-box{background: #c5303d;border-radius: 7px;padding: 10px}
+.red-box img{width: 28px;}
 .dos{background-color: #469504;color:#fff;padding-bottom: 40px;}
+.h1-green{color: #469504;padding-bottom: 65px;}
+.h1-green h1{font-size: 2.3em;}
 .dos p{padding: 20px 0;}
 .dos img{max-width:100%;}
 .dos figcaption{font-size: 0.85em;max-width: 90%; margin-left: 30px; }
@@ -48,3 +64,5 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .separador img {max-width: 100%;}
 .btn-gn{max-width: 200px;border: none !important;border-radius: 5px !important;padding: 15px !important;}
 .btn-red{color:#ffffff;background-color: #b42d38;}
+.red-square{border: 2px solid #c5303d;}
+.red-square img{position: relative;left: -20px;top: 20px;}
