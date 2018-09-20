@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Promocon</title>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <!-- Estilos personalizados-->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/W3.css">
+    <!--jquery -->
+    <script src="js/jquery.js"></script>
+    <!-- slider -->
+    <script src="js/ninja-slider.js"></script>
+    <style>
+      .mySlides {display:none;}
+    </style>
+</head>
+
+<body>
+    <header class="contacto">
+      <div class="logo">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-2 col-md-3 col-lg-3"></div>
+            <div class="col-xs-8 col-md-6 col-lg-6">
+              <img src="img/logo.png" alt="logo Promocon">
+            </div>
+            <div class="col-xs-2 col-md-3 col-lg-3"></div>
+          </div>          
+        </div>        
+      </div>           
+    </header>
+    <div class="main-menu">
+      <ul>
+        <li class="linea"><a>Inicio</a></li>
+        <li class="linea"><a>Nosotros</a></li>
+        <li class="linea"><a>Servicios</a></li>
+        <li class="linea"><a>Proyectos</a></li>
+        <li><a>Contacto</a></li>
+      </ul>        
+    </div>
+   
+    </section>
+      <div class="form-presentation">
+        <div class="container" style="text-align: center">
+          <div class="row">
+            <div class="col-xs-8 col-md-12 col-lg-8 offset-lg-2">
+              <img src="img/logo-promocon-positivo.png">
+              <p>Si está interesado en conocer más sobre nosotros contáctenos…</p>
+              <div class="contact-data">                                  
+                <p><img src="img/icono-movil-promocon.png" ><span>(313) 252 6473</span></p>
+                <p><img src="img/icono-telefono-promocon.png"><span>(571) 622 6250</span></p>
+                <p><img src="img/icono-correo-promocon.png"><span>dcomercial@promocon.net</span></p>
+                <p><img src="img/icono-direccion-promocon.png"><span> CARRERA 47<sup>a</sup> #91 - 32 BOGOTÁ D.C.</span></p>                                                                                              
+              </div> 
+              <div class="separador">
+                <div class="row no-gutters">
+                    <div class="col-4">
+                      <img src="img/linea.png"> 
+                    </div>
+                    <div class="col-4">
+                      <p> o diligencie el formulario </p> 
+                    </div>
+                    <div class="col-4">
+                        <img src="img/linea.png">  
+                    </div>
+                </div>   
+              </div>
+                <form>
+                  <input type="text" name="name" placeholder="Nombre">
+                  <input type="email" name="email" placeholder="Email">
+                  <input type="text" name="phone" placeholder="Teléfono">
+                  <textarea name="message" rows="2" placeholder="Mensaje"></textarea>
+                  <input class="btn-gn btn-red"type="submit" name="submit" value="ENVIAR MENSAJE">
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="main-footer">
+        <div class="container" style="text-align: center">
+          <div class="row">
+            <div class="col-xs-8 col-md-12 col-lg-12">            
+              <ul>
+                <li class="linea"><a>(313) 2526473 (571)6226250</a></li>
+                <li class="linea"><a>dcomercial@promocon.net</a></li>
+                <li><a>BOGOTÁ D.C.</a></li>                        
+              </ul> 
+              <br>
+              <ul class="sub-footer">
+                <li class="linea"><a> &copy; 2018 Promocon derechos reservados</a></li>
+                <li><a>Política de privacidad</a></li>                                   
+              </ul>        
+            </div>     
+          </div> 
+        </div> 
+      </div>                        
+    </footer>   
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-red", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " w3-red";
+      }
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+          var i;
+          var dots = document.getElementsByClassName("demo");
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block"; 
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-red", "");
+          }           
+          dots[myIndex-1].className += " w3-red";
+          setTimeout(carousel, 3000); // Change image every 2 seconds
+      }   
+    </script> 
+</body>
+</html>

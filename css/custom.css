@@ -9,7 +9,7 @@ body{
     margin: 0 auto;
 }
 .logo{background-color: #384a64;text-align: center;padding: 15px 0;}
-.main-menu{position:absolute;left: 0;right: 0;margin: auto;z-index: 10;}
+.main-menu{position:absolute;z-index: 10;left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%)}
 .main-menu ul{list-style-type: none;display: inline-flex;}
 .main-menu li{background-color: #f7f7f7;padding: 15px;}
 .main-menu li a {color: white;text-align: center;padding: 16px;text-decoration: none;}
@@ -41,7 +41,3 @@ body{
 .separador img {max-width: 100%;}
 .btn-gn{max-width: 200px;border: none !important;border-radius: 5px !important;padding: 15px !important;}
 .btn-red{color:#ffffff;background-color: #b42d38;}
-.tel{background-image: url('../img/icono-telefono-promocon.png');background-repeat: no-repeat;background-position: left;}
-.cel{background-image: url('../img/icono-movil-promocon.png');background-repeat: no-repeat;background-position: left;}
-.mail{background-image: url('../img/icono-correo-promocon.png');background-repeat: no-repeat;background-position: left;}
-.dir{background-image: url('../img/icono-direccion-promocon.png');background-repeat: no-repeat;background-position: left;}
