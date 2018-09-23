@@ -6,7 +6,8 @@
     font-family: 'Cabin-Medium';
     src: url(../fonts/Cabin-Medium.otf);
 }
-body{width:100%; font-family: 'Cabin-Medium'; font-size: 15px;margin: 0 auto;min-height: 100%;}
+body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;min-height: 100%;
+    font-weight: lighter;}
 .fixed-body{max-width:1366px;}
 .logo{background-color: #202f44;text-align: center;padding: 15px 0;}
 .logo-aux{text-align: center;padding: 15px 0;}
@@ -38,7 +39,7 @@ body{width:100%; font-family: 'Cabin-Medium'; font-size: 15px;margin: 0 auto;min
 ._02 p {text-align: left;padding:0 20px;}
 .red-box{background: #da1929;border-radius: 7px;padding: 10px}
 .red-box img{width: 28px;}
-.red-box-int{background: #da1929;border-radius: 7px;padding: 10px;height: 50%;margin-right: -1px;margin-top: -1px;}
+.red-box-int{background: #da1929;border-radius: 7px;padding: 6px;height: 50%;margin-right: -1px;margin-top: -1px;}
 .red-box-int img{width: 28px;float: right;}
 .dos{background-color: #469504;color:#fff;padding-bottom: 40px;}
 .h1-green{color: #469504;padding-bottom: 65px;}
@@ -46,10 +47,17 @@ body{width:100%; font-family: 'Cabin-Medium'; font-size: 15px;margin: 0 auto;min
 .dos p{padding: 20px 0;}
 .dos img{max-width:100%;}
 .dos figcaption{font-size: 0.85em;max-width: 90%; margin-left: 30px; }
-.titulo{padding-top: 20px;text-align: center;}
-.tres h1{color: #da1929; font-size: 1.6em;padding: 5px 10px; font-weight: bold;}
+.titulo{padding-top: 20px;text-align: center;padding-bottom: 20px;}
+.titulo-img{padding-top: 20px;padding-bottom: 20px;text-align: center;}
+.titulo-img h1{font-size: 1.3em;display: inline-block;}
+.titulo-img img{vertical-align: middle;display:inline-block; padding-left: 50px;}
+.tres h1{color: #da1929; font-size: 1.6em;padding: 5px 10px;}
 .tres span{color:#202f44; font-size: 0.65em; margin: auto;border-left:1px solid #da1929;padding-left: 10px;}
 .tres h3{color:#da1929;font-size: 1em;}
+.cuatro{text-align: left;background: url('../img/textura-logo-promocon-628.png')no-repeat center,#f8f8f8;padding-bottom: 50px;}
+.small-gallery{max-width: 100%;}
+.small-gallery img {padding: 5px; max-width: 100%;}
+.small-gallery img:hover {z-index: 10;transform: scale(1.2);}
 .cinco p{text-align: center;max-width: 50%;margin: auto;}
 .cinco h1{text-align:center;color: #da1929;font-size: 1.8em;padding: 25px 10px;font-weight: bold; }
 .cinco h3{font-size: 1.2em;color:#da1929;text-decoration: underline; text-align: center;}
@@ -105,6 +113,6 @@ li {
 }
 
 li:before {
-    content: "⯀ ";
+    content: "▪";
     color: red; /* or whatever color you prefer */
 }
