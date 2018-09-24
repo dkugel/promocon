@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/portfolio.css" >
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/W3.css">
-    <!--jquery -->
+    <!-- external files for modals -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -60,14 +60,7 @@
     .show {
     display: block;
     }
-
-    /* Style the buttons */
-    .bt {
-
-    }
-
-    .bt.active {
-    
+    .bt.active {    
     color: #da1929;
     }
     .main-select.active{color:#da1929;}
@@ -95,8 +88,7 @@
                 <li style="border-radius:  0 2px 2px 0;"><a href="contacto.html" >Contacto</a></li>
             </ul>                    
         </div> 
-    </header>    
-        
+    </header>            
     <!-- The Modal -->
     <div class="modal" id="myModal">
         <div class="modal-dialog" style="top: 140px;">
@@ -139,16 +131,17 @@
             <div class="seleccionador" id="myBtnContainer">
                 <div class="row">          
                     <ul id="portfolio-filter" style="display: flex;">
-                    <div class="col-sm-12 col-md-3 col-lg-3"> 
-                        <li><a href="#" title="" class="main-select active" onclick="filterSelection('all')">TIPOS DE PROYECTO</a></li>
+                    <div class="col-sm-12 col-md-3 col-lg-2"> 
+                        <li><a href="#" title="" class="main-select active" onclick="filterSelection('all')">SECTORES</a></li>
                     </div> 
-                    <div class="col-sm-12 col-md-9 col-lg-9">
-                        <li><a href="#" class="bt" onclick="filterSelection('plantas')">PLANTAS INDUSTRIALES  &nbsp;- </a></li>
-                        <li><a href="#" class="bt" onclick="filterSelection('almacenamiento')">ALMACENAMIENTO A GRANEL &nbsp;- </a></li>
-                        <li><a href="#" class="bt" onclick="filterSelection('centros')">CENTROS DE DISTRIBUCIÓN Y LOGÍSTICA &nbsp;- </a></li>
-                        <li><a href="#" class="bt" onclick="filterSelection('logistica')">LOGÍSTICA DE FRÍO &nbsp;- </a></li>
-                        <li><a href="#" class="bt" onclick="filterSelection('inmobiliarios')">DESARROLLO DE PROYECTOS INMOBILIARIOS &nbsp;- </a></li>
-                        <li><a href="#" class="bt"onclick="filterSelection('institucionales')">CONSTRUCCIONES INSTITUCIONALES &nbsp; </a></li> 
+                    <div class="col-sm-12 col-md-9 col-lg-10">
+                        <li><a href="#" class="bt" onclick="filterSelection('alimentos')">ALIMENTOS Y BEBIDAS &nbsp;- </a></li>
+                        <li><a href="#" class="bt" onclick="filterSelection('farmaceuticos')">FARMACÉUTICOS Y COSMÉTICOS &nbsp;- </a></li>
+                        <li><a href="#" class="bt" onclick="filterSelection('mineria')">MINERÍA &nbsp;- </a></li>
+                        <li><a href="#" class="bt" onclick="filterSelection('manufactura')">MANUFACTURA &nbsp;- </a></li>
+                        <li><a href="#" class="bt" onclick="filterSelection('agroindustria')">AGROINDUSTRIA &nbsp;- </a></li>
+                        <li><a href="#" class="bt"onclick="filterSelection('corporativo')">CORPORATIVO &nbsp; </a></li> 
+                        <li><a href="#" class="bt"onclick="filterSelection('infraestructura')">INFRAESTRUCTURA LOGÍSTICA &nbsp; </a></li> 
                     </div>
                     </ul>
                 </div>
@@ -156,183 +149,183 @@
             
             <!-- Portfolio Gallery Grid -->
             <div class="row">
-            <div class="column plantas">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-1-mini.jpg" alt="Mountains" style="width:100%">
                 <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-2-mini.jpg" alt="Lights" style="width:100%">
                 <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-3-mini.jpg" alt="Nature" style="width:100%">
                 <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-4-mini.jpg" alt="Nature" style="width:100%">
                 <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
                 </div>
             </div>
             
-            <div class="column plantas">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-7-mini.jpg" alt="Car" style="width:100%">
                 <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column farmaceuticos">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-8-mini.jpg" alt="Car" style="width:100%">
                 <h4>Plantas Industriales<br><span>FARMACÉUTICOS</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column manufactura">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-10-mini.jpg" alt="Car" style="width:100%">
                 <h4>Plantas Industriales<br><span>MANUFACTURA</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column mineria">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-11-mini.jpg" alt="Car" style="width:100%">
                 <h4>Plantas Industriales<br><span>MINERÍA</span></h4>                
                 </div>
             </div>
 
-            <div class="column plantas">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-13-mini.jpg" alt="Car" style="width:100%">
                 <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-14-mini.jpg" alt="Car" style="width:100%">
                 <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column manufactura">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-18-mini.jpg" alt="Car" style="width:100%">
                 <h4>Plantas Industriales<br><span>MANUFACTURA</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column manufactura">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-19-mini.jpg" alt="Car" style="width:100%">
                 <h4>Plantas Industriales<br><span>MANUFACTURA</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-20-mini.jpg" alt="Car" style="width:100%">
                 <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column manufactura">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-21-mini.jpg" alt="Car" style="width:100%">
                 <h4>Plantas Industriales<br><span>MANUFACTURA</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-25-mini.jpg" alt="Car" style="width:100%">
                 <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-34-mini.jpg" alt="Car" style="width:100%">
                 <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-35-mini.jpg" alt="Car" style="width:100%">
                 <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column mineria">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-36-mini.jpg" alt="Car" style="width:100%">
                 <h4>Plantas Industriales<br><span>MINERÍA</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-37-mini.jpg" alt="Car" style="width:100%">
                 <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
                 </div>
             </div>
-            <div class="column plantas">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-38-mini.jpg" alt="Car" style="width:100%">
                 <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
                 </div>
             </div>
-            <div class="column almacenamiento">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/almacenamiento-a-granel/almacenamiento-a-granel-promocon-1-mini.jpg" alt="Car" style="width:100%">
                 <h4>Almacenamiento a granel<br><span>ALIMENTOS</span></h4>
                 </div>
             </div>
-            <div class="column almacenamiento">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/almacenamiento-a-granel/almacenamiento-a-granel-promocon-2-mini.jpg" alt="Car" style="width:100%">
                 <h4>Almacenamiento a granel<br><span>ALIMENTOS</span></h4>
                 </div>
             </div>
-            <div class="column almacenamiento">
+            <div class="column agroindustria">
                 <div class="content">
                 <img src="img/proyectos/almacenamiento-a-granel/almacenamiento-a-granel-promocon-3-mini.jpg" alt="Car" style="width:100%">
                 <h4>Almacenamiento a granel<br><span>AGROINDUSTRIA</span></h4>
                 </div>
             </div>
-            <div class="column almacenamiento">
+            <div class="column agroindustria">
                 <div class="content">
                 <img src="img/proyectos/almacenamiento-a-granel/almacenamiento-a-granel-promocon-4-mini.jpg" alt="Car" style="width:100%">
                 <h4>Almacenamiento a granel<br><span>AGROINDUSTRIA</span></h4>
                 </div>
             </div>
-            <div class="column almacenamiento">
+            <div class="column agroindustria">
                 <div class="content">
                 <img src="img/proyectos/almacenamiento-a-granel/almacenamiento-a-granel-promocon-5-mini.jpg" alt="Car" style="width:100%">
                 <h4>Almacenamiento a granel<br><span>AGROINDUSTRIA</span></h4>
                 </div>
             </div>
-            <div class="column centros">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-1-mini.jpg" alt="Car" style="width:100%">
                 <h4>Centro de distribución<br><span>ALIMENTOS</span></h4>
                 </div>
             </div>            
-            <div class="column centros">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-3-mini.jpg" alt="Car" style="width:100%">
                 <h4>Centro de distribución<br><span>ALIMENTOS</span></h4>
                 </div>
             </div>
-            <div class="column centros">
+            <div class="column corporativo">
                 <div class="content">
                 <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-4-mini.jpg" alt="Car" style="width:100%">
                 <h4>Centro de distribución<br><span>CORPORATIVO</span></h4>
                 </div>
             </div>            
-            <div class="column centros">
+            <div class="column infraestructura">
                 <div class="content">
                 <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-5-mini.jpg" alt="Car" style="width:100%">
                 <h4>Centro de distribución<br><span>LOGÍSTICA</span></h4>
                 </div>
             </div>
-            <div class="column centros">
+            <div class="column farmaceuticos">
                 <div class="content">
                 <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-6-mini.jpg" alt="Car" style="width:100%">
                 <h4>Centro de distribución<br><span>FARMACÉUTICOS</span></h4>
@@ -344,13 +337,13 @@
                 <h4>Centro de distribución<br><span>LOGÍSTICA</span></h4>
                 </div>
             </div>
-            <div class="column centros">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-8-mini.jpg" alt="Car" style="width:100%">
                 <h4>Centro de distribución<br><span>ALIMENTOS</span></h4>
                 </div>
             </div>
-            <div class="column centros">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-10-mini.jpg" alt="Car" style="width:100%">
                 <h4>Centro de distribución<br><span>ALIMENTOS</span></h4>
@@ -362,31 +355,31 @@
                 <h4>Centro de distribución<br><span>LOGÍSTICA</span></h4>
                 </div>
             </div>
-            <div class="column logistica">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/logistica-de-frio/logisitca-de-frio-promocon-1-mini.jpg" alt="Car" style="width:100%">
                 <h4>Logística de frío<br><span>ALIMENTOS</span></h4>
                 </div>
             </div>
-            <div class="column logistica">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/logistica-de-frio/logisitca-de-frio-promocon-2-mini.jpg" alt="Car" style="width:100%">
                 <h4>Logística de frío<br><span>ALIMENTOS</span></h4>
                 </div>
             </div>
-            <div class="column logistica">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/logistica-de-frio/logisitca-de-frio-promocon-3-mini.jpg" alt="Car" style="width:100%">
                 <h4>Logística de frío<br><span>ALIMENTOS</span></h4>
                 </div>
             </div>
-            <div class="column logistica">
+            <div class="column alimentos">
                 <div class="content">
                 <img src="img/proyectos/logistica-de-frio/logisitca-de-frio-promocon-4-mini.jpg" alt="Car" style="width:100%">
                 <h4>Logística de frío<br><span>ALIMENTOS</span></h4>
                 </div>
             </div>
-            <div class="column inmobiliarios">
+            <div class="column infraestructura">
                 <div class="content">
                 <img src="img/proyectos/proyectos-inmobiliarios/proyectos-inmobiliarios-1-mini.jpg" alt="Car" style="width:100%">
                 <h4>Proyectos Inmobiliarios<br><span>LOGÍSTICA</span></h4>
@@ -398,55 +391,55 @@
                 <h4>Proyectos Inmobiliarios<br><span>LOGÍSTICA</span></h4>
                 </div>
             </div>
-            <div class="column inmobiliarios">
+            <div class="column infraestructura">
                 <div class="content">
                 <img src="img/proyectos/proyectos-inmobiliarios/proyectos-inmobiliarios-3-mini.jpg" alt="Car" style="width:100%">
                 <h4>Proyectos Inmobiliarios<br><span>LOGÍSTICA</span></h4>
                 </div>
             </div>
-            <div class="column inmobiliarios">
+            <div class="column infraestructura">
                 <div class="content">
                 <img src="img/proyectos/proyectos-inmobiliarios/proyectos-inmobiliarios-4-mini.jpg" alt="Car" style="width:100%">
                 <h4>Proyectos Inmobiliarios<br><span>LOGÍSTICA</span></h4>
                 </div>
             </div>
-            <div class="column inmobiliarios">
+            <div class="column infraestructura">
                 <div class="content">
                 <img src="img/proyectos/proyectos-inmobiliarios/proyectos-inmobiliarios-5-mini.jpg" alt="Car" style="width:100%">
                 <h4>Proyectos Inmobiliarios<br><span>LOGÍSTICA</span></h4>
                 </div>
             </div>
-            <div class="column inmobiliarios">
+            <div class="column infraestructura">
                 <div class="content">
                 <img src="img/proyectos/proyectos-inmobiliarios/proyectos-inmobiliarios-6-mini.jpg" alt="Car" style="width:100%">
                 <h4>Proyectos Inmobiliarios<br><span>LOGÍSTICA</span></h4>
                 </div>
             </div>
-            <div class="column institucionales">
+            <div class="column corporativo">
                 <div class="content">
                 <img src="img/proyectos/construcciones-institucionales/construcciones-institucionales-promocon-2-mini.jpg" alt="Car" style="width:100%">
                 <h4>Construcciones Institucionales<br><span>CORPORATIVO</span></h4>
                 </div>
             </div>
-            <div class="column institucionales">
+            <div class="column corporativo">
                 <div class="content">
                 <img src="img/proyectos/construcciones-institucionales/construcciones-institucionales-promocon-3-mini.jpg" alt="Car" style="width:100%">
                 <h4>Construcciones Institucionales<br><span>CORPORATIVO</span></h4>
                 </div>
             </div>
-            <div class="column institucionales">
+            <div class="column corporativo">
                 <div class="content">
                 <img src="img/proyectos/construcciones-institucionales/construcciones-institucionales-promocon-4-mini.jpg" alt="Car" style="width:100%">
                 <h4>Construcciones Institucionales<br><span>CORPORATIVO</span></h4>
                 </div>
             </div>
-            <div class="column institucionales">
+            <div class="column corporativo">
                 <div class="content">
                 <img src="img/proyectos/construcciones-institucionales/construcciones-institucionales-promocon-5-mini.jpg" alt="Car" style="width:100%">
                 <h4>Construcciones Institucionales<br><span>CORPORATIVO</span></h4>
                 </div>
             </div>
-            <div class="column institucionales">
+            <div class="column corporativo">
                 <div class="content">
                 <img src="img/proyectos/construcciones-institucionales/construcciones-institucionales-promocon-7-mini.jpg" alt="Car" style="width:100%">
                 <h4>Construcciones Institucionales<br><span>CORPORATIVO</span></h4>

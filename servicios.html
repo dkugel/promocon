@@ -2,21 +2,19 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Promocon</title>
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.js"></script>
     <!-- Estilos personalizados-->
+    <link rel="stylesheet" href="css/portfolio.css" >
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/W3.css">
-    <!--jquery -->
-    <script src="js/jquery.js"></script>
-    <!-- slider -->
-    <script src="js/ninja-slider.js"></script>
-    <style>
-      .mySlides {display:none;}
-    </style>
+    <!-- external files for modals -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>   
 </head>
 <body>
     <header class="servicios">
@@ -33,24 +31,63 @@
       </div>           
       <div class="main-menu">
             <ul>
-              <li class="linea" style="border-radius: 2px 0 0 2px;"><a href="index.html" >Inicio</a></li>
-              <li class="linea"><a href="nosotros.html">Nosotros</a></li>
-              <li><a href="servicios.html">Servicios</a></li>
-              <li class="linea" style="min-width: 26%;border-left: 1px solid #a1a7af;"><a href="proyectos.html">Proyectos &nbsp;<img src="img/blue-select.png"></a></li>
-              <li style="border-radius:  0 2px 2px 0;"><a href="contacto.html" >Contacto</a></li>
-            </ul>        
+                <li class="linea" style="border-radius: 2px 0 0 2px;"><a href="index.html" >Inicio</a></li>
+                <li class="linea"><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li class="linea" style="border-left: 1px solid #a1a7af;"><a href="" data-toggle="modal" data-target="#myModal">Proyectos &nbsp;<img src="img/blue-select.png"></a></li>
+                <li style="border-radius:  0 2px 2px 0;"><a href="contacto.html" >Contacto</a></li>
+            </ul>                    
         </div> 
-    </header>             
+    </header>            
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog" style="top: 140px;">
+            <div class="modal-content">                                
+            <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row no-gutters">
+                            <div class="col-md-6">
+                                <h1><a href="proyectos-sector.html">POR SECTORES</a></h1><br>
+                                <ul>
+                                    <li>&nbsp;Alimentos y bebidas</li>
+                                    <li>&nbsp;Farmacéuticos y cosméticos</li>
+                                    <li>&nbsp;Minería</li>
+                                    <li>&nbsp;Manufactura</li>
+                                    <li>&nbsp;Agroindustria</li>
+                                    <li>&nbsp;Corporativo</li>
+                                    <li>&nbsp;Infraestructura logística</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h1><a href="proyectos.html">POR TIPO DE PROYECTO</a></h1><br>
+                                <ul>
+                                    <li>&nbsp;Plantas industriales</li>
+                                    <li>&nbsp;Almacenamiento a granel</li>
+                                    <li>&nbsp;Centros de distribución y logística</li>
+                                    <li>&nbsp;Logística de frío</li>
+                                    <li>&nbsp;Desarrollo de proyectos inmobiliarios</li>
+                                    <li>&nbsp;Construcciones Institucionales</li>
+                                </ul>
+                            </div>                            
+                        </div>
+                    </div>            
+                </div>                        
+            </div>
+        </div>
+    </div>             
     <section class="uno service-bg">
       <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-12 col-lg-12">
                 <h1>TENEMOS LA SOLUCIÓN INTEGRAL PARA SUS PROYECTOS</h1>
-                <h2>NUESTROS SERVICIOS</h2>
+                <div class="services-box">
+                    <h2 style="top: -13px;position: relative;background: #fff;width: 50%;margin: 0 auto;">NUESTROS SERVICIOS</h2>
+                </div>
             </div>
         </div>
         <div class="row">
-          <div class="col-xs-8 col-md-5 col-lg-5">
+          <div class="col-xs-8 col-md-5 col-lg-6">
             <h3>01</h3>
             <div class="_01">                
                 <div class="row">
@@ -79,7 +116,7 @@
                             <img src="img/servicios/icono-martillo-promocon.png">
                         </div>
                     </div>
-                </div>
+                </div><br>
                 <p>Realizamos mantenimientos preventivos y correctivos en plantas y centros industriales cumpliendo
                     con las especificaciones dadas por el cliente, ideales para empresas con locaciones en diferentes lugares.
                 </p>
@@ -95,13 +132,13 @@
                             <img src="img/servicios/icono-edificio-promocon.png">
                         </div>
                     </div>
-                </div>
+                </div><br>
                 <p>Participamos en la conceptualización y desarrollo de proyectos logísticos-industriales y apoyamos a los clientes 
                     en sus necesidades de localizaciones.
                 </p>
             </div>                       
           </div>
-          <div class="col-xs-8 col-md-5 col-lg-5 offset-lg-1">
+          <div class="col-xs-8 col-md-5 col-lg-6">
                 <h3>02</h3>
                 <div class="_01">
                     <div class="row">
@@ -113,7 +150,7 @@
                                 <img src="img/servicios/icono-asesoria-promocon.png">
                             </div>
                         </div>
-                    </div>                    
+                    </div><br>                    
                     <p>En Promocon queremos convertir grandes ideas en grandes construcciones. Para ello
                        establecemos y ejecutamos modelos y planes de trabajo para lograr construir cualquier estructura.
                        Contamos con la asesoría técnica y profesional para la realización del proyecto que empresa requiera.
@@ -130,7 +167,7 @@
                                 <img src="img/servicios/icono-mundo-promocon.png">
                             </div>
                         </div>
-                    </div>                     
+                    </div><br>                     
                     <p>Apoyamos a los clientes facilitando la operación continua de la empresa durante
                         la relocalización de sus plantas minimizando riesgos de tipo financiero y logístico.
                     </p>
@@ -146,7 +183,7 @@
                                 <img src="img/servicios/icono-rayo-promocon.png">
                             </div>
                         </div>
-                    </div>                    
+                    </div><br>                    
                     <p>A lo largo de nuestra trayectoria en el ámbito Industrial hemos desarrollado obras de Montaje Electromecánico para la industria.
                          Tenemos la capacidad y experiencia para gestionar y supervisar el montaje electromecánico de equipos industriales para cualquier proceso productivo.
                     </p>
@@ -162,7 +199,7 @@
                                 <img src="img/servicios/icono-edificio-promocon.png">
                             </div>
                         </div>
-                    </div>                    
+                    </div><br>                    
                     <p>Realizamos diseños integrales de proyectos sostenibles cumpliendo los estándares, prácticas y requisitos
                         necesarios para obtener el nivel de certificación LEED deseado.                        
                     </p>

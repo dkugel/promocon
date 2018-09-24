@@ -2,16 +2,19 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Promocon</title>
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.js"></script>
     <!-- Estilos personalizados-->
+    <link rel="stylesheet" href="css/portfolio.css" >
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/W3.css">
-    <!--jquery -->
-    <script src="js/jquery.js"></script>
+    <!-- external files for modals -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <style>
       .mySlides {display:none;}
     </style>
@@ -33,15 +36,52 @@
     </header>
     
     <div class="up-page"> 
-      <div class="main-menu">
-        <ul>
-          <li class="linea" style="border-radius: 2px 0 0 2px;"><a href="index.html" >Inicio</a></li>
-          <li class="linea"><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li class="linea" style="min-width: 26%;border-left: 1px solid #a1a7af;"><a href="proyectos.html">Proyectos &nbsp;<img src="img/blue-select.png"></a></li>
-          <li style="border-radius:  0 2px 2px 0;"><a href="contacto.html" >Contacto</a></li>
-        </ul>        
-      </div>      
+        <div class="main-menu">
+            <ul>
+                <li class="linea" style="border-radius: 2px 0 0 2px;"><a href="index.html" >Inicio</a></li>
+                <li class="linea"><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li class="linea" style="border-left: 1px solid #a1a7af;"><a href="" data-toggle="modal" data-target="#myModal">Proyectos &nbsp;<img src="img/blue-select.png"></a></li>
+                <li style="border-radius:  0 2px 2px 0;"><a href="contacto.html" >Contacto</a></li>
+            </ul>                    
+        </div> 
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog" style="top: 140px;">
+                <div class="modal-content">                                
+                <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row no-gutters">
+                                <div class="col-md-6">
+                                    <h1><a href="proyectos-sector.html">POR SECTORES</a></h1><br>
+                                    <ul>
+                                        <li>&nbsp;Alimentos y bebidas</li>
+                                        <li>&nbsp;Farmacéuticos y cosméticos</li>
+                                        <li>&nbsp;Minería</li>
+                                        <li>&nbsp;Manufactura</li>
+                                        <li>&nbsp;Agroindustria</li>
+                                        <li>&nbsp;Corporativo</li>
+                                        <li>&nbsp;Infraestructura logística</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h1><a href="proyectos.html">POR TIPO DE PROYECTO</a></h1><br>
+                                    <ul>
+                                        <li>&nbsp;Plantas industriales</li>
+                                        <li>&nbsp;Almacenamiento a granel</li>
+                                        <li>&nbsp;Centros de distribución y logística</li>
+                                        <li>&nbsp;Logística de frío</li>
+                                        <li>&nbsp;Desarrollo de proyectos inmobiliarios</li>
+                                        <li>&nbsp;Construcciones Institucionales</li>
+                                    </ul>
+                                </div>                            
+                            </div>
+                        </div>            
+                    </div>                        
+                </div>
+            </div>
+        </div>      
       <!--start slider-->
       <div class="w3-content w3-display-container">
         <img class="mySlides" src="img/inicio-slider/plantas-industriales-slider.jpg" style="width:100%">        
