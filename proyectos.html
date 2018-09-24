@@ -1,303 +1,567 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <title>SECTORES</title>
-  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-  <meta name="keywords" content="">
-  <link rel="stylesheet" href="css/portfolio.css" >
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script src="js/filterable.pack.js" ></script>
-  <!-- Bootstrap 4 -->
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <script src="js/bootstrap.js"></script>
-  <!-- Estilos personalizados-->
-  <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="css/W3.css">
+<html>
+<head>      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Promocon</title>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <!-- Estilos personalizados-->
+    <link rel="stylesheet" href="css/portfolio.css" >
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/W3.css">
+    <!--jquery -->
+    <script src="js/jquery.js"></script>                            
+    <style>
+
+    /* Center website */
+    h1 {
+        font-size: 50px;
+        word-break: break-all;
+    }
+
+    .row {
+        margin: 10px -16px;
+    }
+
+    /* Add padding BETWEEN each column */
+    .row,
+    .row > .column {
+        padding: 8px;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 25%;
+        display: none; /* Hide all elements by default */
+        position: relative;
+    }
+
+    /* Clear floats after rows */ 
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Content */
+    .content {        
+        padding: 10px;
+    }
+    .content img{
+        min-width: 271px;
+    }
+
+    /* The "show" class is added to the filtered elements */
+    .show {
+    display: block;
+    }
+
+    /* Style the buttons */
+    .bt {
+
+    }
+
+    .bt.active {
+    
+    color: #da1929;
+    }
+    .main-select.active{color:#da1929;}
+    </style>
 </head>
 <body>
     <header class="proyectos">
-      <div class="logo-aux">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xs-2 col-md-3 col-lg-3"></div>
-            <div class="col-xs-8 col-md-6 col-lg-6">
-              <img src="img/logo.png" alt="logo Promocon">
+        <div class="logo-aux">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-2 col-md-3 col-lg-3"></div>
+                <div class="col-xs-8 col-md-6 col-lg-6">
+                <img src="img/logo.png" alt="logo Promocon">
+                </div>
+                <div class="col-xs-2 col-md-3 col-lg-3"></div>
+            </div>          
+            </div>        
+        </div>           
+        <div class="main-menu">
+            <ul>
+                <li class="linea" style="border-radius: 2px 0 0 2px;"><a href="index.html" >Inicio</a></li>
+                <li class="linea"><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li class="linea" style="min-width: 26%;border-left: 1px solid #a1a7af;"><a href="proyectos.html">Proyectos &nbsp;<img src="img/blue-select.png"></a></li>
+                <li style="border-radius:  0 2px 2px 0;"><a href="contacto.html" >Contacto</a></li>
+            </ul>        
+        </div> 
+    </header>
+    <section class="portafolio">
+        <div class="container">
+            <div class="seleccionador" id="myBtnContainer">
+                <div class="row">          
+                    <ul id="portfolio-filter" style="display: flex;">
+                    <div class="col-sm-12 col-md-3 col-lg-3"> 
+                        <li><a href="#" title="" class="main-select active" onclick="filterSelection('all')">TIPOS DE PROYECTO</a></li>
+                    </div> 
+                    <div class="col-sm-12 col-md-9 col-lg-9">
+                        <li><a href="#" class="bt" onclick="filterSelection('plantas')">PLANTAS INDUSTRIALES  &nbsp;- </a></li>
+                        <li><a href="#" class="bt" onclick="filterSelection('almacenamiento')">ALMACENAMIENTO A GRANEL &nbsp;- </a></li>
+                        <li><a href="#" class="bt" onclick="filterSelection('centros')">CENTROS DE DISTRIBUCIÓN Y LOGÍSTICA &nbsp;- </a></li>
+                        <li><a href="#" class="bt" onclick="filterSelection('logistica')">LOGÍSTICA DE FRÍO &nbsp;- </a></li>
+                        <li><a href="#" class="bt" onclick="filterSelection('inmobiliarios')">DESARROLLO DE PROYECTOS INMOBILIARIOS &nbsp;- </a></li>
+                        <li><a href="#" class="bt"onclick="filterSelection('institucionales')">CONSTRUCCIONES INSTITUCIONALES &nbsp; </a></li> 
+                    </div>
+                    </ul>
+                </div>
             </div>
-            <div class="col-xs-2 col-md-3 col-lg-3"></div>
-          </div>          
-        </div>        
-      </div>           
-      <div class="main-menu">
-        <ul>
-            <li class="linea"><a href="index.html">Inicio</a></li>
-            <li class="linea"><a href="nosotros.html">Nosotros</a></li>
-            <li class="linea"><a href="servicios.html" >Servicios</a></li>
-            <li class="linea"><a>Proyectos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>        
-      </div> 
-    </header> 
+            
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-1-mini.jpg" alt="Mountains" style="width:100%">
+                <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-2-mini.jpg" alt="Lights" style="width:100%">
+                <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-3-mini.jpg" alt="Nature" style="width:100%">
+                <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-4-mini.jpg" alt="Nature" style="width:100%">
+                <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
+                </div>
+            </div>
+            
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-7-mini.jpg" alt="Car" style="width:100%">
+                <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-8-mini.jpg" alt="Car" style="width:100%">
+                <h4>Plantas Industriales<br><span>FARMACÉUTICOS</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-10-mini.jpg" alt="Car" style="width:100%">
+                <h4>Plantas Industriales<br><span>MANUFACTURA</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-11-mini.jpg" alt="Car" style="width:100%">
+                <h4>Plantas Industriales<br><span>MINERÍA</span></h4>                
+                </div>
+            </div>
 
-<!-- Content -->
-<section class="portafolio">
-<div class="row">
-  <div class="col-sm-12 col-md-12 col-lg-12">
-    <div class="seleccionador">
-      <ul id="portfolio-filter" >
-        <li><a href="#all" title="" class="main-select">SECTORES</a></li>
-        <li><a href="#design" title="" rel="design">ALIMENTOS Y BEBIDAS</a></li>
-        <li><a href="#partner" title="" rel="partner">FARMACÉUTICOS Y COSMÉTICOS</a></li>
-        <li><a href="#political" title="" rel="political">MINERÍA</a></li>
-        <li><a href="#university" title="" rel="university">MANUFACTURA</a></li>
-        <li><a href="#nonprofit" title="" rel="nonprofit">AGROINDUSTRIA</a></li>
-        <li><a href="#business" title="" rel="business">CORPORATIVO</a></li>
-        <li><a href="#econdev" title="" rel="econdev">INFRAESTRUCTURA LOGÍSTICA</a></li>    
-      </ul>
-    </div>
-  </div>
-</div>
-<ul id="portfolio-list">
-    <li style="display: block;" class="business ecommerce partner cms programming jquery search"> <a href="http://www.newmediacampaigns.com/page/saranac" title=""><img src="portfolio_files/SaranacThumb.gif" alt=""></a>
-    <p> Saranac </p>
-    </li>
-    <li style="display: block;" class="nonprofit partner cms jquery"> <a href="http://www.newmediacampaigns.com/page/salvation-army-of-wake-county" title=""><img src="portfolio_files/NEWSALV.gif" alt=""></a>
-    <p> Salvation Army of Wake County </p>
-    </li>
-    <li class="business design"> <a href="http://www.newmediacampaigns.com/page/tharrington-smith" title=""><img src="portfolio_files/TSThumb.gif" alt=""></a>
-    <p> Tharrington Smith </p>
-    </li>
-    <li class="nonprofit university design cms jquery video"> <a href="http://www.newmediacampaigns.com/page/the-morehead-cain-scholars-program" title=""><img src="portfolio_files/MoreheadThumb.gif" alt=""></a>
-    <p> The Morehead-Cain Scholars Program </p>
-    </li>
-    <li class="political design cms"> <a href="http://www.newmediacampaigns.com/page/josh-mandel-for-treasurer" title=""><img src="portfolio_files/TreasTHUMB.gif" alt=""></a>
-    <p> Josh Mandel for Treasurer </p>
-    </li>
-    <li class="university partner design cms jquery"> <a href="http://www.newmediacampaigns.com/page/nc-marine-science" title=""><img src="portfolio_files/marineNEWNEW.gif" alt=""></a>
-    <p> NC Marine Science </p>
-    </li>
-    <li style="display: block;" class="nonprofit econdev partner cms jquery search"> <a href="http://www.newmediacampaigns.com/page/raleigh-economic-development" title=""><img src="portfolio_files/RaleighThumb.gif" alt=""></a>
-    <p> Raleigh Economic Development </p>
-    </li>
-    <li class="political design cms video"> <a href="http://www.newmediacampaigns.com/page/ravenstahl-for-mayor" title=""><img src="portfolio_files/RavenstahlThumb.gif" alt=""></a>
-    <p> Ravenstahl for Mayor </p>
-    </li>
-    <li class="business design cms analytics"> <a href="http://www.newmediacampaigns.com/page/volt-energy" title=""><img src="portfolio_files/VoltThumb.gif" alt=""></a>
-    <p> Volt Energy </p>
-    </li>
-    <li style="display: block;" class=""> <a href="http://www.newmediacampaigns.com/page/phillips-ambassadors" title=""><img src="portfolio_files/PhillipsThumb.gif" alt=""></a>
-    <p> Phillips Ambassadors </p>
-    </li>
-    <li style="display: block;" class="business partner cms programming jquery video"> <a href="http://www.newmediacampaigns.com/page/story-house-productions" title=""><img src="portfolio_files/NEWSTORY.gif" alt=""></a>
-    <p> Story House Productions </p>
-    </li>
-    <li style="display: block;" class="business partner cms search"> <a href="http://www.newmediacampaigns.com/page/conectiv-energy" title=""><img src="portfolio_files/ConectivThumb.gif" alt=""></a>
-    <p> Conectiv Energy </p>
-    </li>
-    <li class="political design programming jquery"> <a href="http://www.newmediacampaigns.com/page/vote-the-site" title=""><img src="portfolio_files/VoteThumb.gif" alt=""></a>
-    <p> Vote the Site </p>
-    </li>
-    <li style="display: block;" class="nonprofit partner cms programming password"> <a href="http://www.newmediacampaigns.com/page/mustaches-for-kids-charlotte" title=""><img src="portfolio_files/MustacheThumb.gif" alt=""></a>
-    <p> Mustaches for Kids Charlotte </p>
-    </li>
-    <li class="political design cms landing email video"> <a href="http://www.newmediacampaigns.com/page/larry-joe-doherty1" title=""><img src="portfolio_files/Larry-Joe-Small.jpg" alt=""></a>
-    <p> Larry Joe Doherty </p>
-    </li>
-    <li style="display: block;" class="nonprofit university econdev partner"> <a href="http://www.newmediacampaigns.com/page/ecu-economic-development" title=""><img src="portfolio_files/ECUThumb.gif" alt=""></a>
-    <p> ECU Economic Development </p>
-    </li>
-    <li class="political design cms ecommerce email video"> <a href="http://www.newmediacampaigns.com/page/walter-boasso" title=""><img src="portfolio_files/BoassoThumb.gif" alt=""></a>
-    <p> Walter Boasso </p>
-    </li>
-    <li class="nonprofit design cms programming password email search"> <a href="http://www.newmediacampaigns.com/page/north-carolina-beer-and-wine-wholesalers-association1" title=""><img src="portfolio_files/North-Carolina-Beer-and-Wine-Wholesalers-Association-Small.jpg" alt=""></a>
-    <p> North Carolina Beer and Wine Wholesalers Association </p>
-    </li>
-    <li class="nonprofit design cms"> <a href="http://www.newmediacampaigns.com/page/project-extra-mile1" title=""><img src="portfolio_files/Project-Extra-Mile-Small.jpg" alt=""></a>
-    <p> Project Extra Mile </p>
-    </li>
-    <li style="display: block;" class="nonprofit partner cms"> <a href="http://www.newmediacampaigns.com/page/ronald-mcdonald-house-of-north-carolina" title=""><img src="portfolio_files/McDonaldThumb.gif" alt=""></a>
-    <p> Ronald McDonald House of North Carolina </p>
-    </li>
-    <li class="nonprofit design cms password video"> <a href="http://www.newmediacampaigns.com/page/lucy-daniels-center" title=""><img src="portfolio_files/NEWLUCY.gif" alt=""></a>
-    <p> Lucy Daniels Center </p>
-    </li>
-    <li class="nonprofit university design cms"> <a href="http://www.newmediacampaigns.com/page/nc-literary-festival" title=""><img src="portfolio_files/NCLiteraryThumb.gif" alt=""></a>
-    <p> NC Literary Festival </p>
-    </li>
-    <li class="business design programming"> <a href="http://www.newmediacampaigns.com/page/recess-framework" title=""><img src="portfolio_files/RecessThumb.gif" alt=""></a>
-    <p> Recess Framework </p>
-    </li>
-    <li style="display: block;" class="nonprofit econdev partner cms search"> <a href="http://www.newmediacampaigns.com/page/wake-county-economic-development" title=""><img src="portfolio_files/WakeThumb.gif" alt=""></a>
-    <p> Wake County Economic Development </p>
-    </li>
-    <li class="political design cms"> <a href="http://www.newmediacampaigns.com/page/friends-of-wake-county1" title=""><img src="portfolio_files/NEWFRIENDS.gif" alt=""></a>
-    <p> Friends of Wake County </p>
-    </li>
-    <li style="display: block;" class="nonprofit partner cms search"> <a href="http://www.newmediacampaigns.com/page/ufcw-local-1500" title=""><img src="portfolio_files/UFCW-Small.jpg" alt=""></a>
-    <p> UFCW Local 1500 </p>
-    </li>
-    <li style="display: block;" class="business partner cms search"> <a href="http://www.newmediacampaigns.com/page/pr-2020" title=""><img src="portfolio_files/PR20Thumb.gif" alt=""></a>
-    <p> PR 20/20 </p>
-    </li>
-    <li class="political design cms"> <a href="http://www.newmediacampaigns.com/page/joe-simitian" title=""><img src="portfolio_files/SimitianThumb.gif" alt=""></a>
-    <p> Joe Simitian </p>
-    </li>
-    <li class="political design cms video search"> <a href="http://www.newmediacampaigns.com/page/foster-friess" title=""><img src="portfolio_files/NewFriessThumb.gif" alt=""></a>
-    <p> Foster Friess </p>
-    </li>
-    <li class="political design cms"> <a href="http://www.newmediacampaigns.com/page/polk-citizens-for-good-government" title=""><img src="portfolio_files/PolkThumb.gif" alt=""></a>
-    <p> Polk Citizens for Good Government </p>
-    </li>
-    <li class="political design programming password video search"> <a href="http://www.newmediacampaigns.com/page/kansas-house-democrats" title=""><img src="portfolio_files/KansasThumb.gif" alt=""></a>
-    <p> Kansas House Democrats </p>
-    </li>
-    <li class="nonprofit design branding cms password"> <a href="http://www.newmediacampaigns.com/page/north-carolina-association-of-volunteer-administration" title=""><img src="portfolio_files/NCAVAThumb.gif" alt=""></a>
-    <p> North Carolina Association of Volunteer Administration </p>
-    </li>
-    <li style="display: block;" class="political partner cms"> <a href="http://www.newmediacampaigns.com/page/stephanie-miner-for-mayor" title=""><img src="portfolio_files/MinerThumb.gif" alt=""></a>
-    <p> Stephanie Miner for Mayor </p>
-    </li>
-    <li class="business design cms"> <a href="http://www.newmediacampaigns.com/page/insider-sports-marketing1" title=""><img src="portfolio_files/Insider-Sports-Marketing-Small.jpg" alt=""></a>
-    <p> Insider Sports Marketing </p>
-    </li>
-    <li style="display: block;" class="business partner cms search"> <a href="http://www.newmediacampaigns.com/page/whites-lumber" title=""><img src="portfolio_files/Whites-Lumber-Small.jpg" alt=""></a>
-    <p> White's Lumber </p>
-    </li>
-    <li style="display: block;" class="ecommerce partner cms"> <a href="http://www.newmediacampaigns.com/page/happikins" title=""><img src="portfolio_files/HappiThumb.gif" alt=""></a>
-    <p> Happikins </p>
-    </li>
-    <li class="university design"> <a href="http://www.newmediacampaigns.com/page/unc-admitted" title=""><img src="portfolio_files/UNC-Admitted-Small.jpg" alt=""></a>
-    <p> UNC Admitted </p>
-    </li>
-    <li class="nonprofit design cms email search"> <a href="http://www.newmediacampaigns.com/page/united-way-of-pitt-county" title=""><img src="portfolio_files/United-Way-Small.jpg" alt=""></a>
-    <p> United Way of Pitt County </p>
-    </li>
-    <li class="political design cms landing email video search"> <a href="http://www.newmediacampaigns.com/page/josh-mandel" title=""><img src="portfolio_files/JoshThumb.gif" alt=""></a>
-    <p> Josh Mandel </p>
-    </li>
-    <li class="business design branding cms programming"> <a href="http://www.newmediacampaigns.com/page/white-knight-drivers1" title=""><img src="portfolio_files/WhiteThumb.gif" alt=""></a>
-    <p> White Knight Drivers </p>
-    </li>
-    <li style="display: block;" class=""> <a href="http://www.newmediacampaigns.com/page/rejuvenate-medspa" title=""><img src="portfolio_files/rejuvTHUMB.gif" alt=""></a>
-    <p> Rejuvenate Medspa </p>
-    </li>
-    <li class="university design cms email search"> <a href="http://www.newmediacampaigns.com/page/unc-entrepreneurship-minor" title=""><img src="portfolio_files/EminorThumb-1.gif" alt=""></a>
-    <p> UNC Entrepreneurship Minor </p>
-    </li>
-    <li class="business design cms email landing"> <a href="http://www.newmediacampaigns.com/page/xbs-global" title=""><img src="portfolio_files/XBSThumb.gif" alt=""></a>
-    <p> XBS Global </p>
-    </li>
-    <li style="display: block;" class="university partner cms jquery search"> <a href="http://www.newmediacampaigns.com/page/advanced-medical-technologies-at-nc-state" title=""><img src="portfolio_files/StateThumb.gif" alt=""></a>
-    <p> Advanced Medical Technologies at N.C. State </p>
-    </li>
-    <li class="political design cms email"> <a href="http://www.newmediacampaigns.com/page/ben-r-lujn" title=""><img src="portfolio_files/LujanThumb.gif" alt=""></a>
-    <p> Ben R. Luj�n </p>
-    </li>
-    <li class="nonprofit university design cms programming password email video"> <a href="http://www.newmediacampaigns.com/page/advising-corps" title=""><img src="portfolio_files/NCACthumbnew.gif" alt=""></a>
-    <p> National College Advising Corps </p>
-    </li>
-    <li class="business design cms"> <a href="http://www.newmediacampaigns.com/page/dpr-landscape-architecture" title=""><img src="portfolio_files/DPRThumb.gif" alt=""></a>
-    <p> DPR Landscape Architecture </p>
-    </li>
-    <li style="display: block;" class="political partner cms jquery"> <a href="http://www.newmediacampaigns.com/page/mack-crounse" title=""><img src="portfolio_files/MackCrounseThumb.gif" alt=""></a>
-    <p> Mack Crounse </p>
-    </li>
-    <li style="display: block;" class="business partner cms jquery video"> <a href="http://www.newmediacampaigns.com/page/third-floor-productions" title=""><img src="portfolio_files/ThirdThumb.gif" alt=""></a>
-    <p> Third Floor Productions </p>
-    </li>
-    <li class="political econdev design cms video"> <a href="http://www.newmediacampaigns.com/page/save-our-little-village" title=""><img src="portfolio_files/SOLVThumb.gif" alt=""></a>
-    <p> Save Our Little Village </p>
-    </li>
-    <li style="overflow: hidden; clear: both; height: 0px; position: relative; float: none; display: block;"></li>
-    </ul>
-  <div class="row">
-    <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-13-mini.jpg" alt="Car" style="width:100%">
+                <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-14-mini.jpg" alt="Car" style="width:100%">
+                <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-18-mini.jpg" alt="Car" style="width:100%">
+                <h4>Plantas Industriales<br><span>MANUFACTURA</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-19-mini.jpg" alt="Car" style="width:100%">
+                <h4>Plantas Industriales<br><span>MANUFACTURA</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-20-mini.jpg" alt="Car" style="width:100%">
+                <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-21-mini.jpg" alt="Car" style="width:100%">
+                <h4>Plantas Industriales<br><span>MANUFACTURA</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-25-mini.jpg" alt="Car" style="width:100%">
+                <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-34-mini.jpg" alt="Car" style="width:100%">
+                <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-35-mini.jpg" alt="Car" style="width:100%">
+                <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-36-mini.jpg" alt="Car" style="width:100%">
+                <h4>Plantas Industriales<br><span>MINERÍA</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-37-mini.jpg" alt="Car" style="width:100%">
+                <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
+                </div>
+            </div>
+            <div class="column plantas">
+                <div class="content">
+                <img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-38-mini.jpg" alt="Car" style="width:100%">
+                <h4>Plantas Industriales<br><span>ALIMENTOS</span></h4>                
+                </div>
+            </div>
+            <div class="column almacenamiento">
+                <div class="content">
+                <img src="img/proyectos/almacenamiento-a-granel/almacenamiento-a-granel-promocon-1-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column almacenamiento">
+                <div class="content">
+                <img src="img/proyectos/almacenamiento-a-granel/almacenamiento-a-granel-promocon-2-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column almacenamiento">
+                <div class="content">
+                <img src="img/proyectos/almacenamiento-a-granel/almacenamiento-a-granel-promocon-3-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column almacenamiento">
+                <div class="content">
+                <img src="img/proyectos/almacenamiento-a-granel/almacenamiento-a-granel-promocon-4-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column almacenamiento">
+                <div class="content">
+                <img src="img/proyectos/almacenamiento-a-granel/almacenamiento-a-granel-promocon-5-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column centros">
+                <div class="content">
+                <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-1-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column centros">
+                <div class="content">
+                <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-1-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column centros">
+                <div class="content">
+                <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-3-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column centros">
+                <div class="content">
+                <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-4-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column centros">
+                <div class="content">
+                <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-4-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column centros">
+                <div class="content">
+                <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-5-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column centros">
+                <div class="content">
+                <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-6-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column centros">
+                <div class="content">
+                <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-7-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column centros">
+                <div class="content">
+                <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-8-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column centros">
+                <div class="content">
+                <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-10-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column centros">
+                <div class="content">
+                <img src="img/proyectos/centros-distribucion-logistica/centros-distribucion-logisitca-promocon-11-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column logistica">
+                <div class="content">
+                <img src="img/proyectos/logistica-de-frio/logisitca-de-frio-promocon-1-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column logistica">
+                <div class="content">
+                <img src="img/proyectos/logistica-de-frio/logisitca-de-frio-promocon-2-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column logistica">
+                <div class="content">
+                <img src="img/proyectos/logistica-de-frio/logisitca-de-frio-promocon-3-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column logistica">
+                <div class="content">
+                <img src="img/proyectos/logistica-de-frio/logisitca-de-frio-promocon-4-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column logistica">
+                <div class="content">
+                <img src="img/proyectos/proyectos-inmobiliarios/proyectos-inmobiliarios-1-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column inmobiliarios">
+                <div class="content">
+                <img src="img/proyectos/proyectos-inmobiliarios/proyectos-inmobiliarios-2-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column inmobiliarios">
+                <div class="content">
+                <img src="img/proyectos/proyectos-inmobiliarios/proyectos-inmobiliarios-3-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column inmobiliarios">
+                <div class="content">
+                <img src="img/proyectos/proyectos-inmobiliarios/proyectos-inmobiliarios-4-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column inmobiliarios">
+                <div class="content">
+                <img src="img/proyectos/proyectos-inmobiliarios/proyectos-inmobiliarios-5-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column inmobiliarios">
+                <div class="content">
+                <img src="img/proyectos/proyectos-inmobiliarios/proyectos-inmobiliarios-6-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column institucionales">
+                <div class="content">
+                <img src="img/proyectos/construcciones-institucionales/construcciones-institucionales-promocon-2-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column institucionales">
+                <div class="content">
+                <img src="img/proyectos/construcciones-institucionales/construcciones-institucionales-promocon-3-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column institucionales">
+                <div class="content">
+                <img src="img/proyectos/construcciones-institucionales/construcciones-institucionales-promocon-4-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column institucionales">
+                <div class="content">
+                <img src="img/proyectos/construcciones-institucionales/construcciones-institucionales-promocon-5-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column institucionales">
+                <div class="content">
+                <img src="img/proyectos/construcciones-institucionales/construcciones-institucionales-promocon-7-mini.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <!-- END GRID -->
+            </div>
+        </div>
+    </section>
 
-    </div>
-    <div class="col-sm-12 col-md-3 col-lg-3">
-      
-    </div>
-    <div class="col-sm-12 col-md-3 col-lg-3">
-  
-    </div>
-    <div class="col-sm-12 col-md-3 col-lg-3">
-  
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
 <div class="form-presentation">
     <div class="container" style="text-align: center">
-      <div class="row">
-        <div class="col-xs-8 col-md-12 col-lg-8 offset-lg-2">
-          <img src="img/logo-promocon-positivo.png">
-          <p>Si está interesado en conocer más sobre nosotros contáctenos…</p>
-          <div class="contact-data">                                  
-            <p><img src="img/icono-movil-promocon.png" ><span>(313) 252 6473</span></p>
-            <p><img src="img/icono-telefono-promocon.png"><span>(571) 622 6250</span></p>
-            <p><img src="img/icono-correo-promocon.png"><span>dcomercial@promocon.net</span></p>
-            <p><img src="img/icono-direccion-promocon.png"><span> CARRERA 47<sup>a</sup> #91 - 32 BOGOTÁ D.C.</span></p>                                                                                              
-          </div> 
-          <div class="separador">
-            <div class="row no-gutters">
-                <div class="col-4">
-                  <img src="img/linea.png"> 
+        <div class="row">
+            <div class="col-xs-8 col-md-12 col-lg-8 offset-lg-2">
+                <img src="img/logo-promocon-positivo.png">
+                <p>Si está interesado en conocer más sobre nosotros contáctenos…</p>
+                <div class="contact-data">                                  
+                <p><img src="img/icono-movil-promocon.png" ><span>(313) 252 6473</span></p>
+                <p><img src="img/icono-telefono-promocon.png"><span>(571) 622 6250</span></p>
+                <p><img src="img/icono-correo-promocon.png"><span>dcomercial@promocon.net</span></p>
+                <p><img src="img/icono-direccion-promocon.png"><span> CARRERA 47<sup>a</sup> #91 - 32 BOGOTÁ D.C.</span></p>                                                                                              
+                </div> 
+                <div class="separador">
+                <div class="row no-gutters">
+                    <div class="col-4">
+                        <img src="img/linea.png"> 
+                    </div>
+                    <div class="col-4">
+                        <p> o diligencie el formulario </p> 
+                    </div>
+                    <div class="col-4">
+                        <img src="img/linea.png">  
+                    </div>
+                </div>   
                 </div>
-                <div class="col-4">
-                  <p> o diligencie el formulario </p> 
-                </div>
-                <div class="col-4">
-                    <img src="img/linea.png">  
-                </div>
-            </div>   
-          </div>
-            <form>
-              <input type="text" name="name" placeholder="Nombre">
-              <input type="email" name="email" placeholder="Email">
-              <input type="text" name="phone" placeholder="Teléfono">
-              <textarea name="message" rows="2" placeholder="Mensaje"></textarea>
-              <input class="btn-gn btn-red"type="submit" name="submit" value="ENVIAR MENSAJE">
-            </form>
-          </div>
-      </div>
+                <form>
+                    <input type="text" name="name" placeholder="Nombre">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="text" name="phone" placeholder="Teléfono">
+                    <textarea name="message" rows="2" placeholder="Mensaje"></textarea>
+                    <input class="btn-gn btn-red"type="submit" name="submit" value="ENVIAR MENSAJE">
+                </form>
+            </div>
+        </div>
     </div>
-  </div>
-  <footer>
-      <div class="main-footer">
+</div>
+<footer>
+    <div class="main-footer">
         <div class="container" style="text-align: center">
-          <div class="row">
-            <div class="col-xs-8 col-md-12 col-lg-12">            
-              <ul class="up-footer">
-                <li class="linea"><a>(313) 2526473 (571)6226250</a></li>
-                <li class="linea"><a>dcomercial@promocon.net</a></li>
-                <li><a>BOGOTÁ D.C.</a></li>                        
-              </ul> 
-              <br>
-              <ul class="sub-footer">
-                <li class="linea"><a> &copy; 2018 Promocon derechos reservados</a></li>
-                <li><a>Política de privacidad</a></li>                                   
-              </ul>        
-            </div>     
-          </div> 
+            <div class="row">
+                <div class="col-xs-8 col-md-12 col-lg-12">            
+                <ul class="up-footer">
+                    <li class="linea"><a>(313) 2526473 (571)6226250</a></li>
+                    <li class="linea"><a>dcomercial@promocon.net</a></li>
+                    <li><a>BOGOTÁ D.C.</a></li>                        
+                </ul> 
+                <br>
+                <ul class="sub-footer">
+                    <li class="linea"><a> &copy; 2018 Promocon derechos reservados</a></li>
+                    <li><a>Política de privacidad</a></li>                                   
+                </ul>        
+                </div>     
+            </div> 
         </div> 
-      </div>                        
-    </footer>
-<script type="text/javascript">
+    </div>                        
+</footer>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
 
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("bt");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 </script>
-</div>
-</div>
+
 </body>
 </html>
