@@ -21,7 +21,7 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .servicios{background-image: url('../img/servicios/header-promocon-servicios.jpg'); min-width: 100%; min-height: 300px;
     background-repeat: no-repeat; background-position: center;background-color: #202f44;}   
 .main-menu{position:absolute;z-index: 10;left: 48%; -webkit-transform: translateX(-50%);
-     transform: translateX(-50%);margin-left: -18px;text-transform: uppercase;top: 15%;}
+     transform: translateX(-50%);margin-left: -18px;text-transform: uppercase;top: 12%;}
 .main-menu ul{list-style-type: none;display: inline-flex;}
 .main-menu li{background-color: #f7f7f7;padding: 15px;}
 .main-menu li a {color: #202f44;text-align: center;padding: 16px;text-decoration: none;}
@@ -133,4 +133,16 @@ border-bottom: 2px solid #da1929; border-right: none;min-height: 117px;}
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {color: #da1929;}
 .nav-tabs .nav-link {color: #a1a7af;}
 .nav-tabs .nav-link img {color: #a1a7af;}
-.cuatro-sub{text-align: left;background: #f8f8f8;padding-bottom: 40px;padding-top: 40px;}
+.cuatro-sub{background: #f8f8f8;padding-bottom: 40px;padding-top: 40px;
+    max-width: 850px;margin: 0 auto;}
+.list-us ul{list-style-type: none; padding: 0; overflow: hidden;}
+.list-us li{float: left;font-size: 1.6em;}
+.list-us li a{color: #676662; text-align: center; padding: 16px;text-decoration: none;}
+.list-us li a:active{color: #da1929;}
+.list-us li a:focus{color: #da1929;}
+.border-aux{border-right:2px solid #da1929;}
+.card {border-top: none;border-left: none;border-right: none;border-bottom: 2px solid #da1929;
+border-radius: 0;color: #202f44;}
+.card a{color:#202f44;}
+.card-header {background: white; border-bottom: none;}
+.card-body {padding-top: 0;}
