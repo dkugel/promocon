@@ -19,8 +19,10 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .nosotros{background-image: url('../img/nosotros/header-promocon-nosotros.jpg'); min-width: 100%; min-height: 300px;
     background-repeat: no-repeat; background-position: center;background-color: #202f44;} 
 .servicios{background-image: url('../img/servicios/header-promocon-servicios.jpg'); min-width: 100%; min-height: 300px;
+    background-repeat: no-repeat; background-position: center;background-color: #202f44;}
+.proyectos{background-image: url('../img/proyectos/header-promocon-proyectos.jpg'); min-width: 100%; min-height: 300px;
     background-repeat: no-repeat; background-position: center;background-color: #202f44;}   
-.main-menu{position:absolute;z-index: 10;left: 48%; -webkit-transform: translateX(-50%);
+.main-menu{position:absolute;z-index: 10;left: 49%; -webkit-transform: translateX(-50%);
      transform: translateX(-50%);margin-left: -18px;text-transform: uppercase;top: 12%;}
 .main-menu ul{list-style-type: none;display: inline-flex;}
 .main-menu li{background-color: #f7f7f7;padding: 15px;}
