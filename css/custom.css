@@ -117,6 +117,7 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .main-footer ul li a{text-decoration: none; color: #fff;padding: 5px}
 .up-footer{font-size:1.1em;margin-bottom: 0px;}
 .sub-footer{font-size: 0.9em;}
+
 /* Nosotros */
 .h1-green{color: #109600;padding-bottom: 65px;}
 .h1-green h1{font-size: 2.2em;font-weight: bold;}
@@ -148,3 +149,8 @@ border-radius: 0;color: #202f44;}
 .card a{color:#202f44;}
 .card-header {background: white; border-bottom: none;}
 .card-body {padding-top: 0;}
+
+/* PROYECTOS*/
+.portafolio{padding-top: 20px;}
+.main-select{color:#da1929;font-size: 1.8em; border-right: 2px solid #da1929;}
+.seleccionador ul{list-style-type: none; padding: 0;}
