@@ -159,6 +159,8 @@ border-radius: 0;color: #202f44;}
 .column span{font-size:1.3em;}
 .column p{color: #fff;position: absolute;top:36px;background-color:rgba(0,0,0,0.5);width: 88%;padding-left: 5px;font-size:1em;}
 .column img{border-bottom: 2px solid #da1929;}
+.modal-header {border: none;padding: 0;font-size: 2em;}
+.close {opacity: 1;}
 .modal-content{background: #fff;border-radius: 0;border-top: 2px solid #da1929;border-bottom:2px solid #da1929;font-size: 0.9em;
     padding: 0 1rem 0 1rem;text-align: left;}
 .modal-content h1{font-size: 1.4em;}
@@ -167,10 +169,18 @@ border-radius: 0;color: #202f44;}
 .modal-content li { padding-left: 1em; text-indent: -.7em;color: #6b6b6b}
 .modal-content li:before {content: "▪"; color: #da1929; }
 .modal-body{padding:20px 1rem 20px 1rem;}
+.lg-modal{border: none; border-radius: 5px; min-width: 100%;position: relative;}
+.lightbox-content h1{color: #da1929;padding:10px 25px;}
+.lightbox-content h2{color: #202f44;font-size: 1.2em;}
+.lightbox-content span{color: #a1a7af;}
+.lightbox-content p{color: #a1a7af;padding:0 25px;}
 /* SERVICIOS */
 .services-box{border-top: 1px solid #da1929;border-left:1px solid #da1929;border-right: 1px solid #da1929; max-width: 75%; 
     text-align: center;margin: 30px auto; padding-bottom: 20px;}
 /*MEDIA*/
 @media (min-width:1370px){
     .main-menu{left:51%;}
+}
+@media (min-width:992px){
+    .modal-lg {max-width: 950px;}
 }
