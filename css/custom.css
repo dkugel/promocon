@@ -12,7 +12,7 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .logo{
     background-image: url('../img/header-inicio-promocon.jpg');min-width: 100%;
     background-repeat: no-repeat; background-position: center;background-color: #202f44;
-    text-align: center;padding: 25px 0;}
+    text-align: center;padding: 27px 0;}
 .logo-aux{text-align: center;padding: 15px 0;}
 .contacto{background-image: url('../img/contacto/header-promocon-contacto.jpg'); min-width: 100%; min-height: 300px;
     background-repeat: no-repeat; background-position: center;background-color: #202f44;}
@@ -23,27 +23,26 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .proyectos{background-image: url('../img/proyectos/header-promocon-proyectos.jpg'); min-width: 100%; min-height: 300px;
     background-repeat: no-repeat; background-position: center;background-color: #202f44;}   
 .main-menu{position:absolute;z-index: 10;left: 49%; -webkit-transform: translateX(-50%);
-     transform: translateX(-50%);margin-left: -18px;text-transform: uppercase;top: 12%;}
+     transform: translateX(-50%);margin-left: -18px;text-transform: uppercase;top: 11.5%;}
 .main-menu ul{list-style-type: none;display: inline-flex;}
 .main-menu li{background-color: #f7f7f7;padding: 15px;}
 .main-menu li a {color: #202f44;text-align: center;padding: 16px;text-decoration: none;}
 .linea{border-right: 1px solid #a1a7af; max-height: 90%; margin: auto 0;}
 .up-page{background: #202f44;text-align: center;}
 .shadow-font{color:#202f44; text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-    font-size: 0.8em;}
+    font-size: 1em;}
 .indicators{margin-top: -22px;}
-.uno{background-color: #fff;text-align: center; color: #202f44;font-size: 1.3em;
+.uno{background-color: #fff;text-align: center; color: #202f44;font-size: 1.31em;
     padding-bottom: 40px;padding-top: 40px;margin:0 auto;max-width: 850px;}
 .uno h1{color: #da1929; font-size: 1.6em;padding: 30px 0; font-weight: bold;}
 .uno h2{color:#202f44; font-size: 1.4em;}
-.uno h3{color: #da1929; font-size: 2.5em;font-weight: bold;margin-bottom: -10px;}
+.uno h3{color: #da1929; font-size: 2.9em;font-weight: bold;margin-bottom: -10px;}
 .uno strong{color:#da1929}
 .uno span {color: #da1929;}
-.service-bg{background-image: url('../img/servicios/textura-logo-promocon-558.png');background-repeat: no-repeat;background-position: center;}
 ._01{border:1px solid #bebebe;padding:0;border-radius: 10px;margin-bottom: 20px;}
-._01 h3{color: #da1929; font-size: 1.6em;text-align: left;padding:15px 0 0 20px;}
-._01 p {text-align: left;padding:5px 20px;}
-._02{display:flex;border:1px solid #bebebe;padding:0;border-radius: 10px;margin-bottom: 20px;background-color: #fff;min-height: 80%;max-width: 100%;}
+._01 h3{color: #da1929; font-size: 1.5em;text-align: left;padding:15px 0 0 20px;line-height: 20px;line-height: 26px;}
+._01 p {text-align: left;padding:5px 20px;font-size: 0.95em;}
+._02{display:flex;border:1px solid #bebebe;padding:0;border-radius: 10px;margin-bottom: 20px;background-color: #fff;min-height: 84%;max-width: 210px;}
 ._02 h3{color: #da1929; font-size: 1.1em;text-align: left;padding:15px 0 0 20px;}
 ._02 p {text-align: left;padding:0 20px;}
 .red-box{background: #da1929;border-radius: 7px;padding: 10px}
@@ -51,7 +50,7 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .red-box-int{background: #da1929;border-radius: 7px;padding: 6px;height: 50%;margin-right: -1px;margin-top: -1px;}
 .red-box-int img{width: 28px;float: right;}
 .dos{background-color: #109600;color:#fff;padding-bottom: 40px;}
-.dos p{padding: 13px 0;font-size: 1.2em}
+.dos p{padding: 13px 0;font-size: 1.21em}
 .dos figcaption{font-size: 0.85em;max-width: 90%; margin-left: 30px; }
 .colibri{background-image: url(../img/colibri-promocon.png);background-position: left;background-repeat: no-repeat;background-size: cover; min-height: 100%;}
 .green-aux{background-color:#357302;margin-top: -10px;border-radius: 5px; text-align: center;
@@ -60,38 +59,39 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
     background-color: rgba(0,0,0,0.5); min-width: 95%;padding: 10px;top: 10px;left: 14px;}
 .green-aux img{max-width: 100%;padding: 10px;}
 .titulo{padding-top: 20px;text-align: center;padding-bottom: 20px;}
-.titulo-img{padding-top: 20px;padding-bottom: 20px;text-align: center;}
-.titulo-img h1{font-size: 1.3em;display: inline-block;}
+.titulo-img{padding-top: 20px;padding-bottom: 20px;text-align: left;}
+.titulo-img h1{font-size: 1.4em;display: inline-block;padding-top: 5%;}
 .titulo-img img{vertical-align: middle;display:inline-block; padding-left: 50px;}
 .tres{padding: 20px 0;}
-.tres h1{color: #da1929; font-size: 2em;padding: 5px 10px;}
+.tres h1{color: #da1929; font-size: 2.2em;padding-top: 5px;padding-right: 10px;padding-bottom: 20px;padding-left: 10px;}
 .tres span{color:#202f44; font-size: 0.65em; margin: auto;border-left:1px solid #da1929;padding-left: 10px;}
 .tres h3{color:#da1929;font-size: 1em;}
+.tres p{color: #6b6b6b}
 .cuatro{text-align: left;background: url('../img/textura-logo-promocon-628.png')no-repeat center,#f8f8f8;padding-bottom: 50px;}
 .small-gallery{max-width: 100%;}
 .small-gallery img {padding: 5px; max-width: 100%;}
 .small-gallery img:hover {z-index: 10;transform: scale(1.2);}
-.cinco p{text-align: center;max-width: 50%;margin: auto;}
-.cinco h1{text-align:center;color: #da1929;font-size: 1.8em;padding: 25px 10px;font-weight: bold; }
+.cinco p{text-align: center;max-width: 50%;margin: auto;font-size: 1.2em}
+.cinco h1{text-align:center;color: #da1929;font-size: 2.2em;padding: 25px 10px;font-weight: bold; }
 .cinco h3{font-size: 1.2em;color:#da1929;text-decoration: underline; text-align: center;}
-.aux-box-5{border: 1px solid #bebebe;max-width:50%;margin: auto;padding-bottom: 10px}
+.aux-box-5{border: 1px solid #bebebe;max-width:55%;margin: auto;padding-bottom: 10px}
 .aux-box-5 h1{color: #202f44; font-style: italic;font-size: 1.2em;font-weight: lighter;}
-.aux-box-5 ul {list-style: none; padding:0; margin:0;}
+.aux-box-5 ul {list-style: none; padding:0; margin:0;font-size: 1.2em;}
 .aux-box-5 li { padding-left: 1em; text-indent: -.7em;}
 .aux-box-5 li:before {content: "▪"; color: #da1929; }
 .sub-box {margin: 0 auto;text-align: center;max-width: 40%;border-left: 1px solid #ff7900;
     border-right: 1px solid #ff7900; border-bottom: 1px solid #ff7900;min-height: 60px;}
 .sub-img {margin-top:-50px;text-align: center;margin-bottom: 20px;}
 .seis{background:#202f44 url('../img/servicios/textura-logo-promocon-558.png') center no-repeat;}
-.seis h1{text-align: center;color: #fff;font-size: 1.8em;padding: 20px;font-weight: bold;}
-.siete h1{color: #da1929; font-size: 1.8em;padding: 25px 10px; font-weight: bold;text-align: center;}
-.siete img{width: 80%;margin: auto;}
+.seis h1{text-align: center;color: #fff;font-size: 2.0em;padding: 20px;font-weight: bold;}
+.siete h1{color: #da1929; font-size: 2.2em;padding: 25px 10px; font-weight: bold;text-align: center;}
+.siete img{width: 100%;margin: auto;}
 .form-presentation{font-family:'Cabin-Regular';padding: 10px 0 50px; max-width: 100%; margin: 0 auto;color:#6b6b6b;
      background: url('../img/textura-logo-promocon-771-izquierda.png') -35% no-repeat,
       url('../img/textura-logo-promocon-771-derecha.png') 135% no-repeat,#f8f8f8}
 .form-presentation input{width: 100%;padding: 5px;margin: 5px;border-radius: 0px; border: 1px solid #bebebe}
 .form-presentation textarea{width: 100%;padding: 5px;margin: 5px;border-radius: 0px; border: 1px solid #bebebe}
-.contact-data{color:#202f44;line-height: 10px;text-align: left;padding: 10px 0 30px 35%; }
+.contact-data{color:#202f44;line-height: 10px;text-align: left;padding: 10px 0 30px 35%; font-weight: bold;}
 .contact-data p{margin-bottom: 0;}
 .contact-data img{border-right:2px solid #da1929; padding-right: 10px; }
 .contact-data span{padding-left: 10px;}
@@ -102,29 +102,31 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .contact-data-sub p{margin-bottom: 0;}
 .contact-data-sub img{border-right:2px solid #da1929; padding-right: 10px; }
 .contact-data-sub span{padding-left: 10px;}
-.separador{max-width: 100%;}
+.separador{max-width: 100%;padding-bottom: 25px;}
 .separador img {max-width: 100%;}
 .btn-gn{max-width: 138px;border: none !important;border-radius: 5px !important;
-    padding: 14px !important;font-size: 0.9em}
+    padding: 14px !important;font-size: 0.85em}
 .btn-red{color:#ffffff;background-color: #da1929;text-decoration: none !important;}
 .btn-small{font-size: 0.7em}
 .red-square{border: 2px solid #da1929;}
 .red-square img{position: relative;left: -20px;top: 20px;}
 .separador-top{margin-top:20px;}
 .separador-bottom{margin-bottom:20px;}
-.main-footer{text-align: center;background-color:#202f44;width: 100%;padding-top: 10px;}
+.main-footer{text-align: center;background-color:#202f44;width: 100%;padding-top: 15px;padding-bottom: 15px;}
 .main-footer ul{list-style-type: none;display: inline-flex;}
 .main-footer ul li{color: #fff;}
 .main-footer ul li a{text-decoration: none; color: #fff;padding: 5px}
 .up-footer{font-size:1.1em;margin-bottom: 0px;}
 .sub-footer{font-size: 0.9em;}
-/* Nosotros */
-.h1-green{color: #109600;padding-bottom: 65px;}
+
+/* NOSOTROS */
+.h1-green{color: #109600;padding-bottom: 65px;padding-top: 45px;}
 .h1-green h1{font-size: 2.2em;font-weight: bold;}
 .uno-sub{min-width: 100%;padding-bottom: 5%;}
 .titulo-dos{padding-top: 30px;text-align: left;padding-bottom: 20px;}
+.titulo-dos h1{font-weight: bold;}
 .tab-aux{text-align: center;}
-.tab-aux p{font-size: 1.1em; font-family: 'Cabin-Regular'; text-align: left;}
+.tab-aux p{font-size: 1.1em; font-family: 'Cabin-Regular'; text-align: left;color: #202f44;}
 .tab-aux li{min-width: 20%;}
 .nav-tabs {border-bottom: none;}
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {border-top: none;border-left: none;
@@ -133,22 +135,23 @@ border-bottom: 2px solid #da1929; border-right: none;min-height: 117px;}
 .aux-box-us ul {list-style: none; padding:0; margin:0;font-size: 1.1em;}
 .aux-box-us li { padding-left: 1em; text-indent: -.7em;}
 .aux-box-us li:before {content: "▪"; color: #da1929; }
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {color: #da1929;}
-.nav-tabs .nav-link {color: #a1a7af;}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {color: #da1929;line-height: 20px;}
+.nav-tabs .nav-link {color: #a1a7af;font-size: 0.9em;line-height: 20px;}
 .nav-tabs .nav-link img {color: #a1a7af;}
 .cuatro-sub{background: #f8f8f8;padding-bottom: 40px;padding-top: 40px;
-    max-width: 850px;margin: 0 auto;}
+    max-width: 850px;margin: 0 auto;min-width: 100%;}
+.list-us{padding-bottom: 15px;}    
 .list-us ul{list-style-type: none; padding: 0; overflow: hidden;}
 .list-us li{float: left;font-size: 1.6em;}
 .list-us li a{color: #676662; text-align: center; padding: 16px;text-decoration: none;}
 .list-us li a:active{color: #da1929;}
 .list-us li a:focus{color: #da1929;}
-.border-aux{border-right:2px solid #da1929;}
-.card {border-top: none;border-left: none;border-right: none;border-bottom: 2px solid #da1929;
+.border-aux{border-right:1px solid #da1929;}
+.card {border-top: none;border-left: none;border-right: none;border-bottom: 1px solid #da1929;
 border-radius: 0;color: #202f44;}
 .card a{color:#202f44;}
 .card-header {background: white; border-bottom: none;}
-.card-body {padding-top: 0;}
+.card-body {padding-top: 0;font-size: 1.1em;}
 
 /* PROYECTOS*/
 .portafolio{padding-top: 20px;}
@@ -161,8 +164,8 @@ border-radius: 0;color: #202f44;}
 .column img{border-bottom: 2px solid #da1929;}
 .modal-header {border: none;padding: 0;font-size: 2em;}
 .close {opacity: 1;}
-.modal-content{background: #fff;border-radius: 0;border-top: 2px solid #da1929;border-bottom:2px solid #da1929;font-size: 0.9em;
-    padding: 0 1rem 0 1rem;text-align: left;}
+.modal-content{background: #fff;border-radius: 0;border-top: 3px solid #da1929;border-bottom:3px solid #da1929;font-size: 0.9em;
+    text-align: left;}
 .modal-content h1{font-size: 1.4em;}
 .modal-content a{text-decoration: none;}
 .modal-content ul {list-style: none; padding:0; margin:0;font-size: 1.1em;}
@@ -175,9 +178,12 @@ border-radius: 0;color: #202f44;}
 .lightbox-content h3{color: #202f44;font-size: 1.7em;}
 .lightbox-content span{color: #a1a7af;}
 .lightbox-content p{color: #a1a7af;padding:0 25px;}
+
 /* SERVICIOS */
 .services-box{border-top: 1px solid #da1929;border-left:1px solid #da1929;border-right: 1px solid #da1929; max-width: 75%; 
     text-align: center;margin: 30px auto; padding-bottom: 20px;}
+.service-bg{background-image: url('../img/servicios/textura-logo-promocon-558.png');background-repeat: no-repeat;background-position: center;max-width: 850px;}
+
 /*MEDIA*/
 @media (min-width:1370px){
     .main-menu{left:51%;}
