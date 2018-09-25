@@ -63,6 +63,7 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .titulo-img{padding-top: 20px;padding-bottom: 20px;text-align: center;}
 .titulo-img h1{font-size: 1.3em;display: inline-block;}
 .titulo-img img{vertical-align: middle;display:inline-block; padding-left: 50px;}
+.tres{padding: 20px 0;}
 .tres h1{color: #da1929; font-size: 2em;padding: 5px 10px;}
 .tres span{color:#202f44; font-size: 0.65em; margin: auto;border-left:1px solid #da1929;padding-left: 10px;}
 .tres h3{color:#da1929;font-size: 1em;}
@@ -117,7 +118,6 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .main-footer ul li a{text-decoration: none; color: #fff;padding: 5px}
 .up-footer{font-size:1.1em;margin-bottom: 0px;}
 .sub-footer{font-size: 0.9em;}
-
 /* Nosotros */
 .h1-green{color: #109600;padding-bottom: 65px;}
 .h1-green h1{font-size: 2.2em;font-weight: bold;}
@@ -172,6 +172,7 @@ border-radius: 0;color: #202f44;}
 .lg-modal{border: none; border-radius: 5px; min-width: 100%;position: relative;}
 .lightbox-content h1{color: #da1929;padding:10px 25px;}
 .lightbox-content h2{color: #202f44;font-size: 1.2em;}
+.lightbox-content h3{color: #202f44;font-size: 1.7em;}
 .lightbox-content span{color: #a1a7af;}
 .lightbox-content p{color: #a1a7af;padding:0 25px;}
 /* SERVICIOS */
