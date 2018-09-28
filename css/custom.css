@@ -22,9 +22,9 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
     background-repeat: no-repeat; background-position: center;background-color: #0f2b43 ;}
 .proyectos{background-image: url('../img/proyectos/header-promocon-proyectos.jpg'); min-width: 100%; min-height: 300px;
     background-repeat: no-repeat; background-position: center;background-color: #0f2b43 ;} 
-.envoltorio{position: absolute;top:12%;width: 100%;z-index:100;}
+.envoltorio{position: absolute;width: 100%;z-index:100;margin-top: -20px;}
 .alternate-menu{position: relative;}
-.alternate-menu li{padding: 15px;background-color: #f7f7f7;}
+.alternate-menu li{padding: 15px 20px;background-color: #f7f7f7;font-size: 1.15em;}
 .alternate-menu a{color: #0f2b43 ;}
 .linea-l{border-left: 1px solid #a1a7af;}
 .linea-r{border-right: 1px solid #a1a7af;}  
@@ -46,7 +46,7 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .uno strong{color:#da1929}
 .uno span {color: #da1929;}
 .little-modal{background-color: #da1929; color: #fff;}
-.little-modal p{font-size: 1em;padding-left: 10px;}
+.little-modal p{font-size: 1em;padding-left: 20px;padding-bottom:10px; }
 ._01{border:1px solid #bebebe;padding:0;border-radius: 10px;margin-bottom: 20px;}
 ._01 h3{color: #da1929; font-size: 1.5em;text-align: left;padding:15px 0 0 20px;line-height: 20px;line-height: 26px;}
 ._01 p {text-align: left;padding:5px 20px;font-size: 0.95em;}
@@ -70,8 +70,8 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .titulo-img h1{font-size: 1.4em;display: inline-block;padding-top: 5%;}
 .titulo-img img{vertical-align: middle;display:inline-block; padding-left: 50px;}
 .tres{padding: 20px 0;}
-.tres h1{color: #da1929; font-size: 2.6em;padding-top: 5px;padding-right: 10px;padding-bottom: 20px;padding-left: 10px;}
-.tres span{color:#0f2b43 ; font-size: 0.45em; margin: auto;padding-left: 10px;vertical-align: middle;}
+.tres h1{color: #da1929; font-size: 2.6em;padding-top: 5px;padding-right: 10px;padding-bottom: 20px;padding-left: 10px;font-weight: bold;}
+.tres span{color:#0f2b43 ; font-size: 0.45em; margin: auto;padding-left: 10px;vertical-align: middle;font-weight: lighter;}
 .tres h3{color:#da1929;font-size: 1.3em;}
 .tres p{color: #6b6b6b;font-size: 1.05em;}
 .cuatro{text-align: left;background: url('../img/textura-logo-promocon-628.png')no-repeat center,#f8f8f8;padding-bottom: 50px;}
@@ -80,11 +80,11 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .cinco p{text-align: center;max-width: 50%;margin: auto;font-size: 1.2em}
 .cinco h1{text-align:center;color: #da1929;font-size: 2.2em;padding: 25px 10px;font-weight: bold; }
 .cinco h3{font-size: 1.2em;color:#da1929;text-decoration: underline; text-align: center;}
-.aux-box-5{border: 1px solid #bebebe;max-width:55%;margin: auto;padding-bottom: 10px}
-.aux-box-5 h1{color: #0f2b43 ; font-style: italic;font-size: 1.2em;font-weight: lighter;}
+.aux-box-5{border: 1px solid #dedede;max-width:55%;margin: auto;padding-bottom: 10px}
+.aux-box-5 h1{color: #0f2b43 ; font-style: italic;font-size: 1.6em;font-weight: lighter;}
 .aux-box-5 ul {list-style: none; padding:0; margin:0;font-size: 1.2em;}
-.aux-box-5 li { padding-left: 1em; text-indent: -.7em;}
-.aux-box-5 li:before {content: "▪"; color: #da1929; }
+.aux-box-5 li { padding-left: 1em; text-indent: -.7em;line-height: 20px;padding-bottom: 15px;}
+.aux-box-5 li:before {content: "▪"; color: red; }
 .sub-box {margin: 0 auto;text-align: center;max-width: 40%;border-left: 1px solid #ff7900;
     border-right: 1px solid #ff7900; border-bottom: 1px solid #ff7900;min-height: 60px;}
 .sub-img {margin-top:-50px;text-align: center;margin-bottom: 20px;}
@@ -92,16 +92,16 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .seis h1{text-align: center;color: #fff;font-size: 2.0em;padding: 20px;font-weight: bold;}
 .siete{text-align: center;}
 .siete h1{color: #da1929; font-size: 2.2em;padding: 25px 10px; font-weight: bold;text-align: center;}
-.siete img{width: 100%;margin: auto;}
+.siete img{width: 100%;margin: auto;max-width: 191px;}
 .form-presentation{font-family:'Cabin-Regular';padding: 10px 0 50px; max-width: 100%; margin: 0 auto;color:#6b6b6b;
      background: url('../img/textura-logo-promocon-771-izquierda.png') -35% no-repeat,
       url('../img/textura-logo-promocon-771-derecha.png') 135% no-repeat,#f8f8f8}
 .form-presentation input{width: 100%;padding: 5px;margin: 5px;border-radius: 0px; border: 1px solid #bebebe}
 .form-presentation textarea{width: 100%;padding: 5px;margin: 5px;border-radius: 0px; border: 1px solid #bebebe}
-.contact-data{color:#0f2b43 ;line-height: 10px;text-align: left;padding: 10px 0 30px 35%; font-weight: bold;}
+.contact-data{color:#0f2b43 ;line-height: 10px;text-align: left;padding: 20px 0 30px 35%; font-weight: bold;}
 .contact-data p{margin-bottom: 0;}
 .contact-data img{border-right:2px solid #da1929; padding-right: 10px; }
-.contact-data span{padding-left: 10px;}
+.contact-data span{padding-left: 10px;vertical-align: super;}
 .contact-data-sub{color:#0f2b43 ;line-height: 10px;text-align: left;padding: 30px 0 30px 0; }
 .contact-data-sub h1{color:#da1929;font-size: 1.2em;line-height: 10px;}
 .contact-data-sub h2{color:#bebebe;font-size: 1.4em;border-bottom: 1px solid #da1929;padding-bottom: 10px;max-width: 70%}
@@ -141,7 +141,7 @@ border-bottom: 2px solid #da1929; border-right: none;min-height: 117px;}
 .aux-box-us{margin: auto;padding-bottom: 10px; text-align: left;}
 .aux-box-us ul {list-style: none; padding:0; margin:0;font-size: 1.1em;}
 .aux-box-us li { padding-left: 1em; text-indent: -.7em;}
-.aux-box-us li:before {content: "▪"; color: #da1929; }
+.aux-box-us li:before {content: "▪"; color: red; }
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {color: #da1929;line-height: 20px;}
 .nav-tabs .nav-link {color: #a1a7af;font-size: 0.9em;line-height: 20px;}
 .nav-tabs .nav-link img {color: #a1a7af;}
@@ -177,9 +177,9 @@ border-radius: 0;color: #0f2b43 ;}
 .modal-content a{text-decoration: none;}
 .modal-content ul {list-style: none; padding:0; margin:0;font-size: 1.1em;}
 .modal-content li { padding-left: 1em; text-indent: -.7em;color: #6b6b6b}
-.modal-content li:before {content: "▪"; color: #da1929; }
+.modal-content li:before {content: "▪"; color: red; }
 .modal-body{padding:20px 1rem 20px 1rem;}
-.lg-modal{border: none; border-radius: 5px; min-width: 100%;position: relative;}
+.lg-modal{border: none; border-radius: 5px; min-width: 100%;position: relative;padding: 5px;}
 .lightbox-content h1{color: #da1929;padding:10px 25px;}
 .lightbox-content h2{color: #0f2b43 ;font-size: 1.2em;}
 .lightbox-content h3{color: #0f2b43 ;font-size: 1.7em;}
@@ -200,19 +200,21 @@ border-radius: 0;color: #0f2b43 ;}
     .modal-lg {max-width: 950px;}
     .aux-size{min-width: 800px !important;}    
 }
-@media (min-width:780px){
+@media (min-width:768px) and (max-width:991px){
     .aux-space{padding-top: 50px;}
+    .w3-display-bottom{left:41.56% !important;}
 }
 @media (max-width:450px){
     .green-aux{width: 340px;}
     .bg-bimbo{ width: 320px !important;height: auto;}
-    .aux-size{max-width: 100%  !important;}
+    .aux-size{display: none;}
     .aux-box-5 {min-width: 95%;}
     .titulo-img img {max-width: 150px;padding: 0;}
     .titulo-img h1{ margin-left: -15px;}
     ._02{margin: 20px auto;}
     .siete img {max-width: 191px;}
     .contact-data{padding: 10px 0 30px 20%;}
+    .w3-display-bottom{left:31.56% !important;}
 }
 
 .bg-bimbo{    background: url(../img/planta-bimbo-sostenible-promocon.png)no-repeat; 
@@ -220,3 +222,52 @@ border-radius: 0;color: #0f2b43 ;}
     width: 511px;   
     background-size: cover;
     background-position: center;}
+.borde-modal{border:1px solid #da1929;}
+.auxtrigger{display:none;}         
+.topnav {
+overflow: hidden;
+background-color: #f7f7f7;
+}
+
+.topnav a {
+float: left;
+display: block;
+color: #0f2b43;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+.topnav .icon {
+display: none;
+}
+
+@media screen and (max-width: 600px) {
+.up-page{margin-top:30px;}
+.auxtrigger{display:block;} 
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+    float: right;
+    display: block;
+}
+.alternate-menu{display: none;}
+}
+
+@media screen and (max-width: 600px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+}

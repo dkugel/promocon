@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/portfolio.css" >
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/W3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- external files for modals -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -36,22 +37,34 @@
     </header>
     <div class="envoltorio">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-2 col-md-3 col-lg-3"></div>
-                <div class="col-xs-8 col-md-6 col-lg-6">
+            <div class="row">                
+                <div class="col-12">
                     <div class="alternate-menu">
                         <ul class="nav justify-content-center">
                             <li class="nav-item" style="border-radius: 2px 0 0 2px;"><a href="index.html" >Inicio</a></li>
                             <li class="nav-item linea-l linea-r"><a href="nosotros.html">Nosotros</a></li>
                             <li class="nav-item linea-r"><a href="servicios.html">Servicios</a></li>
                             <li class="nav-item linea-r"><a href="" data-toggle="modal" data-target="#myModal" id="b1">Proyectos &nbsp;<img src="img/blue-select.png"></a></li>
-                            <li class="nav-item" style="border-radius:  0 2px 2px 0;"><a href="contacto.html" >Contacto</a></li>
+                            <li class="nav-item" style="border-radius:  0 2px 2px 0;"><a href="contacto.html" >Contacto</a></li>                            
+                            </a>
                         </ul>  
                     </div>
-                </div>
-                <div class="col-xs-2 col-md-3 col-lg-3"></div>
+                </div>                
             </div>          
-        </div>    
+        </div>
+        <div class="auxtrigger">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" >Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="" data-toggle="modal" data-target="#myModal" id="b1">Proyectos &nbsp;<img src="img/blue-select.png"></a>
+                <a href="contacto.html" >Contacto</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div> 
+        </div> 
+              
     </div> 
     
     <div class="up-page"> 
@@ -171,14 +184,14 @@
     </section>
     <section class="tres">      
       <div class="container">
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-xs-12 col-md-12 col-lg-12">
                 <div class="titulo">
                   <h1>VISION 360&deg; &nbsp;<a style="border-left: 1px solid #da1929;">&nbsp;</a><span>NO SE TRATA DE CONSTRUIR, SINO DE ENTREGAR EL PROYECTO IDÓNEO PARA SU COMPAÑÍA</span></h1>                  
                 </div>
-                <div class="row">
-                   <div class="col-xs-9 col-md-6 col-lg-6">  
-                      <div class="row no-gutters">  
+                <div class="row" >
+                   <div class="col-xs-12 col-md-6 col-lg-6">  
+                      <div class="row no-gutters"style="padding-bottom: 25px;">  
                         <div class="col-3">          
                           <img src="img/planeamos-promocon.jpg">
                         </div>
@@ -190,8 +203,8 @@
                         </div>                      
                       </div>
                   </div> 
-                  <div class="col-xs-9 col-md-6 col-lg-6">
-                      <div class="row no-gutters">  
+                  <div class="col-xs-12 col-md-6 col-lg-6">
+                      <div class="row no-gutters" style="padding-bottom: 25px;">  
                         <div class="col-3">          
                           <img src="img/ejecutamos-promocon.jpg">
                         </div>
@@ -203,13 +216,13 @@
                       </div>                                                      
                   </div>                  
                 </div>   
-                <div class="row"style="padding-top: 20px;">                     
-                   <div class="col-xs-9 col-md-6 col-lg-6"> 
-                      <div class="row no-gutters">  
+                <div class="row"style="padding-top: 25px;">                     
+                   <div class="col-xs-12 col-md-6 col-lg-6"> 
+                      <div class="row no-gutters" style="padding-bottom: 25px;">  
                         <div class="col-3">          
                           <img src="img/controlamos-promocon.jpg">
                         </div>
-                        <div class="col-9">
+                        <div class="col-9" >
                           <h3>CONTROLAMOS:</h3>
                           <p>Durante la construcción y después de entregar un proyecto supervisamos todos los detalles
                             para garantizar la perfecta operatividad de las obras.
@@ -217,8 +230,8 @@
                         </div>                      
                       </div>                                                       
                    </div>
-                   <div class="col-xs-9 col-md-6 col-lg-6"> 
-                      <div class="row no-gutters">  
+                   <div class="col-xs-12 col-md-6 col-lg-6"> 
+                      <div class="row no-gutters" style="padding-bottom: 25px;">  
                         <div class="col-3">          
                           <img src="img/ponemos-en-marcha-promocon.jpg">
                         </div>
@@ -257,7 +270,7 @@
                 </div> 
                 <!-- modal proyectos recientes -->                        
                 <div class="modal fade bd-example-modal-lg" id="Proy1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog " style="max-width: 330px;">
+                    <div class="modal-dialog borde-modal" style="max-width: 330px;">
                         <div class="lg-modal modal-content ">
                             <div class="modal-header little-modal">
                                 <h5 class="modal-title" id="exampleModalLongTitle">Contecar</h5><br>                                                         
@@ -265,18 +278,13 @@
                             <div class="little-modal">
                                 <p>Centro de Distribución y Logística</p>
                                 <p>Diseño y construcción de la bodega norte puerto Contecar.</p>
-                                <p>En ejecución</p>
-                            </div>
-                            <div class="container-fluid">
-                                <div class="lightbox-content">
-                                    <div class="row no-gutters">
-                                        <div class="col-md-12">
-                                             
-                                            <a href="#" data-toggle="modal" data-target="#Proy1" id="b3"><img id="myImage" src="img/inicio-proyectos-recientes/contecar-inicio-up.jpg" alt="Lights" style="width:100%"></a>
-                                        </div>                                    
-                                    </div>                                
-                                </div> 
-                            </div>
+                                <p>En ejecución</p>                                 
+                            </div>                            
+                            <div class="row no-gutters">
+                                <div class="col-md-12">                                            
+                                    <a href="#" data-toggle="modal" data-target="#Proy1" id="b3"><img id="myImage" src="img/inicio-proyectos-recientes/contecar-inicio-up.jpg" alt="Lights" style="width:100%; padding: 0;"></a>
+                                </div>                                    
+                            </div>                                                                                                                        
                         </div>  
                     </div>
                 </div> 
@@ -671,7 +679,7 @@
       <div class="container" style="text-align: center">
         <div class="row">
           <div class="col-xs-8 col-md-12 col-lg-8 offset-lg-2">
-            <img src="img/logo-promocon-positivo.png">
+            <img src="img/logo-promocon-positivo.png">            
             <p>Si está interesado en conocer más sobre nosotros contáctenos…</p>
             <div class="contact-data">                                  
               <p><img src="img/icono-movil-promocon.png" ><span>(313) 252 6473</span></p>
@@ -836,7 +844,14 @@
        $("#b15").hover(function () {
        $('#Proy7').modal('hide')
        });
-
+       function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
     </script> 
 </body>
 </html>
