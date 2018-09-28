@@ -11,39 +11,47 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .fixed-body{max-width:1366px;}
 .logo{
     background-image: url('../img/header-inicio-promocon.jpg');min-width: 100%;
-    background-repeat: no-repeat; background-position: center;background-color: #202f44;
+    background-repeat: no-repeat; background-position: center;background-color: #0f2b43 ;
     text-align: center;padding: 27px 0;}
 .logo-aux{text-align: center;padding: 15px 0;}
 .contacto{background-image: url('../img/contacto/header-promocon-contacto.jpg'); min-width: 100%; min-height: 300px;
-    background-repeat: no-repeat; background-position: center;background-color: #202f44;}
+    background-repeat: no-repeat; background-position: center;background-color: #0f2b43 ;}
 .nosotros{background-image: url('../img/nosotros/header-promocon-nosotros.jpg'); min-width: 100%; min-height: 300px;
-    background-repeat: no-repeat; background-position: center;background-color: #202f44;} 
+    background-repeat: no-repeat; background-position: center;background-color: #0f2b43 ;} 
 .servicios{background-image: url('../img/servicios/header-promocon-servicios.jpg'); min-width: 100%; min-height: 300px;
-    background-repeat: no-repeat; background-position: center;background-color: #202f44;}
+    background-repeat: no-repeat; background-position: center;background-color: #0f2b43 ;}
 .proyectos{background-image: url('../img/proyectos/header-promocon-proyectos.jpg'); min-width: 100%; min-height: 300px;
-    background-repeat: no-repeat; background-position: center;background-color: #202f44;}   
+    background-repeat: no-repeat; background-position: center;background-color: #0f2b43 ;} 
+.envoltorio{position: absolute;top:12%;width: 100%;z-index:100;}
+.alternate-menu{position: relative;}
+.alternate-menu li{padding: 15px;background-color: #f7f7f7;}
+.alternate-menu a{color: #0f2b43 ;}
+.linea-l{border-left: 1px solid #a1a7af;}
+.linea-r{border-right: 1px solid #a1a7af;}  
 .main-menu{position:absolute;z-index: 10;left: 49%; -webkit-transform: translateX(-50%);
      transform: translateX(-50%);margin-left: -18px;text-transform: uppercase;top: 11.5%;}
 .main-menu ul{list-style-type: none;display: inline-flex;}
 .main-menu li{background-color: #f7f7f7;padding: 15px;}
-.main-menu li a {color: #202f44;text-align: center;padding: 16px;text-decoration: none;}
+.main-menu li a {color: #0f2b43 ;text-align: center;padding: 16px;text-decoration: none;}
 .linea{border-right: 1px solid #a1a7af; max-height: 90%; margin: auto 0;}
-.up-page{background: #202f44;text-align: center;}
-.shadow-font{color:#202f44; text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-    font-size: 1em;}
+.up-page{background: #0f2b43 ;text-align: center;}
+.shadow-font{color:#0f2b43 ; text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    font-size: 1.1em;}
 .indicators{margin-top: -22px;}
-.uno{background-color: #fff;text-align: center; color: #202f44;font-size: 1.31em;
+.uno{background-color: #fff;text-align: center; color: #0f2b43 ;font-size: 1.31em;
     padding-bottom: 40px;padding-top: 40px;margin:0 auto;max-width: 850px;}
 .uno h1{color: #da1929; font-size: 1.6em;padding: 30px 0; font-weight: bold;}
-.uno h2{color:#202f44; font-size: 1.4em;}
+.uno h2{color:#0f2b43 ; font-size: 1.4em;}
 .uno h3{color: #da1929; font-size: 2.9em;font-weight: bold;margin-bottom: -10px;}
 .uno strong{color:#da1929}
 .uno span {color: #da1929;}
+.little-modal{background-color: #da1929; color: #fff;}
+.little-modal p{font-size: 1em;padding-left: 10px;}
 ._01{border:1px solid #bebebe;padding:0;border-radius: 10px;margin-bottom: 20px;}
 ._01 h3{color: #da1929; font-size: 1.5em;text-align: left;padding:15px 0 0 20px;line-height: 20px;line-height: 26px;}
 ._01 p {text-align: left;padding:5px 20px;font-size: 0.95em;}
 ._02{display:flex;border:1px solid #bebebe;padding:0;border-radius: 10px;margin-bottom: 20px;background-color: #fff;min-height: 84%;max-width: 210px;}
-._02 h3{color: #da1929; font-size: 1.1em;text-align: left;padding:15px 0 0 20px;}
+._02 h3{color: #da1929; font-size: 1.02em;text-align: left;padding:15px 0 0 7px;}
 ._02 p {text-align: left;padding:0 20px;}
 .red-box{background: #da1929;border-radius: 7px;padding: 10px}
 .red-box img{width: 28px;}
@@ -51,11 +59,10 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .red-box-int img{width: 28px;float: right;}
 .dos{background-color: #109600;color:#fff;padding-bottom: 40px;}
 .dos p{padding: 13px 0;font-size: 1.21em}
-.dos figcaption{font-size: 0.85em;max-width: 90%; margin-left: 30px; }
+.dos figcaption{font-size: 0.85em;max-width: 90%; margin-left: 30px; margin-top: 16px; }
 .colibri{background-image: url(../img/colibri-promocon.png);background-position: left;background-repeat: no-repeat;background-size: cover; min-height: 100%;}
-.green-aux{background-color:#357302;margin-top: -10px;border-radius: 5px; text-align: center;
-    position: relative; text-align: center;color: white; }
-.green-aux p{position: absolute;text-align: left;font-size: 0.8em;background-color:rgba(44,61,77,0.9);
+.green-aux{background-color:#357302;border-radius: 5px;padding: 10px; margin-top: -10px; width: 531px;}
+.green-aux p{text-align: left;font-size: 0.8em;background-color:rgba(44,61,77,0.9);
     background-color: rgba(0,0,0,0.5); min-width: 95%;padding: 10px;top: 10px;left: 14px;}
 .green-aux img{max-width: 100%;padding: 10px;}
 .titulo{padding-top: 20px;text-align: center;padding-bottom: 20px;}
@@ -63,27 +70,27 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .titulo-img h1{font-size: 1.4em;display: inline-block;padding-top: 5%;}
 .titulo-img img{vertical-align: middle;display:inline-block; padding-left: 50px;}
 .tres{padding: 20px 0;}
-.tres h1{color: #da1929; font-size: 2.2em;padding-top: 5px;padding-right: 10px;padding-bottom: 20px;padding-left: 10px;}
-.tres span{color:#202f44; font-size: 0.65em; margin: auto;border-left:1px solid #da1929;padding-left: 10px;}
-.tres h3{color:#da1929;font-size: 1em;}
-.tres p{color: #6b6b6b}
+.tres h1{color: #da1929; font-size: 2.6em;padding-top: 5px;padding-right: 10px;padding-bottom: 20px;padding-left: 10px;}
+.tres span{color:#0f2b43 ; font-size: 0.45em; margin: auto;padding-left: 10px;vertical-align: middle;}
+.tres h3{color:#da1929;font-size: 1.3em;}
+.tres p{color: #6b6b6b;font-size: 1.05em;}
 .cuatro{text-align: left;background: url('../img/textura-logo-promocon-628.png')no-repeat center,#f8f8f8;padding-bottom: 50px;}
 .small-gallery{max-width: 100%;}
 .small-gallery img {padding: 5px; max-width: 100%;}
-.small-gallery img:hover {z-index: 10;transform: scale(1.2);}
 .cinco p{text-align: center;max-width: 50%;margin: auto;font-size: 1.2em}
 .cinco h1{text-align:center;color: #da1929;font-size: 2.2em;padding: 25px 10px;font-weight: bold; }
 .cinco h3{font-size: 1.2em;color:#da1929;text-decoration: underline; text-align: center;}
 .aux-box-5{border: 1px solid #bebebe;max-width:55%;margin: auto;padding-bottom: 10px}
-.aux-box-5 h1{color: #202f44; font-style: italic;font-size: 1.2em;font-weight: lighter;}
+.aux-box-5 h1{color: #0f2b43 ; font-style: italic;font-size: 1.2em;font-weight: lighter;}
 .aux-box-5 ul {list-style: none; padding:0; margin:0;font-size: 1.2em;}
 .aux-box-5 li { padding-left: 1em; text-indent: -.7em;}
 .aux-box-5 li:before {content: "▪"; color: #da1929; }
 .sub-box {margin: 0 auto;text-align: center;max-width: 40%;border-left: 1px solid #ff7900;
     border-right: 1px solid #ff7900; border-bottom: 1px solid #ff7900;min-height: 60px;}
 .sub-img {margin-top:-50px;text-align: center;margin-bottom: 20px;}
-.seis{background:#202f44 url('../img/servicios/textura-logo-promocon-558.png') center no-repeat;}
+.seis{background:#0f2b43  url('../img/servicios/textura-logo-promocon-558.png') center no-repeat;}
 .seis h1{text-align: center;color: #fff;font-size: 2.0em;padding: 20px;font-weight: bold;}
+.siete{text-align: center;}
 .siete h1{color: #da1929; font-size: 2.2em;padding: 25px 10px; font-weight: bold;text-align: center;}
 .siete img{width: 100%;margin: auto;}
 .form-presentation{font-family:'Cabin-Regular';padding: 10px 0 50px; max-width: 100%; margin: 0 auto;color:#6b6b6b;
@@ -91,11 +98,11 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
       url('../img/textura-logo-promocon-771-derecha.png') 135% no-repeat,#f8f8f8}
 .form-presentation input{width: 100%;padding: 5px;margin: 5px;border-radius: 0px; border: 1px solid #bebebe}
 .form-presentation textarea{width: 100%;padding: 5px;margin: 5px;border-radius: 0px; border: 1px solid #bebebe}
-.contact-data{color:#202f44;line-height: 10px;text-align: left;padding: 10px 0 30px 35%; font-weight: bold;}
+.contact-data{color:#0f2b43 ;line-height: 10px;text-align: left;padding: 10px 0 30px 35%; font-weight: bold;}
 .contact-data p{margin-bottom: 0;}
 .contact-data img{border-right:2px solid #da1929; padding-right: 10px; }
 .contact-data span{padding-left: 10px;}
-.contact-data-sub{color:#202f44;line-height: 10px;text-align: left;padding: 30px 0 30px 0; }
+.contact-data-sub{color:#0f2b43 ;line-height: 10px;text-align: left;padding: 30px 0 30px 0; }
 .contact-data-sub h1{color:#da1929;font-size: 1.2em;line-height: 10px;}
 .contact-data-sub h2{color:#bebebe;font-size: 1.4em;border-bottom: 1px solid #da1929;padding-bottom: 10px;max-width: 70%}
 .contact-data-sub h3{color:#da1929;font-size: 0.9em;line-height: 20px;}
@@ -112,7 +119,7 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .red-square img{position: relative;left: -20px;top: 20px;}
 .separador-top{margin-top:20px;}
 .separador-bottom{margin-bottom:20px;}
-.main-footer{text-align: center;background-color:#202f44;width: 100%;padding-top: 15px;padding-bottom: 15px;}
+.main-footer{text-align: center;background-color:#0f2b43 ;width: 100%;padding-top: 15px;padding-bottom: 15px;}
 .main-footer ul{list-style-type: none;display: inline-flex;}
 .main-footer ul li{color: #fff;}
 .main-footer ul li a{text-decoration: none; color: #fff;padding: 5px}
@@ -126,7 +133,7 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .titulo-dos{padding-top: 30px;text-align: left;padding-bottom: 20px;}
 .titulo-dos h1{font-weight: bold;}
 .tab-aux{text-align: center;}
-.tab-aux p{font-size: 1.1em; font-family: 'Cabin-Regular'; text-align: left;color: #202f44;}
+.tab-aux p{font-size: 1.1em; font-family: 'Cabin-Regular'; text-align: left;color: #0f2b43 ;}
 .tab-aux li{min-width: 20%;}
 .nav-tabs {border-bottom: none;}
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {border-top: none;border-left: none;
@@ -148,8 +155,8 @@ border-bottom: 2px solid #da1929; border-right: none;min-height: 117px;}
 .list-us li a:focus{color: #da1929;}
 .border-aux{border-right:1px solid #da1929;}
 .card {border-top: none;border-left: none;border-right: none;border-bottom: 1px solid #da1929;
-border-radius: 0;color: #202f44;}
-.card a{color:#202f44;}
+border-radius: 0;color: #0f2b43 ;}
+.card a{color:#0f2b43 ;}
 .card-header {background: white; border-bottom: none;}
 .card-body {padding-top: 0;font-size: 1.1em;}
 
@@ -174,10 +181,11 @@ border-radius: 0;color: #202f44;}
 .modal-body{padding:20px 1rem 20px 1rem;}
 .lg-modal{border: none; border-radius: 5px; min-width: 100%;position: relative;}
 .lightbox-content h1{color: #da1929;padding:10px 25px;}
-.lightbox-content h2{color: #202f44;font-size: 1.2em;}
-.lightbox-content h3{color: #202f44;font-size: 1.7em;}
+.lightbox-content h2{color: #0f2b43 ;font-size: 1.2em;}
+.lightbox-content h3{color: #0f2b43 ;font-size: 1.7em;}
 .lightbox-content span{color: #a1a7af;}
 .lightbox-content p{color: #a1a7af;padding:0 25px 20px 25px;font-size: 1.1em;}
+.aux-space{padding-top: 20px;}
 
 /* SERVICIOS */
 .services-box{border-top: 1px solid #da1929;border-left:1px solid #da1929;border-right: 1px solid #da1929; max-width: 75%; 
@@ -190,4 +198,25 @@ border-radius: 0;color: #202f44;}
 }
 @media (min-width:992px){
     .modal-lg {max-width: 950px;}
+    .aux-size{min-width: 800px !important;}    
 }
+@media (min-width:780px){
+    .aux-space{padding-top: 50px;}
+}
+@media (max-width:450px){
+    .green-aux{width: 340px;}
+    .bg-bimbo{ width: 320px !important;height: auto;}
+    .aux-size{max-width: 100%  !important;}
+    .aux-box-5 {min-width: 95%;}
+    .titulo-img img {max-width: 150px;padding: 0;}
+    .titulo-img h1{ margin-left: -15px;}
+    ._02{margin: 20px auto;}
+    .siete img {max-width: 191px;}
+    .contact-data{padding: 10px 0 30px 20%;}
+}
+
+.bg-bimbo{    background: url(../img/planta-bimbo-sostenible-promocon.png)no-repeat; 
+    height: 352px;
+    width: 511px;   
+    background-size: cover;
+    background-position: center;}

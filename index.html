@@ -34,17 +34,28 @@
         </div>        
       </div>           
     </header>
+    <div class="envoltorio">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-2 col-md-3 col-lg-3"></div>
+                <div class="col-xs-8 col-md-6 col-lg-6">
+                    <div class="alternate-menu">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item" style="border-radius: 2px 0 0 2px;"><a href="index.html" >Inicio</a></li>
+                            <li class="nav-item linea-l linea-r"><a href="nosotros.html">Nosotros</a></li>
+                            <li class="nav-item linea-r"><a href="servicios.html">Servicios</a></li>
+                            <li class="nav-item linea-r"><a href="" data-toggle="modal" data-target="#myModal" id="b1">Proyectos &nbsp;<img src="img/blue-select.png"></a></li>
+                            <li class="nav-item" style="border-radius:  0 2px 2px 0;"><a href="contacto.html" >Contacto</a></li>
+                        </ul>  
+                    </div>
+                </div>
+                <div class="col-xs-2 col-md-3 col-lg-3"></div>
+            </div>          
+        </div>    
+    </div> 
     
     <div class="up-page"> 
-      <div class="main-menu">
-        <ul>
-            <li class="linea" style="border-radius: 2px 0 0 2px;"><a href="index.html" >Inicio</a></li>
-            <li class="linea"><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li class="linea" style="border-left: 1px solid #a1a7af;"><a href="" data-toggle="modal" data-target="#myModal">Proyectos &nbsp;<img src="img/blue-select.png"></a></li>
-            <li style="border-radius:  0 2px 2px 0;"><a href="contacto.html" >Contacto</a></li>
-        </ul>                    
-      </div> 
+      
       <!-- The Modal -->
       <div class="modal" id="myModal">
         <div class="modal-dialog" style="top: 140px;">
@@ -85,11 +96,11 @@
       <!--start slider-->
       <div class="w3-content w3-display-container">
         <img class="mySlides" src="img/inicio-slider/plantas-industriales-slider.jpg" style="width:100%">        
-        <div class="w3-display-middle w3-container ">
+        <div class="w3-display-middle w3-container aux-size">
           <div class="shadow-font">
             SERVICIOS ESPECIALIZADOS DE INGENIERÍA<br>
           </div>          
-          <div class="w3-container w3-padding-10 w3-bluecustom">
+          <div class="w3-container w3-padding-10 w3-bluecustom" >
             PLANEAMOS - EJECUTAMOS - CONTROLAMOS - PONEMOS EN MARCHA  
           </div>
                     
@@ -123,7 +134,7 @@
           <div class="col-xs-8 col-md-12 col-lg-12">
             <p>Somos una constructora dedicada a prestar servicios <strong>de ingeniería especializada</strong>
               para el sector industrial, logístico, empresarial e institucional.
-            </p>
+            </p><br>
             <p>Acompañamos los proyectos desde los diseños arquitectónicos y estructurales, la elaboración de
               los presupuestos, programación de la obra, construcción y entrega final del proyecto.</p>
           </div>
@@ -132,22 +143,26 @@
     <section class="dos">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-md-6 col-lg-6">
+          <div class="col-xs-12 col-md-12 col-lg-6">
             <div class="colibri">
               <img src="img/logo-promocon-sostenible-positivo.png">
-              <p>En Promocon trabajamos para ofrecer mejores soluciones para el medio ambiente, logrando que la
-              arquitectura y construcción de nuestras obras estén bajo el enfoque del diseño sostenible.</p> 
-
+              <div class="aux-space">
+                <p>En Promocon trabajamos para ofrecer mejores soluciones para el medio ambiente, logrando que la
+                arquitectura y construcción de nuestras obras estén bajo el enfoque del diseño sostenible.</p> 
+              </div>
               <p>Somos pioneros en Colombia y referentes en la Región en materia de certificación de proyectos
               industriales bajo el sello internacional de sostenibilidad “Leadership in Energy and Environmental Design (LEED)”.
               </p>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6 col-lg-6">
-            <div class="green-aux">
-              <p>Diseño y Construcción del Centro de Distribución Bimbo (Tunja Cundinamarca 2015)</p>
-              <img src="img/planta-bimbo-sostenible-promocon.png">                
+          <div class="col-xs-12 col-md-12 col-lg-6">            
+              <div class="green-aux">
+              <div class="bg-bimbo">                  
+                  <p>Diseño y Construcción del Centro de Distribución Bimbo (Tunja Cundinamarca 2015)</p>
+              </div>
             </div>
+                              
+            
             <figcaption>La planta Bimbo cuenta con tratamiento de aguas residuales, aprovechamiento de residuos y
                 optimización de uso de energéticos. Certificada LEED Gold.</figcaption>
           </div>
@@ -159,7 +174,7 @@
         <div class="row">
             <div class="col-xs-12 col-md-12 col-lg-12">
                 <div class="titulo">
-                  <h1>VISION 360&deg; &nbsp;<span>NO SE TRATA DE CONSTRUIR, SINO DE ENTREGAR EL PROYECTO IDÓNEO PARA SU COMPAÑÍA</span></h1>                  
+                  <h1>VISION 360&deg; &nbsp;<a style="border-left: 1px solid #da1929;">&nbsp;</a><span>NO SE TRATA DE CONSTRUIR, SINO DE ENTREGAR EL PROYECTO IDÓNEO PARA SU COMPAÑÍA</span></h1>                  
                 </div>
                 <div class="row">
                    <div class="col-xs-9 col-md-6 col-lg-6">  
@@ -238,31 +253,238 @@
             <div class="small-gallery">
               <div class="row no-gutters">
                 <div class="col-2 offset-2">
-                  <img src="img/inicio-proyectos-recientes/contecar-inicio-up.jpg">                  
-                </div>
+                    <a href="#" data-toggle="modal" data-target="#Proy1" id="b2"><img src="img/inicio-proyectos-recientes/contecar-inicio-down.jpg"></a>                  
+                </div> 
+                <!-- modal proyectos recientes -->                        
+                <div class="modal fade bd-example-modal-lg" id="Proy1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog " style="max-width: 330px;">
+                        <div class="lg-modal modal-content ">
+                            <div class="modal-header little-modal">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Contecar</h5><br>                                                         
+                            </div>
+                            <div class="little-modal">
+                                <p>Centro de Distribución y Logística</p>
+                                <p>Diseño y construcción de la bodega norte puerto Contecar.</p>
+                                <p>En ejecución</p>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="lightbox-content">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-12">
+                                             
+                                            <a href="#" data-toggle="modal" data-target="#Proy1" id="b3"><img id="myImage" src="img/inicio-proyectos-recientes/contecar-inicio-up.jpg" alt="Lights" style="width:100%"></a>
+                                        </div>                                    
+                                    </div>                                
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                </div> 
+
                 <div class="col-2">
-                  <img src="img/inicio-proyectos-recientes/exennta-inicio-up.jpg">
+                    <a href="#" data-toggle="modal" data-target="#Proy2" id="b4"><img src="img/inicio-proyectos-recientes/exennta-inicio-down.jpg"></a>
                 </div>
-                <div class="col-2">
-                  <img src="img/inicio-proyectos-recientes/carulla-inicio-up.jpg">
+                <!-- modal proyectos recientes -->                        
+                <div class="modal fade bd-example-modal-lg" id="Proy2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog " style="max-width: 330px;">
+                        <div class="lg-modal modal-content ">
+                            <div class="modal-header little-modal">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Exxenta - Terranum</h5><br>                                                         
+                            </div>
+                            <div class="little-modal">
+                                <p>Desarrollo de proyectos inmobiliarios</p>
+                                <p>Construcción de zona franca</p>
+                                <p>Finalizado</p>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="lightbox-content">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-12">                                             
+                                            <a href="#" data-toggle="modal" data-target="#Proy2" id="b5"><img id="myImage" src="img/inicio-proyectos-recientes/exennta-inicio-up.jpg" alt="Lights" style="width:100%"></a>
+                                        </div>                                    
+                                    </div>                                
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
                 </div>
+
                 <div class="col-2">
-                  <img src="img/inicio-proyectos-recientes/kimberly-inicio-up.jpg">
+                    <a href="#" data-toggle="modal" data-target="#Proy3" id="b6"><img src="img/inicio-proyectos-recientes/carulla-inicio-down.jpg"></a>
+                </div>
+                <!-- modal proyectos recientes -->                        
+                <div class="modal fade bd-example-modal-lg" id="Proy3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog " style="max-width: 330px;">
+                        <div class="lg-modal modal-content ">
+                            <div class="modal-header little-modal">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Exxenta - Terranum</h5><br>                                                         
+                            </div>
+                            <div class="little-modal">
+                                <p>Construcciones institucionales</p>
+                                <p>Construcción del Fresh Market Pepe Sierra.
+                                    (Bogotá – Cundinamarca).</p>
+                                <p>Finalizado</p>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="lightbox-content">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-12">                                             
+                                            <a href="#" data-toggle="modal" data-target="#Proy3" id="b7"><img id="myImage" src="img/inicio-proyectos-recientes/carulla-inicio-up.jpg" alt="Lights" style="width:100%"></a>
+                                        </div>                                    
+                                    </div>                                
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <a href="#" data-toggle="modal" data-target="#Proy4" id="b6"><img src="img/inicio-proyectos-recientes/kimberly-inicio-down.jpg"></a>
+                </div>
+                <!-- modal proyectos recientes -->                        
+                <div class="modal fade bd-example-modal-lg" id="Proy4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog " style="max-width: 330px;">
+                        <div class="lg-modal modal-content ">
+                            <div class="modal-header little-modal">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Kimberly</h5><br>                                                         
+                            </div>
+                            <div class="little-modal">
+                                <p>Planta Industrial</p>
+                                <p>	Proyecto ampliación, centro de distribución y patio de maniobras.
+                                    (Barbosa – Antioquia).</p>
+                                <p>En ejecución</p>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="lightbox-content">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-12">                                             
+                                            <a href="#" data-toggle="modal" data-target="#Proy4" id="b7"><img id="myImage" src="img/inicio-proyectos-recientes/kimberly-inicio-up.jpg" alt="Lights" style="width:100%"></a>
+                                        </div>                                    
+                                    </div>                                
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
                 </div>
               </div>
               <div class="row no-gutters">
                   <div class="col-2 offset-2">
-                    <img src="img/inicio-proyectos-recientes/belcorp-inicio-up.jpg">
+                      <a href="#" data-toggle="modal" data-target="#Proy5" id="b8"><img src="img/inicio-proyectos-recientes/belcorp-inicio-down.jpg"></a>
                   </div>
+                  <!-- modal proyectos recientes -->                        
+                  <div class="modal fade bd-example-modal-lg" id="Proy5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog " style="max-width: 330px;">
+                          <div class="lg-modal modal-content ">
+                              <div class="modal-header little-modal">
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Belcorp</h5><br>                                                         
+                              </div>
+                              <div class="little-modal">
+                                  <p>Planta Industrial</p>
+                                  <p>Construcción de planta de fragancias y maquillaje.</p>
+                                  <p>En ejecución</p>
+                              </div>
+                              <div class="container-fluid">
+                                  <div class="lightbox-content">
+                                      <div class="row no-gutters">
+                                          <div class="col-md-12">                                             
+                                              <a href="#" data-toggle="modal" data-target="#Proy5" id="b9"><img id="myImage" src="img/inicio-proyectos-recientes/belcorp-inicio-up.jpg" alt="Lights" style="width:100%"></a>
+                                          </div>                                    
+                                      </div>                                
+                                  </div> 
+                              </div>
+                          </div>  
+                      </div>
+                  </div>
+
                   <div class="col-2">
-                    <img src="img/inicio-proyectos-recientes/exito-inicio-up.jpg">  
+                      <a href="#" data-toggle="modal" data-target="#Proy6" id="b10"><img src="img/inicio-proyectos-recientes/exito-inicio-down.jpg"></a>  
                   </div>
+                  <!-- modal proyectos recientes -->                        
+                  <div class="modal fade bd-example-modal-lg" id="Proy6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog " style="max-width: 330px;">
+                          <div class="lg-modal modal-content ">
+                              <div class="modal-header little-modal">
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Éxito</h5><br>                                                         
+                              </div>
+                              <div class="little-modal">
+                                  <p>Construcciones institucionales</p>
+                                  <p>Adecuaciones y construcción de locales Éxito.
+                                      (Cali – Valle del Cauca)</p>
+                                  <p>En ejecución</p>
+                              </div>
+                              <div class="container-fluid">
+                                  <div class="lightbox-content">
+                                      <div class="row no-gutters">
+                                          <div class="col-md-12">                                             
+                                              <a href="#" data-toggle="modal" data-target="#Proy6" id="b9"><img id="myImage" src="img/inicio-proyectos-recientes/exito-inicio-up.jpg" alt="Lights" style="width:100%"></a>
+                                          </div>                                    
+                                      </div>                                
+                                  </div> 
+                              </div>
+                          </div>  
+                      </div>
+                  </div>
+
                   <div class="col-2">
-                    <img src="img/inicio-proyectos-recientes/cittium-inicio-up.jpg">
+                      <a href="#" data-toggle="modal" data-target="#Proy7" id="b12"><img src="img/inicio-proyectos-recientes/cittium-inicio-down.jpg"></a>
                   </div>
+                  <!-- modal proyectos recientes -->                        
+                  <div class="modal fade bd-example-modal-lg" id="Proy7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog " style="max-width: 330px;">
+                          <div class="lg-modal modal-content ">
+                              <div class="modal-header little-modal">
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Cittium</h5><br>                                                         
+                              </div>
+                              <div class="little-modal">
+                                  <p>Desarrollo de proyectos inmobiliarios</p>
+                                  <p>Adecuaciones y ampliación de bodegas.
+                                      (Bogotá D.C. – Cundinamarca)</p>
+                                  <p>En ejecución</p>
+                              </div>
+                              <div class="container-fluid">
+                                  <div class="lightbox-content">
+                                      <div class="row no-gutters">
+                                          <div class="col-md-12">                                             
+                                              <a href="#" data-toggle="modal" data-target="#Proy7" id="b13"><img id="myImage" src="img/inicio-proyectos-recientes/cittium-inicio-up.jpg" alt="Lights" style="width:100%"></a>
+                                          </div>                                    
+                                      </div>                                
+                                  </div> 
+                              </div>
+                          </div>  
+                      </div>
+                  </div>
+
+
                   <div class="col-2">
-                    <img src="img/inicio-proyectos-recientes/arrayanes-inicio-up.jpg">
+                      <a href="#" data-toggle="modal" data-target="#Proy8" id="b14"><img src="img/inicio-proyectos-recientes/arrayanes-inicio-down.jpg"></a>
                   </div>
+                  <!-- modal proyectos recientes -->                        
+                  <div class="modal fade bd-example-modal-lg" id="Proy8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog " style="max-width: 330px;">
+                          <div class="lg-modal modal-content ">
+                              <div class="modal-header little-modal">
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Kimberly</h5><br>                                                         
+                              </div>
+                              <div class="little-modal">
+                                  <p>Construcciones institucionales</p>
+                                  <p>	Construcción de sendero peatonal.
+                                      (Bogotá D.C. – Cundinamarca)</p>
+                                  <p>Finalizado</p>
+                              </div>
+                              <div class="container-fluid">
+                                  <div class="lightbox-content">
+                                      <div class="row no-gutters">
+                                          <div class="col-md-12">                                             
+                                              <a href="#" data-toggle="modal" data-target="#Proy8" id="b15"><img id="myImage" src="img/inicio-proyectos-recientes/arrayanes-inicio-up.jpg" alt="Lights" style="width:100%"></a>
+                                          </div>                                    
+                                      </div>                                
+                                  </div> 
+                              </div>
+                          </div>  
+                      </div>
+                  </div>
+
+
               </div>
             </div><br>
             <div class=" w3-container w3-padding-10" style="text-align: center;padding: 10px;">
@@ -316,10 +538,10 @@
     <section class="seis">
       <div class="container">
         <div class="row no-gutters">
-          <div class="col-xs-12 col-md-12 col-lg-12">
+          <div class="col-xs-12 col-md-12 col-lg-10 offset-lg-1">
             <h1>NUESTROS SERVICIOS</h1>                                            
               <div class="row">
-                <div class="col-xs-5 col-md-4 col-lg-3">
+                <div class="col-xs-12 col-md-4 col-lg-3">
                   <div class="_02">                    			
                       <h3>ESTUDIOS PRELIMINARES Y PLANES MAESTROS</h3>                      																		                                        
                       <div class="red-box-int">
@@ -335,7 +557,7 @@
                         </div>                       
                     </div>
                 </div> 
-                <div class="col-xs-5 col-md-4 col-lg-3">
+                <div class="col-xs-12 col-md-4 col-lg-3">
                     <div class="_02">                    			
                         <h3>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</h3>                      																		                                        
                         <div class="red-box-int">
@@ -343,7 +565,7 @@
                         </div>                       
                     </div>
                 </div>
-                <div class="col-xs-5 col-md-4 col-lg-3">
+                <div class="col-xs-12 col-md-4 col-lg-3">
                     <div class="_02">                    			
                         <h3>RELOCALIZACIÓN DE PLANTAS DE PRODUCCIÓN Y CENTROS DE DISTRIBUCIÓN</h3>                      																		                                        
                         <div class="red-box-int">
@@ -353,7 +575,7 @@
                 </div>                                                    
             </div>
             <div class="row">
-                <div class="col-xs-5 col-md-4 col-lg-3 offset-lg-1" style="padding-left: 5%;">
+                <div class="col-xs-12 col-md-4 col-lg-3 offset-lg-1" style="padding-left: 5%;">
                   <div class="_02">                    			
                       <h3>PROYECTOS INMOBILIARIOS</h3>                      																		                                        
                       <div class="red-box-int">
@@ -363,13 +585,13 @@
                 </div>  
                 <div class="col-xs-5 col-md-4 col-lg-3" style="padding-left: 5%;">
                     <div class="_02">                    			
-                        <h3>MONTAJES <br> ELECTROMECÁNICOS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br></h3>                      																		                                        
+                        <h3>MONTAJES <br> ELECTROMECÁNICOS </h3>                      																		                                        
                         <div class="red-box-int">
                           <img src="img/servicios/icono-rayo-promocon.png">
                         </div>                       
                     </div>
                 </div> 
-                <div class="col-xs-5 col-md-4 col-lg-3" style="padding-left: 5%;">
+                <div class="col-xs-12 col-md-4 col-lg-3" style="padding-left: 5%;">
                     <div class="_02">                    			
                         <h3>ASESORÍA EN LEED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>                      																		                                        
                         <div class="red-box-int">
@@ -390,7 +612,7 @@
           <div class="col-xs-12 col-md-12 col-lg-12">
             <h1>NUESTROS CLIENTES</h1>
             <div class="row no-gutters">
-            <div class="col-xs-6 col-md-2 col-lg-2">
+            <div class="col-xs-12 col-md-2 col-lg-2">
               <img src="img/clientes/promocon-zenu.jpg">
               <img src="img/clientes/promocon-colombina.jpg">
               <img src="img/clientes/promocon-unilever.jpg">
@@ -399,7 +621,7 @@
               <img src="img/clientes/promocon-carulla.jpg">
               <img src="img/clientes/promocon-alpina.jpg">
             </div>
-            <div class="col-xs-6 col-md-2 col-lg-2">
+            <div class="col-xs-12 col-md-2 col-lg-2">
               <img src="img/clientes/promocon-racafe.jpg">
               <img src="img/clientes/promocon-congrupo.jpg">
               <img src="img/clientes/promocon-tlbuen.jpg">
@@ -407,7 +629,7 @@
               <img src="img/clientes/promocon-exito.jpg">
               <img src="img/clientes/promocon-carrefour.jpg">
             </div>
-            <div class="col-xs-6 col-md-2 col-lg-2">
+            <div class="col-xs-12 col-md-2 col-lg-2">
               <img src="img/clientes/promocon-quaker.jpg">
               <img src="img/clientes/promocon-casa-luker.jpg">
               <img src="img/clientes/promocon-rica.jpg">
@@ -415,7 +637,7 @@
               <img src="img/clientes/promocon-colfrigos.jpg">
               <img src="img/clientes/promocon-brinsa.jpg">
             </div>
-            <div class="col-xs-6 col-md-2 col-lg-2">
+            <div class="col-xs-12 col-md-2 col-lg-2">
               <img src="img/clientes/promocon-fajobe.jpg">
               <img src="img/clientes/promocon-carbo-coque.jpg">
               <img src="img/clientes/promocon-pronaca.jpg">
@@ -423,7 +645,7 @@
               <img src="img/clientes/promocon-ccb.jpg">
               <img src="img/clientes/promocon-bimbo.jpg">
             </div>
-            <div class="col-xs-6 col-md-2 col-lg-2">
+            <div class="col-xs-12 col-md-2 col-lg-2">
               <img src="img/clientes/promocon-el-rey.jpg">
               <img src="img/clientes/promocon-noel.jpg">
               <img src="img/clientes/promocon-pepsico.jpg">
@@ -431,7 +653,7 @@
               <img src="img/clientes/promocon-los-arrayanes.jpg">
               <img src="img/clientes/promocon-belcorp.jpg">
             </div>
-            <div class="col-xs-6 col-md-2 col-lg-2">
+            <div class="col-xs-12 col-md-2 col-lg-2">
               <img src="img/clientes/promocon-cnch.jpg">
               <img src="img/clientes/promocon-los-coches.jpg">
               <img src="img/clientes/promocon-levapan.jpg">
@@ -544,7 +766,77 @@
           }           
           dots[myIndex-1].className += " w3-red";
           setTimeout(carousel, 8000); // Change image every 2 seconds
-      }   
+      }  
+      $("#b1").hover(function () {
+      $('#myModal').modal({
+          show: true,
+          backdrop: true
+        })
+       }); 
+       $("#b2").hover(function () {
+       $('#Proy1').modal({
+          show: true,
+          backdrop: false
+        })
+       });
+       $("#b3").hover(function () {
+       $('#Proy1').modal('hide')
+       });
+       $("#b4").hover(function () {
+       $('#Proy2').modal({
+          show: true,
+          backdrop: false
+        })
+       });
+       $("#b5").hover(function () {
+       $('#Proy2').modal('hide')
+       });
+       $("#b6").hover(function () {
+       $('#Proy3').modal({
+          show: true,
+          backdrop: false
+        })
+       });
+       $("#b7").hover(function () {
+       $('#Proy3').modal('hide')
+       });
+       $("#b8").hover(function () {
+       $('#Proy4').modal({
+          show: true,
+          backdrop: false
+        })
+       });
+       $("#b9").hover(function () {
+       $('#Proy4').modal('hide')
+       });
+       $("#b10").hover(function () {
+       $('#Proy5').modal({
+          show: true,
+          backdrop: false
+        })
+       });
+       $("#b11").hover(function () {
+       $('#Proy5').modal('hide')
+       });
+       $("#b12").hover(function () {
+       $('#Proy6').modal({
+          show: true,
+          backdrop: false
+        })
+       });
+       $("#b13").hover(function () {
+       $('#Proy6').modal('hide')
+       });
+       $("#b14").hover(function () {
+       $('#Proy7').modal({
+          show: true,
+          backdrop: false
+        })
+       });
+       $("#b15").hover(function () {
+       $('#Proy7').modal('hide')
+       });
+
     </script> 
 </body>
 </html>

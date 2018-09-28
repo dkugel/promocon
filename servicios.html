@@ -34,7 +34,7 @@
                 <li class="linea" style="border-radius: 2px 0 0 2px;"><a href="index.html" >Inicio</a></li>
                 <li class="linea"><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
-                <li class="linea" style="border-left: 1px solid #a1a7af;"><a href="" data-toggle="modal" data-target="#myModal">Proyectos &nbsp;<img src="img/blue-select.png"></a></li>
+                <li class="linea" style="border-left: 1px solid #a1a7af;"><a href="" data-toggle="modal" data-target="#myModal" id="b1">Proyectos &nbsp;<img src="img/blue-select.png"></a></li>
                 <li style="border-radius:  0 2px 2px 0;"><a href="contacto.html" >Contacto</a></li>
             </ul>                    
         </div> 
@@ -231,6 +231,14 @@
             </div> 
             </div> 
         </div>                        
-    </footer>      
+    </footer>    
+    <script>
+        $("#b1").hover(function () {
+        $('#myModal').modal({
+            show: true,
+            backdrop: true
+            })
+        }); 
+    </script>  
 </body>
 </html>
