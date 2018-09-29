@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="nosotros">
+  <header class="nosotros">
       <div class="logo-aux">
         <div class="container-fluid">
           <div class="row">
@@ -30,14 +30,35 @@
           </div>          
         </div>        
       </div>           
-      <div class="main-menu">
-          <ul>
-              <li class="linea" style="border-radius: 2px 0 0 2px;"><a href="index.html" >Inicio</a></li>
-              <li class="linea"><a href="nosotros.html">Nosotros</a></li>
-              <li><a href="servicios.html">Servicios</a></li>
-              <li class="linea" style="border-left: 1px solid #a1a7af;"><a href="" data-toggle="modal" data-target="#myModal" id="b1">Proyectos &nbsp;<img src="img/blue-select.png"></a></li>
-              <li style="border-radius:  0 2px 2px 0;"><a href="contacto.html" >Contacto</a></li>
-          </ul>                    
+      <div class="envoltorio">
+        <div class="container-fluid">
+            <div class="row">                
+                <div class="col-12">
+                    <div class="alternate-menu" style="margin-top: 15px;">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item" style="border-radius: 2px 0 0 2px;"><a href="index.html" >Inicio</a></li>
+                            <li class="nav-item linea-l linea-r"><a href="nosotros.html">Nosotros</a></li>
+                            <li class="nav-item linea-r"><a href="servicios.html">Servicios</a></li>
+                            <li class="nav-item linea-r"><a href="" data-toggle="modal" data-target="#myModal" id="b1">Proyectos &nbsp;<img src="img/blue-select.png"></a></li>
+                            <li class="nav-item" style="border-radius:  0 2px 2px 0;"><a href="contacto.html" >Contacto</a></li>                            
+                            </a>
+                        </ul>  
+                    </div>
+                </div>                
+            </div>          
+        </div>
+        <div class="auxtrigger">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" >Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="" data-toggle="modal" data-target="#myModal" id="b1">Proyectos &nbsp;<img src="img/blue-select.png"></a>
+                <a href="contacto.html" >Contacto</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div> 
+        </div>               
       </div> 
   </header>            
   <!-- The Modal -->
@@ -81,14 +102,14 @@
     <section class="uno-sub uno">
       <div class="container">
         <div class="row">
-          <div class="col-xs-8 col-md-7 col-lg-7">
-            <p style="text-align: left">SOMOS UNA CONSTRUCTORA DEDICADA A PRESTAR SERVICIOS DE <strong style="font-size:1.8em;">INGENIERÍA ESPECIALIZADA</strong> <span>PARA EL SECTOR INDUSTRIAL,
+          <div class="col-xs-12 col-md-7 col-lg-7">
+            <p style="text-align: left;line-height: 28px;padding-top: 5px;">SOMOS UNA CONSTRUCTORA DEDICADA A PRESTAR SERVICIOS DE <strong style="font-size:1.8em;">INGENIERÍA ESPECIALIZADA</strong> <span>PARA EL SECTOR INDUSTRIAL,
                LOGÍSTICO, EMPRESARIAL E INSTITUCIONAL.</span></p><br>
             <P style="text-align: left">Acompañamos los proyectos desde los diseños arquitectónicos y estructurales, la elaboración de los presupuestos,
                 la programación de la obra, construcción y entrega final del proyecto. 
             </P>
           </div>
-          <div class="col-xs-8 col-md-4 col-lg-4 offset-lg-1">
+          <div class="col-xs-12 col-md-4 col-lg-4 offset-lg-1">
             <div class="red-square">
               <img src="img/nosotros/nosotros-promocon-servicios-especializados-de-ingenieria.jpg">
             </div>
@@ -107,8 +128,8 @@
               </ul>
             </div> 
             <div class="row">
-                <div class="col-6">
-                  <div id="accordion">
+                <div class="col-xs-12 col-lg-5 offset-lg-1">
+                  <div id="accordion"  class="acc-us">
                     <div class="card">
                       <div class="card-header">
                         <a class="card-link" data-toggle="collapse" href="#collapseOne">
@@ -165,8 +186,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
-                    <img src="img/nosotros/mision-vision-valores-promocon.jpg" style="max-width:100%">
+                <div class="col-xs-12 col-lg-6">
+                  <div class="acc-us">
+                      <img src="img/nosotros/mision-vision-valores-promocon.jpg" style="max-width:100%">
+                  </div>
+                    
                 </div>
               </div>                     
         </div>                                        
@@ -202,16 +226,16 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6 col-lg-6">            
-            <img src="img/nosotros/promocon-sostenible.png" style="margin-top: -26%;max-width: 100%" >                            
-          </div>
-          <div class="row">
-                <div class="col-xs-12 col-md-12 col-lg-12">
-                    <p>Nuestra política de sostenibilidad implica ser eficientes en todos los recursos empleados durante el ciclo de vida 
-                       de la construcción desde el diseño, tipo de materiales usados, proceso de construcción y uso de recursos; de esta 
-                       forma mitigamos los impactos provenientes del proceso de construcción e incentivamos la implementación de las buenas
-                       prácticas.
-                    </p>
-                </div>
+            <img src="img/nosotros/promocon-sostenible.png" style="margin-top: -23%;max-width: 100%" >                            
+          </div>          
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <p>Nuestra política de sostenibilidad implica ser eficientes en todos los recursos empleados durante el ciclo de vida 
+                   de la construcción desde el diseño, tipo de materiales usados, proceso de construcción y uso de recursos; de esta 
+                   forma mitigamos los impactos provenientes del proceso de construcción e incentivamos la implementación de las buenas
+                   prácticas.
+                </p>
             </div>
         </div>
       </div>      
