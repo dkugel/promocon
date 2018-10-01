@@ -30,7 +30,7 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
     background-repeat: no-repeat; background-position: center;background-color: #0f2b43;
     position: relative;
 } 
-.envoltorio{position: absolute;width: 100%;z-index:100;margin-top: -20px;}
+.envoltorio{position: absolute;width: 100%;z-index:100;margin-top: -25px;}
 .alternate-menu{position: relative;text-transform: uppercase;font-size: 0.8em;}
 .alternate-menu li{padding: 15px 20px;background-color: #f7f7f7;font-size: 1.15em;}
 .alternate-menu a{color: #0f2b43 ;}
@@ -46,20 +46,20 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .shadow-font{color:#0f2b43 ; text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
     font-size: 1.1em;}
 .indicators{margin-top: -22px;}
-.uno{background-color: #fff;text-align: center; color: #0f2b43 ;font-size: 1.31em;
+.uno{background-color: #fff;text-align: center; color: #0f2b43 ;font-size: 1.4em;
     padding-bottom: 40px;padding-top: 40px;margin:0 auto;max-width: 850px;}
 .uno h1{color: #da1929; font-size: 1.6em;padding: 30px 0; font-weight: bold;}
 .uno h2{color:#0f2b43 ; font-size: 1.4em;}
 .uno h3{color: #da1929; font-size: 2.9em;font-weight: bold;margin-bottom: -10px;}
 .uno strong{color:#da1929}
 .uno span {color: #da1929;}
-.little-modal{background-color: #da1929; color: #fff;}
+.little-modal{background-color: #da1929; color: #fff;padding-top: 15px;}
 .little-modal p{font-size: 1em;padding-left: 20px;padding-bottom:10px; }
 ._01{border:1px solid #bebebe;padding:0;border-radius: 10px;margin-bottom: 20px; background: white;max-width: 408px;}
 ._01 h3{color: #da1929; font-size: 1.3em;text-align: left;padding:15px 0 0 20px;line-height: 20px;line-height: 26px;}
-._01 p {text-align: left;padding:5px 20px;font-size: 0.93em;}
+._01 p {text-align: justify;padding:10px 20px;font-size: 0.89em;}
 ._02{display:flex;border:1px solid #bebebe;padding:0;border-radius: 10px;margin-bottom: 20px;background-color: #fff;min-height: 84%;max-width: 210px;}
-._02 h3{color: #da1929; font-size: 1.02em;text-align: left;padding:15px 0 0 10px;}
+._02 h3{color: #da1929; font-size: 1.02em;text-align: left;padding:15px 0 0 10px;font-weight: bold;}
 ._02 p {text-align: left;padding:0 20px;}
 .red-box{background: #da1929;border-radius: 7px;padding: 10px}
 .red-box img{width: 28px;}
@@ -75,18 +75,18 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .green-aux img{max-width: 100%;padding: 10px;}
 .titulo{padding-top: 20px;text-align: center;padding-bottom: 20px;}
 .titulo-img{padding-top: 20px;padding-bottom: 20px;text-align: left;}
-.titulo-img h1{font-size: 1.4em;display: inline-block;padding-top: 5%;}
+.titulo-img h1{font-size: 1.5em;display: inline-block;padding-top: 5%;}
 .titulo-img img{vertical-align: middle;display:inline-block; padding-left: 50px;}
 .tres{padding: 20px 0;}
-.tres h1{color: #da1929; font-size: 2.6em;padding-top: 5px;padding-right: 10px;padding-bottom: 20px;padding-left: 10px;font-weight: bold;}
+.tres h1{color: #da1929; font-size: 2.2em;padding-top: 5px;padding-right: 10px;padding-bottom: 20px;padding-left: 10px;font-weight: bold;}
 .tres span{color:#0f2b43 ; font-size: 0.45em; margin: auto;padding-left: 10px;vertical-align: middle;font-weight: lighter;}
 .tres h3{color:#da1929;font-size: 1.3em;}
-.tres p{color: #6b6b6b;font-size: 1.05em;}
+.tres p{color: #6b6b6b;font-size: 1.15em;}
 .cuatro{text-align: left;background: url('../img/textura-logo-promocon-628.png')no-repeat center,#f8f8f8;padding-bottom: 50px;}
-.small-gallery{max-width: 100%;}
+.small-gallery{max-width: 100%;text-align: center;}
 .small-gallery img {padding: 5px; max-width: 100%;}
-.cinco p{text-align: center;max-width: 50%;margin: auto;font-size: 1.2em}
-.cinco h1{text-align:center;color: #da1929;font-size: 2.2em;padding: 25px 10px;font-weight: bold; }
+.cinco p{text-align: center;max-width: 50%;margin: auto;font-size: 1.25em}
+.cinco h1{text-align:center;color: #da1929;font-size: 2.3em;padding: 25px 10px;font-weight: bold; }
 .cinco h3{font-size: 1.2em;color:#da1929;text-decoration: underline; text-align: center;}
 .aux-box-5{border: 1px solid #dedede;max-width:55%;margin: auto;padding-bottom: 10px}
 .aux-box-5 h1{color: #0f2b43 ; font-style: italic;font-size: 1.6em;font-weight: lighter;}
@@ -147,7 +147,7 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .nav-tabs {border-bottom: none;}
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {border-top: none;border-left: none;
 border-bottom: 2px solid #da1929; border-right: none;min-height: 117px;}
-.aux-box-us{margin: auto;padding-bottom: 10px; text-align: left;font-size: 0.8em;}
+.aux-box-us{margin: auto;padding-bottom: 10px; text-align: left;font-size: 1em;}
 .aux-box-us ul {list-style: none; padding:0; margin:0;font-size: 1.1em;}
 .aux-box-us li { padding-left: 1em; text-indent: -.7em;}
 .aux-box-us li:before {content: "▪"; color: red; }
@@ -166,8 +166,8 @@ border-bottom: 2px solid #da1929; border-right: none;min-height: 117px;}
 .card {border-top: none;border-left: none;border-right: none;border-bottom: 1px solid #da1929;
 border-radius: 0;color: #0f2b43; max-width: 80%;}
 .card a{color:#0f2b43 ;}
-.card-header {background: white; border-bottom: none;}
-.card-body {padding-top: 0;font-size: 1.1em;}
+.card-header {background: white; border-bottom: none;font-weight: bold;}
+.card-body {padding-top: 0;font-size: 1.05em;}
 .tab-content{padding-top: 50px;}
 
 /* PROYECTOS*/
@@ -183,7 +183,7 @@ border-radius: 0;color: #0f2b43; max-width: 80%;}
 .close {opacity: 1;}
 .modal-content{background: #fff;border-radius: 0;border-top: 3px solid #da1929;border-bottom:3px solid #da1929;font-size: 0.9em;
     text-align: left;}
-.modal-content h1{font-size: 1.5em;}
+.modal-content h1{font-size: 1.3em;}
 .modal-content a{text-decoration: none;}
 .modal-content ul {list-style: none; padding:0; margin:0;font-size: 1.1em;}
 .modal-content li { padding-left: 1em; text-indent: -.7em;color: #6b6b6b}
@@ -191,11 +191,13 @@ border-radius: 0;color: #0f2b43; max-width: 80%;}
 .modal-body{padding:20px 1rem 20px 1rem;}
 .lg-modal{border: none; border-radius: 5px; min-width: 100%;position: relative;padding: 5px;}
 .lightbox-content h1{color: #da1929;padding:10px 25px;}
-.lightbox-content h2{color: #0f2b43 ;font-size: 1.2em;}
-.lightbox-content h3{color: #0f2b43 ;font-size: 1.7em;}
-.lightbox-content span{color: #a1a7af;}
+.lightbox-content h2{color: #0f2b43 ;font-size: 1.2em;margin-left: -10px;}
+.lightbox-content h3{color: #0f2b43 ;font-size: 1.7em;padding: 30px 0;}
+.lightbox-content span{color: #a1a7af;margin-left: -10px;}
 .lightbox-content p{color: #a1a7af;padding:0 25px 20px 25px;font-size: 1.1em;}
 .aux-space{padding-top: 20px;}
+.mini-bt{color: #6b6b6b;}
+.mini-bt:hover{color: #da1929;}
 
 /* SERVICIOS */
 .services-box{border-top: 1px solid #da1929;border-left:1px solid #da1929;border-right: 1px solid #da1929; max-width: 75%; 
@@ -203,6 +205,10 @@ border-radius: 0;color: #0f2b43; max-width: 80%;}
 .service-bg{background-image: url('../img/servicios/textura-logo-promocon-558.png');background-repeat: no-repeat;background-position: center;max-width: 850px;}
 .left_01{margin-left: -36px;}
 .right_01{margin-right: -36px; margin-left: 36px;}
+.aux-box-serv{margin:10px 30px;padding-bottom: 10px; text-align: left;}
+.aux-box-serv ul {list-style: none; padding:0; margin:0;font-size: 0.89em}
+.aux-box-serv li { padding-left: 1em; text-indent: -.7em;}
+.aux-box-serv li:before {content: "▪"; color: red; }
 
 
 .bg-bimbo{    background: url(../img/planta-bimbo-sostenible-promocon.png)no-repeat; 
@@ -233,8 +239,8 @@ display: none;
 }
 .acc-us{padding-bottom: 30px;}
 a:hover {color: #0f2b43;}
-
-
+.middle-box{margin-left: -3px;}
+.margen-cuadros{margin-left: 0px}
 
 
 
@@ -246,6 +252,7 @@ a:hover {color: #0f2b43;}
     .modal-lg {max-width: 950px;}
     .aux-size{min-width: 800px !important;}  
     .acc-us img{margin-left: -50px;}  
+    .margen-cuadros{margin-left: 35px;}
         
 }
 @media (min-width:768px) and (max-width:991px){
@@ -261,6 +268,7 @@ a:hover {color: #0f2b43;}
 @media (max-width:680px){
     .w3-display-bottom{left: 40% !important;}
     .shadow-font{display: none;}
+    .cinco p {min-width: 100%}
 }
 @media (max-width:450px){
     .green-aux{width: 340px;}
@@ -276,7 +284,16 @@ a:hover {color: #0f2b43;}
     .dos figcaption {margin: 10px 0;}
 }
 @media screen and (max-width:450px){    
-    .column span {font-size: 1em;}    
+    .column span {font-size: 1em;}   
+    .acc-us{padding-left: 10px !important;} 
+    .card {min-width: 100%;}
+    
+}
+@media screen and (max-width:515px){
+    .up-footer{display: block;}
+    .sub-footer{display: block;}
+    .main-footer  {display: block;}
+    .main-footer ul {display: block !important;}
 }
 @media screen and (max-width: 600px) {
     .up-page{margin-top:30px;}
@@ -299,7 +316,7 @@ a:hover {color: #0f2b43;}
     text-align: left;
     }
     .list-us {padding-left: 0;}
-    .list-us li a {font-size: 0.7em}
+    .list-us li a {font-size: 0.5em}
     .acc-us img {margin-left: -15px;}    
     .middle-box {margin-left: 38px !important;}
     .column h4 {max-width: 89.5%;}

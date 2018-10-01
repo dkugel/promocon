@@ -41,9 +41,9 @@
                               <li class="nav-item linea-l linea-r"><a href="nosotros.html">Nosotros</a></li>
                               <li class="nav-item linea-r"><a href="servicios.html">Servicios</a></li>
                               <li class="nav-item linea-r"><a href="" data-toggle="modal" data-target="#myModal" id="b1">Proyectos &nbsp;<img src="img/blue-select.png"></a></li>
-                              <li class="nav-item" style="border-radius:  0 2px 2px 0;"><a href="contacto.html" >Contacto</a></li>                            
-                              </a>
+                              <li class="nav-item" style="border-radius:  0 2px 2px 0;"><a href="contacto.html" >Contacto</a></li>                                                          
                           </ul>  
+                          <img src="img/franja-menu-promocon.png" style="margin-top: -35px;position: absolute;z-index: -10;">
                       </div>
                   </div>                
               </div>          
@@ -80,34 +80,32 @@
                           <div class="col-md-6">
                               <h1><a href="proyectos-sector.html">POR SECTORES</a></h1><br>
                               <ul>
-                                  <li>&nbsp;Alimentos y bebidas</li>
-                                  <li>&nbsp;Farmacéuticos y cosméticos</li>
-                                  <li>&nbsp;Minería</li>
-                                  <li>&nbsp;Manufactura</li>
-                                  <li>&nbsp;Agroindustria</li>
-                                  <li>&nbsp;Corporativo</li>
-                                  <li>&nbsp;Infraestructura logística</li>
-                              </ul>
+                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Alimentos y bebidas</a></li>
+                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Farmacéuticos y cosméticos</a></li>
+                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Minería</a></li>
+                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Manufactura</a></li>
+                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Agroindustria</a></li>
+                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Corporativo</a></li>
+                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Infraestructura logística</a></li>
+                            </ul>
                           </div>
                           <div class="col-md-6">
                               <h1><a href="proyectos.html">POR TIPO DE PROYECTO</a></h1><br>
-                              <ul>
-                                  <li>&nbsp;Plantas industriales</li>
-                                  <li>&nbsp;Almacenamiento a granel</li>
-                                  <li>&nbsp;Centros de distribución y logística</li>
-                                  <li>&nbsp;Logística de frío</li>
-                                  <li>&nbsp;Desarrollo de proyectos inmobiliarios</li>
-                                  <li>&nbsp;Construcciones Institucionales</li>
-                              </ul>
+                                <ul>
+                                    <li>&nbsp;<a href="proyectos.html" class="mini-bt">Plantas industriales</a></li>
+                                    <li>&nbsp;<a href="proyectos.html" class="mini-bt">Almacenamiento a granel</a></li>
+                                    <li>&nbsp;<a href="proyectos.html" class="mini-bt">Centros de distribución y logística</a></li>
+                                    <li>&nbsp;<a href="proyectos.html" class="mini-bt">Logística de frío</a></li>
+                                    <li>&nbsp;<a href="proyectos.html" class="mini-bt">Desarrollo de proyectos inmobiliarios</a></li>
+                                    <li>&nbsp;<a href="proyectos.html" class="mini-bt">Construcciones Institucionales</a></li>
+                                </ul>
                           </div>                            
                       </div>
                   </div>            
               </div>                        
           </div>
       </div>
-  </div>
-    
-   
+  </div>       
     <section>
       <div class="form-presentation">
         <div class="container" style="text-align: center">
@@ -151,13 +149,13 @@
                 </div>   
               </div>
                 <div class="col-xs-8 col-md-12 col-lg-8 offset-lg-2">              
-                 <form>
-                  <input type="text" name="name" placeholder="Nombre">
-                  <input type="email" name="email" placeholder="Email">
-                  <input type="text" name="phone" placeholder="Teléfono">
-                  <textarea name="message" rows="2" placeholder="Mensaje"></textarea>
-                  <input class="btn-gn btn-red"type="submit" name="submit" value="ENVIAR MENSAJE">
-                 </form>
+                    <form action="enviar.php" method="POST">
+                        <input type="text" name="name" placeholder="Nombre" required>
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="text" name="phone" placeholder="Teléfono" required>
+                        <textarea name="message" rows="2" placeholder="Mensaje"></textarea>
+                        <input class="btn-gn btn-red"type="submit" name="submit" value="ENVIAR MENSAJE">
+                    </form>
                 </div>
               </div>
           </div>
