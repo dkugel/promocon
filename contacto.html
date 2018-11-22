@@ -156,9 +156,11 @@
                     <!--El formulario llama al archivo enviar.php el cual tiene los scripts de envío del formulario-->          
                     <form action="enviar.php" method="POST">
                         <input type="text" name="name" placeholder="Nombre" required>
-                        <input type="email" name="email" placeholder="Email">
+                        <input type="email" name="email" placeholder="Email" required>
                         <input type="text" name="phone" placeholder="Teléfono" required>
-                        <textarea name="message" rows="2" placeholder="Mensaje"></textarea>
+                        <textarea name="message" rows="2" placeholder="Mensaje" required></textarea>                        
+                        <input type="text" name="codigo" placeholder="Digite el código de seguridad" required>
+                        <img src="captcha.php"/><br>
                         <input class="btn-gn btn-red"type="submit" name="submit" value="ENVIAR MENSAJE">
                     </form>
                 </div>
