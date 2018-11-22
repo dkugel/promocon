@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Promocon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.js"></script>
@@ -152,7 +152,8 @@
                     </div>
                 </div>   
               </div>
-                <div class="col-xs-8 col-md-12 col-lg-8 offset-lg-2">              
+                <div class="col-xs-8 col-md-12 col-lg-8 offset-lg-2">    
+                    <!--El formulario llama al archivo enviar.php el cual tiene los scripts de envío del formulario-->          
                     <form action="enviar.php" method="POST">
                         <input type="text" name="name" placeholder="Nombre" required>
                         <input type="email" name="email" placeholder="Email">
@@ -186,6 +187,8 @@
           </div> 
         </div>                        
       </footer>  
+
+      <!--javascript para el menú mobile-->
       <script>
         $("#b1").hover(function () {
         $('#myModal').modal({

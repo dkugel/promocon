@@ -3,7 +3,7 @@
 <head>      
     <meta charset="utf-8">
     <title>Promocon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.js"></script>
@@ -158,8 +158,12 @@
             </div>
         </div>
     </div>
+
+    <!--portafolio, filtros y modales-->
     <section class="portafolio">
         <div class="container">
+            <!--funcioón de filtro, cada link llama la función en js y filtra por los tag las fotos
+                los nombres de los filtros se seleccionaron según el sector o el tipo de proyecto-->
             <div class="seleccionador" id="myBtnContainer">
                 <div class="row">          
                     <ul id="portfolio-filter" style="display: contents;">
@@ -176,7 +180,12 @@
                     </div>
                     </ul>
                 </div>
-            </div>            
+            </div>  
+            <!--Fin filtro-->  
+
+            <!--Cada componente de la grilla se compone de una foto y el modal, la foto llama al correspondiente modal
+                y en cada modal hay 3 fotos que llaman 3 diferentes modales-->
+                        
             <!-- Portfolio Gallery Grid -->
             <div class="row">
             <div class="column plantas">
@@ -254,7 +263,14 @@
                         </div>
                     </div>  
                 </div>
-            </div>    
+            </div>  
+            
+            <!--Fin del componente foto-modal, si se quiere añadir uno nuevo se cambian las fotos y en las clases se escoge a qué filtro
+                vincularlo (class="column plantas" vincula el componente al filtro "plantas industriales") la pareja data-target="#APlanta" - id="APlanta"
+                vinculan foto con el modal
+            -->
+
+
             <div class="column plantas">
                 <div class="content">
                     <a href="#" data-toggle="modal" data-target="#BPlanta"><img src="img/proyectos/plantas-industriales/plantas-industriales-promocon-2-mini.jpg" alt="Lights" style="width:100%"></a>
@@ -3963,6 +3979,7 @@
     </div>                        
 </footer>
 
+<!--javascript para los modales de la grilla de productos y el menú principal-->
 <script>
 filterSelection("all")
 function filterSelection(c) {

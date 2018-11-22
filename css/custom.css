@@ -1,7 +1,4 @@
-@viewport{
-    zoom: 1.0;
-    width: device-width;
-}
+
 @font-face {
     font-family: 'Cabin-Regular';
     src: url(../fonts/Cabin-Regular.ttf);
@@ -10,8 +7,8 @@
     font-family: 'Cabin-Medium';
     src: url(../fonts/Cabin-Medium.otf);
 }
-body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;min-height: 100%;
-    font-weight: 300;}
+body{max-width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;min-height: 100%;
+    font-weight: 300;overflow-x: hidden;}
 .fixed-body{max-width:1366px;}
 .logo{
     background-image: url('../img/header-inicio-promocon.jpg');min-width: 100%;
@@ -58,7 +55,8 @@ body{width:100%; font-family: 'Cabin-Regular'; font-size: 14px;margin: 0 auto;mi
 .uno strong{color:#da1929}
 .uno span {color: #da1929;}
 .little-modal{background-color: #da1929; color: #fff;padding-top: 15px;}
-.little-modal p{font-size: 1em;padding-left: 20px;padding-bottom:10px; }
+.little-modal p{font-size: 1em;padding-left: 20px;padding-bottom:5px; }
+.little-modal strong{font-weight: bold;padding-bottom: 0;padding-left: 20px;}
 ._01{border:1px solid #bebebe;padding:0;border-radius: 10px;margin-bottom: 20px; background: white;max-width: 408px;}
 ._01 h3{color: #da1929; font-size: 1.3em;text-align: left;padding:15px 0 0 20px;line-height: 20px;line-height: 26px;}
 ._01 p {text-align: justify;padding:10px 20px;font-size: 0.89em;}
@@ -174,6 +172,8 @@ border-radius: 0;color: #0f2b43; max-width: 80%;}
 .card-header {background: white; border-bottom: none;font-weight: bold;}
 .card-body {padding-top: 0;font-size: 1.05em;}
 .tab-content{padding-top: 50px;}
+.planeta-sos{margin-top: -11%;}
+.planeta-sos img{max-width: 100%;}
 
 /* PROYECTOS*/
 .portafolio{padding-top: 20px;}
@@ -184,7 +184,7 @@ border-radius: 0;color: #0f2b43; max-width: 80%;}
 .column span{font-size:1.3em;}
 .column p{color: #fff;position: absolute;top:36px;background-color:rgba(0,0,0,0.5);width: 88%;padding-left: 5px;font-size:1em;}
 .column img{border-bottom: 2px solid #da1929;}
-.modal-header {border: none;padding: 0px 10px;font-size: 2em;}
+.modal-header {border: none;padding: 0px 10px;font-size: 1.7em;}
 .close {opacity: 1;}
 .modal-content{background: #fff;border-radius: 0;border-top: 3px solid #da1929;border-bottom:3px solid #da1929;font-size: 0.9em;
     text-align: left;}
@@ -344,6 +344,9 @@ a:hover {color: #0f2b43;}
     .right_01{margin: 0;text-align:-webkit-center;text-align: -moz-center;}
     .column span {font-size: 1em;}
     .gold-leed{left:50%;}
+    .planeta-sos{margin-top: 10px;}
+    .tab-content {padding-top: 0px;}
+    .tab-aux p{margin-right: 0;padding-bottom: 10px}
 }
 @media (max-width:380px){
     .w3-display-bottom{left:31.56% !important;}
