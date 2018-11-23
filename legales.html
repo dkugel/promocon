@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Promocon</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <!-- Estilos personalizados-->
+    <link rel="stylesheet" href="css/portfolio.css" >
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/W3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- external files for modals -->    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+      .mySlides {display:none;}
+    body,td,th {
+	font-family: Cabin-Regular;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+    </style>
+</head>
+
+<body>
+    <!--Header para inicio, es diferente al de las demás páginas por el slider-->
+    <header>
+      <div class="logo">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-2 col-md-3 col-lg-3"></div>
+            <div class="col-xs-8 col-md-6 col-lg-6">
+              <img src="img/logo.png" alt="logo Promocon">
+            </div>
+            <div class="col-xs-2 col-md-3 col-lg-3"></div>
+          </div>          
+        </div>        
+      </div>           
+    </header>
+    
+    
+    <div class="envoltorio">
+        <div class="container-fluid">
+            <div class="row">                
+                <div class="col-12">
+                    <div class="alternate-menu">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item" style="border-radius: 2px 0 0 2px;"><a href="index.html" >Inicio</a></li>
+                            <li class="nav-item linea-l linea-r"><a href="nosotros.html">Nosotros</a></li>
+                            <li class="nav-item linea-r"><a href="servicios.html">Servicios</a></li>
+                            <li class="nav-item linea-r"><a href="" data-toggle="modal" data-target="#myModal" id="b1">Proyectos &nbsp;<img src="img/blue-select.png"></a></li>
+                            <li class="nav-item" style="border-radius:  0 2px 2px 0;"><a href="contacto.html" >Contacto</a></li>                                                        
+                        </ul>
+                        <div style="position: absolute; left: 50%;">
+                            <div style="margin-top: -35px;position: relative; left: -50%;z-index: -10;">
+                                <img src="img/franja-menu-promocon.png" >
+                            </div>                            
+                        </div>  
+                        
+                    </div>
+                </div>                
+            </div>          
+        </div>
+        <div class="auxtrigger">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" >Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="" data-toggle="modal" data-target="#myModal" id="b1">Proyectos &nbsp;<img src="img/blue-select.png"></a>
+                <a href="contacto.html" >Contacto</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div> 
+        </div> 
+              
+    </div> 
+    
+    
+          <!-- The Modal -->
+      <!--modal para proyectos-->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog" style="top: 140px;">
+          <div class="modal-content">                                
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row no-gutters">
+                  <div class="col-md-6">
+                    <h1><a href="proyectos-sector.html">POR SECTORES</a></h1><br>
+                    <ul>
+                        <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Alimentos y bebidas</a></li>
+                        <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Farmacéuticos y cosméticos</a></li>
+                        <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Minería</a></li>
+                        <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Manufactura</a></li>
+                        <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Agroindustria</a></li>
+                        <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Corporativo</a></li>
+                        <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Infraestructura logística</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h1><a href="proyectos.html">POR TIPO DE PROYECTO</a></h1><br>
+                    <ul>
+                        <li>&nbsp;<a href="proyectos.html" class="mini-bt">Plantas industriales</a></li>
+                        <li>&nbsp;<a href="proyectos.html" class="mini-bt">Almacenamiento a granel</a></li>
+                        <li>&nbsp;<a href="proyectos.html" class="mini-bt">Centros de distribución y logística</a></li>
+                        <li>&nbsp;<a href="proyectos.html" class="mini-bt">Logística de frío</a></li>
+                        <li>&nbsp;<a href="proyectos.html" class="mini-bt">Desarrollo de proyectos inmobiliarios</a></li>
+                        <li>&nbsp;<a href="proyectos.html" class="mini-bt">Construcciones Institucionales</a></li>
+                    </ul>
+                  </div>                            
+                </div>
+              </div>            
+            </div>                        
+          </div>
+        </div>
+      </div>
+      <!--findel modal-->  
+        
+    
+<!-- primer párrafo --> 
+    <section class="uno">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8 col-md-12 col-lg-12">
+          <br>
+
+            <p><strong>PROTECCION DE DATOS / POLÍTICA DE PRIVACIADAD</strong>
+                          </p><br>
+<div style="font-family:Verdana, Geneva, sans-serif; font-size:11px; text-align:left;" id="txt-legales">
+                 
+            
+              <p><strong>
+              Responsable de las bases de datos: PROYECTOS, MONTAJES Y CONSTRUCCIONES S.A.</strong> 
+  <br>
+  <strong>Contacto:</strong> Constanza Merino Barreto 
+  <br>
+  <strong>Domicilio:</strong> Carrera 47 A No. 91 – 32, Bogotá - Colombia 
+  <br>
+  <strong>Correo electrónico:</strong> <a href="mailto:protecciondatos@promocon.net">protecciondatos@promocon.net </a><br> 
+  <strong>Teléfono:</strong> (57) 1- 622 6250
+  <br>
+  <br>
+  <strong>PROYECTOS MONTAJES Y CONSTRUCCIONES S.A.</strong>, PROMOCON S.A., identificada con el NIT No. 800.095.750-5, domiciliada en la ciudad de Bogotá, con ocasión de la expedición de la Ley 1581 de 2012 que reglamenta el Derecho Constitucional de Habeas Data, el cual estipula la posibilidad que tienen las personas de “conocer, actualizar y rectificar los datos personales que existan sobre ella en banco de datos o archivos de entidades públicas o privadas”, informa a todos los interesados sus <strong>POLÍTICAS DE TRATAMIENTO DE INFORMACIÓN DE DATOS PERSONALES.</strong> 
+  <br>
+  <br>
+                Lo anterior se desarrolla en atención a lo dispuesto en el Artículo 15 de la Constitución Política, la Ley 1581 de 2012 y el Decreto 1377 de 2013, sin perjuicio de las demás normas concordantes tales como Leyes sobre Secreto Empresarial, entre otras. 
+  <br>
+  <br>
+                Así mismo se informa que PROYECTOS MONTAJES Y CONSTRUCCIONES S.A., PROMOCON S.A., (en adelante PROMOCON S.A.) es responsable del Tratamiento de los datos personales y datos sensibles de los titulares, tales como Usuarios, Clientes, Empleados, Proveedores, Prestadores, Colaboradores y Accionistas, datos sobre los cuales decide de manera directa y autónoma. 
+  <br>
+  <br>
+  <strong>MARCO LEGAL</strong>
+                La presente política se enmarca dentro de: 
+  <br>
+<table style="font:Verdana, Geneva, sans-serif" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td style="font-family:Verdana, Geneva, sans-serif; font-size:9px;" width="95%">
+1.	Constitución Política de Colombia: Artículos 15 y 20. <br>
+2.	Ley 1581 de 2012, Por la cual se dictan disposiciones generales para la protección de datos personales. <br>
+3.	Decreto 1377 de 2013. <br>
+4.	Decreto 886 de mayo 13 de 2014.<br>
+5.	Decreto Único 1074 de mayo del 2015.<br></td>
+  </tr>
+</table>
+
+  <br>
+  <br>
+  <strong>GLOSARIO</strong>
+                AUTORIZACIÓN: Consentimiento previo, expreso e informado del Titular para llevar a cabo el Tratamiento de datos personales. 
+  <br>
+  <br>
+                DATO PERSONAL: Cualquier información vinculada o que pueda asociarse a una o varias personas naturales determinadas o determinables. 
+  <br>
+  <br>
+                DATO PERSONAL PÚBLICO: Son aquellos datos personales que las normas y la Constitución han determinado expresamente como públicos y, para cuya recolección y tratamiento, no es necesaria la autorización del titular de la información. (Ej. Dirección, teléfono, profesión u oficio, su calidad de comerciante o servidor público, datos contenidos en sentencias judiciales ejecutoriadas, datos sobre el estado civil de las personas, entre otros.)
+  <br>
+  <br>
+                DATO PERSONAL SEMIPRIVADO: Son datos que no tienen una naturaleza íntima, reservada, ni pública y cuyo conocimiento o divulgación puede interesar no solo a su titular, sino a un grupo de personas o a la sociedad en general. Para su tratamiento se requiere la autorización expresa del titular de la información. (Ej. Dato financiero y crediticio de actividad comercial o de servicios a que se refiere la Ley Especial, dirección, teléfono, correo electrónico). 
+  <br>
+  <br>
+                DATO PERSONAL PRIVADO: Es un dato personal que por su naturaleza íntima o reservada solo interesa a su titular. (Ej. Fotografías, videos, datos relacionados con su estilo de vida). 
+  <br>
+  <br>
+                DATO PERSONAL SENSIBLE: Información que afecta la intimidad de la persona o cuyo uso indebido puede generar su discriminación, tales como aquellos que revelen el origen racial o étnico, la orientación política, las convicciones religiosas o filosóficas, la pertenencia a sindicatos, organizaciones sociales, de Derechos Humanos, o que promueva intereses de cualquier partido político o que garanticen los derechos y garantías de partidos políticos de oposición, así como los datos relativos a la salud, a la vida sexual y datos biométricos como huellas dactilares, fotografías, vídeos. 
+  <br>
+  <br>
+                RESPONSABLE DEL TRATAMIENTO: Persona natural o jurídica, pública o privada, que por sí misma o en asocio con otros, decida sobre la base de datos y/o el Tratamiento de los datos. 
+  <br>
+  <br>
+                TITULAR: Persona natural cuyos datos personales sean objeto de Tratamiento. 
+  <br>
+  <br>
+                TRATAMIENTO: Cualquier operación o conjunto de operaciones sobre datos personales, tales como la recolección, almacenamiento, uso, circulación o supresión. 
+  <br>
+  <br>
+  <strong>AMBITO DE APLICACIÓN.</strong>
+  <br>
+                La política de tratamiento de la información y el manual se aplicará de forma obligatoria a todos los datos de carácter personal registrados en soportes físicos o digitales que sean susceptibles de ser tratados por <strong>PROMOCON S.A.</strong>, como responsable de dichos datos y a su posterior uso.
+  <br>
+  <br>
+                <strong>POLÍTICA Y FINALIDAD DE TRATAMIENTO DE DATOS PERSONALES.</strong>
+  <br>
+  <br>
+  <strong>PROMOCON S.A.</strong>, cuenta con la infraestructura y organización, plataforma tecnológica y física necesarias para garantizar el correcto e idóneo tratamiento de la información y datos personales y datos sensibles, así como la confidencialidad necesaria para el ejercicio de los derechos de sus titulares contenidos en la Constitución y en la Ley, y en mayor medida para permitir el conocimiento, actualización, rectificación y supresión de información personal, y lograr la excelencia en la prestación de servicios de Salud y en general en el desarrollo del objeto social de <strong>PROMOCON S.A.</strong>
+  <br>
+  <br>
+                Para tal fin y tratamiento de datos personales de los diferentes titulares, <strong>PROMOCON S.A.</strong>, ha establecido las siguientes políticas: 
+  <br>
+  <br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td style="font-family:Verdana, Geneva, sans-serif;" width="95%">1.	<strong>PROMOCON S.A.</strong>, cuenta con los medios necesarios para suministrar un correcto tratamiento de los datos personales y datos sensibles, garantizando la confidencialidad de los mismos salvo en los casos exceptuados por la Ley, evitando el acceso a la información de terceros no autorizados. 
+  <br>
+  <br>
+                2.	La información solicitada por <strong>PROMOCON S.A.</strong>, a sus titulares será la necesaria para garantizar la prestación del servicio y en general para dar cumplimiento a su objeto social y a las normas que la regulan. Los datos sensibles requeridos serán de libre y voluntaria entrega por parte de los titulares de la información, y su tratamiento solamente podrá realizarse cuando medie Autorización de su titular, salvo los casos previstos por la Ley. 
+  <br>
+  <br>
+                3.	<strong>PROMOCON S.A.</strong>, velará por el estricto cumplimiento de los Derechos fundamentales de los menores, y el tratamiento de sus datos requerirán Autorización previa de sus representantes; en ningún caso <strong>PROMOCON S.A.</strong>, desatenderá el interés superior del menor.</td>
+  </tr>
+</table>
+
+
+  <br>
+  <br>
+                Las bases de datos de clientes, proveedores, empleados, ex empelados y usuarios tienen como finalidad utilizar los datos para la debida prestación de los servicios que proporciona <strong>PROMOCON S.A.</strong>, y además con las siguientes finalidades: 
+  <br>
+  <br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td style="font-family:Verdana, Geneva, sans-serif;" width="95%">1.	Identificación de clientes, empleados, contratistas y proveedores, así como medición de necesidad, oportunidad y calidad en los productos y servicios prestados por éstos. 
+  <br>
+  <br>
+                2.	Dar cumplimiento a obligaciones contraídas con nuestros clientes, proveedores y empleados.
+  <br>
+  <br>
+                3.	Informar acerca de las innovaciones efectuadas en nuestros productos y servicios, con el fin de profundizar o ampliar el portafolio actual, así como de las mejoras o cambios en sus canales de atención y la demostración gráfica, descriptiva e ilustrativa de la experiencia adquirida con los proyectos desarrollados por la empresa. 
+  <br>
+  <br>
+                4.	Remitir la información objeto de tratamiento a diferentes entidades inherentes al negocio jurídico celebrado tales como, entidades financieras, empresas de servicios públicos, DIAN, SHD, y notarías. 
+  <br>
+  <br>
+                5.	Enviar información acerca de las ofertas que hemos desarrollado con aliados comerciales que le pueden resultar de interés a los clientes, usuarios y potenciales clientes.
+  <br>
+  <br>
+                6.	Dar a conocer los diferentes servicios y productos ofrecidos por <strong>PROMOCON S.A.</strong>, hacer publicidad de los mismos mediante imágenes y textos de los proyectos desarrollados, y en general mantener contacto con los usuarios o posibles clientes mediante cualquier medio de comunicación (brochure, telefónico, escrito, redes sociales, y/o electrónico). 
+  <br>
+  <br>
+                7.	Evaluar la calidad de los servicios prestados por <strong>PROMOCON S.A.</strong> 
+  <br>
+  <br>
+                8.	De los empleados, busca tener actualizada la información de los funcionarios con el fin de que la relación laboral se desarrolle de manera adecuada. La de los Ex empleados busca tener a disposición de las autoridades, o del mismo Titular, su información durante el término establecido en la ley laboral y la candidatos en proceso de selección recoge la información proveniente de las hojas de vida, certificaciones y referencias personales de quienes se presentan a procesos de selección en <strong>PROMOCON S.A.</strong>, busca identificar los candidatos más idóneos para ser vinculados. 
+  <br>
+  <br>
+                9.	Cualquier otra operación necesaria para el desarrollo del objeto social de <strong>PROMOCON S.A.</strong> atendiendo a su naturaleza.
+  <br></td>
+  </tr>
+</table>
+
+
+  <br>
+                Cualquier persona que intervenga en el Tratamiento de datos personales y datos sensibles, y cuya responsabilidad recaiga en <strong>PROMOCON S.A.</strong>, tienen la obligación de garantizar la reserva y confidencialidad de la información, aun cuando ya no cuente con ningún tipo de relación con <strong>PROMOCON S.A.</strong> 
+  <br>
+  <br>
+  <strong>REQUISITOS ESPECIALES PARA EL TRATAMIENTO DE CIERTOS DATOS PERSONALES.</strong>
+  <br>
+  <br>
+  <strong>Datos personales de niños y adolescentes contemplados en esta política:</strong>
+  <br>
+  <br>
+                El tratamiento de datos personales de menores o adolecentes por parte de <strong>PROMOCON S.A.</strong> se llevará a cabo respetando el interés superior de los niños, niñas y adolescentes.
+  <br>
+  <br>
+                Todo responsable, encargado tercero involucrado en el tratamiento de los datos personales de menores, deberá siempre velar por el uso adecuado de este tipo de datos personales. <strong>PROMOCON S.A.</strong>, en todo momento, como responsable del tratamiento de la información personal, respeta todos y cada uno de los derechos establecidos en la Constitución Política Colombiana, la Ley 1581 de 2012 y el Decreto 1377 de 2013.
+  <br>
+  <br>
+  <strong>PRINCIPIOS RECTORES DE PROTECCIÓN DE DATOS.</strong> 
+  <br>
+  <br>
+                Esta política cumple con todos y cada uno de los principios rectores contemplados en la Ley 1581 de 2012 los cuales son: 
+  <br>
+  <br>
+  <strong>Principio de legalidad en materia de Tratamiento de datos:</strong> El Tratamiento a que se refiere la presente ley es una actividad reglada que debe sujetarse a lo establecido en ella y en las demás disposiciones que la desarrollen.
+  <br>
+  <br>
+  <strong>Principio de finalidad:</strong> El Tratamiento debe obedecer a una finalidad legítima de acuerdo con la Constitución y la Ley, la cual debe ser informada al Titular.
+  <br>
+  <br>
+  <strong>Principio de libertad:</strong> El Tratamiento sólo puede ejercerse con el consentimiento, previo, expreso e informado del Titular. Los datos personales no podrán ser obtenidos o divulgados sin previa autorización, o en ausencia de mandato legal o judicial que releve el consentimiento.
+  <br>
+  <br>
+  <strong>Principio de veracidad o calidad:</strong> La información sujeta a Tratamiento debe ser veraz, completa, exacta, actualizada, comprobable y comprensible. Se prohíbe el Tratamiento de datos parciales, incompletos, fraccionados o que induzcan a error.
+  <br>
+  <br>
+  <strong>Principio de transparencia:</strong> En el Tratamiento debe garantizarse el derecho del Titular a obtener del Responsable del Tratamiento o del Encargado del Tratamiento, en cualquier momento y sin restricciones, información acerca de la existencia de datos que le conciernan.
+  <br>
+  <br>
+  <strong>Principio de acceso y circulación restringida:</strong> El Tratamiento se sujeta a los límites que se derivan de la naturaleza de los datos personales, de las disposiciones de la ley y la Constitución. En este sentido, el Tratamiento sólo podrá hacerse por personas autorizadas por el Titular y/o por las personas previstas en la ley; Los datos personales, salvo la información pública, no podrán estar disponibles en Internet u otros medios de divulgación o comunicación masiva, salvo que el acceso sea técnicamente controlable para brindar un conocimiento restringido sólo a los Titulares o terceros autorizados conforme a la ley. 
+  <br>
+  <br>
+  <strong>Principio de seguridad:</strong> La información sujeta a Tratamiento por el Responsable del Tratamiento o Encargado del Tratamiento a que se refiere la ley, se deberá manejar con las medidas técnicas, humanas y administrativas que sean necesarias para otorgar seguridad a los registros evitando su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento. 
+  <br>
+  <br>
+  <strong>Principio de confidencialidad:</strong> Todas las personas que intervengan en el Tratamiento de datos personales que no tengan la naturaleza de públicos están obligadas a garantizar la reserva de la información, inclusive después de finalizada su relación con alguna de las labores que compren del Tratamiento, pudiendo sólo realizar suministro o comunicación de datos personales cuando ello corresponda al desarrollo de las actividades autorizadas en la ley y en los términos de la misma.
+  <br>
+  <br>
+  <strong>DERECHOS DE LOS TITULARES.</strong> 
+  <br>
+  <br>
+                El titular de los datos personales y datos sensibles tendrán los siguientes derechos, los cuales serán respetados y garantizados por <strong>PROMOCON S.A.</strong>, en su calidad de responsable del tratamiento de ésta información: 
+  <br>
+  <br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td style="font-family:Verdana, Geneva, sans-serif;" width="95%">1.	Conocer, actualizar y rectificar sus datos personales frente a PROMOCON S.A., Este derecho se podrá ejercer, entre otros frente a datos parciales, inexactos, incompletos, fraccionados, que induzcan a error, o aquellos cuyo Tratamiento esté expresamente prohibido o no haya sido autorizado. 
+  <br>
+  <br>
+                2.	Solicitar prueba de la autorización otorgada a PROMOCON S.A., salvo cuando expresamente se exceptúe como requisito para el Tratamiento. 
+  <br>
+  <br>
+                3.	Ser informado por PROMOCON S.A., previa solicitud, respecto del uso que le hadado a sus datos personales. 
+  <br>
+  <br>
+                4.	Presentar ante la Superintendencia de Industria y Comercio quejas por infracciones a lo dispuesto en la Ley 1581 de 2012 y las demás normas que la modifiquen, adicionen o complementen.
+  <br>
+  <br>
+                5.	Revocar la autorización y/o solicitar la supresión del dato cuando en el Tratamiento no se respeten los principios, derechos y garantías constitucionales y legales. La revocatoria y/o supresión procederá cuando la Superintendencia de Industria y Comercio haya determinado que en el Tratamiento, PROMOCON S.A., ha incurrido en conductas contrarias a esta ley y a la Constitución;
+  <br>
+  <br>
+                6.	Acceder en forma gratuita a sus datos personales que hayan sido objeto de tratamiento.</td>
+  </tr>
+</table>
+
+  <br>
+  <br>
+  <strong>DERECHO DE ACCESO DEL TITULAR. </strong>
+  <br>
+  <br>
+  <strong>Definición.</strong> Este derecho hace referencia a la capacidad que se reconoce mediante la Ley 1581 de 2012 a toda persona natural que se encuentre interesada en conocer si sus datos personales han sido sometidos a un tratamiento, en los términos expresados en la norma, además de ejercer el derecho de conocer el origen de sus datos y si los mismos han sido cedidos o no a terceros y por ende la identificación de los cesionarios. 
+  <br>
+  <br>
+  <strong>Ejercicio del Derecho:</strong> Este derecho es de tipo personalísimo, es decir, hace referencia a que el ejercicio del mismo ha de realizarse por el interesado o por el representante legal del titular de la información personal, que deberá actuar bajo poder. En todo momento el titular de la información deberá acreditar su identidad mediante cualquier medio que garantice una plena identificación<sup>1</sup>.
+  <br>
+  <br>
+                Los menores de edad deberán ejercer su derecho de habeas data a través de quien acredite la representación legal de los mismos. Si se llegare a presentar una solicitud por alguna persona que no fuese el titular de la información personal, la misma deberá ser tenida como no presentada, es decir, no se brindará ningún tipo de respuesta frente a dicho requerimiento de información. El ejercicio de este derecho es de tipo gratuito, pero si se ejerce más de una vez en el mes calendario podrán cobrarse los gastos de envío y reproducción de documentos, de la respuesta.
+  <br>
+  <br>
+                La solicitud de ejercicio del derecho de acceso, deberá contener por lo menos:
+  <br>
+  <br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td style="font-family:Verdana, Geneva, sans-serif;" width="95%">1.	Fecha de la solicitud.
+  <br>
+ 
+                2.	Fotocopia de la identificación personal (Cedula de ciudadanía, identificación institucional, etc.) 
+  <br>
+  
+                3.	Domicilio para efectos de notificación.
+  <br>
+  
+                4.	Descripción de los hechos que dan lugar a la consulta, petición o reclamo.
+  <br>
+  
+                5.	Documentos que considere necesarios y que sustenten la consulta, petición o reclamo.
+  <br>
+  
+                6.	Documentos que acrediten la representación si es del caso (poder, registro civil, etc.) 
+  <br>
+  
+                7.	La firma de quien solicita la información.</td>
+  </tr>
+</table>
+
+  <br><br>
+ 
+                La persona interesada en ejercer este derecho, deberá en todo caso, utilizar un medio que permita acreditar el envío y la recepción de la solicitud.
+  <br>
+  <br>
+--------------------------------------<br>
+<sup>1</sup> Debe entenderse que la acreditación de la identidad ha de realizarse mediante documentos físicos o análogos, tales como cedula de ciudadanía, identificaciones Institucionales, etc.
+<br>
+-------------------------------------- 
+  <br>
+  <br>
+                El interesado en ejercer este derecho recibirá la información solicitada mediante cualquier medio de comunicación (electrónico o físico), correo electrónico, redes sociales o cualquier otro medio electrónico o físico conocido en el presente o futuro, que haga posible realizar comunicaciones. 
+  <br>
+  <br>
+  <strong>CONTENIDO DE LA INFORMACIÓN QUE FACILITARÁ AL RESPONSABLE DEL ARCHIVO Y/O BASE DEDATOS.</strong>
+  <br>
+  <br>
+                Toda información que se brinde al titular de los datos personales, independiente del soporte en esta haya sido facilitada, deberá tener las siguientes características: 
+  <br>
+  <br>
+                •	Legible.
+  <br>
+                •	Precisa. 
+  <br>
+                •	Verificable.
+  <br>
+  <br>
+  <strong>DEBERES DE PROMOCON S.A., EN EL TRATAMIENTO DE LA INFORMACIÓN.</strong> 
+  <br>
+  <br>
+  <strong>PROMOCON S.A.</strong>, en su calidad de responsable en el tratamiento de los datos personales y datos sensibles, tendrá los siguientes deberes: 
+  <br>
+  <br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td style="font-family:Verdana, Geneva, sans-serif;" width="95%">1.	Garantizar al titular, en todo tiempo, el pleno y efectivo ejercicio del derecho de hábeas data.
+  <br>
+                2.	Solicitar y conservar, en las condiciones previstas en la Ley, copia de la respectiva autorización otorgada por el Titular.
+  <br>
+                3.	Informar debidamente al Titular sobre la finalidad de la recolección y los derechos que le asisten por virtud de la autorización otorgada. 
+  <br>
+                4.	Conservar la información bajo las condiciones de seguridad necesarias para impedir su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento, y garantizar su confidencialidad e integridad. 
+  <br>
+                5.	Mantener actualizada la información, requiriendo al titular de ser necesario. Y rectificar la información cuando esta sea incorrecta.
+  <br>
+                6.	Tramitar las consultas y reclamos formulados por los titulares o sus representantes en los términos señalados en la presente Política de Tratamiento.
+  <br>
+                7.	Informar a solicitud del titular sobre el uso dado a sus datos. 
+  <br>
+                8.	Informar a la autoridad de protección de datos cuando se presenten violaciones a los códigos de seguridad y existan riesgos en la administración de la información de los titulares.
+  <br>
+                9.	Cumplir las instrucciones y requerimientos que imparta la Superintendencia de Industria y Comercio.</td>
+  </tr>
+</table>
+
+  <br>
+  <br>
+  <strong>DEBERES DE LOS ENCARGADOS DEL TRATAMIENTO DE LA BASE DE DATOS</strong> 
+  <br>
+  <br>
+                Los encargados del tratamiento de la bases de datos de PROMOCON deberán garantizar al ejercicio del derecho de hábeas data del titular, el principio de transparencia y el principio de acceso y circulación restringida de la información.
+  <br>
+  <br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td style="font-family:Verdana, Geneva, sans-serif;" width="95%">1.	Impedir la adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento de la información del titular.
+  <br><br>
+                2.	Informar a los responsables y a las autoridades competentes cuando se presenten violaciones a los códigos de seguridad que generen riesgos en la administración e la información.
+  <br><br>
+                3.	Realizar oportunamente la actualización, rectificación o supresión de los datos erróneos.
+  <br><br>
+                4.	Actualizar la información reportada por los responsables dentro de los cinco (5) días hábiles contados a partir de su recibo. 
+  <br><br>
+                5.	Registrar en la base las leyendas de: 
+  <br>
+                
+                •	Reclamo en trámite.
+  <br>
+                •	Información en discusión judicial
+  <br><br>
+                
+                6.	Abstenerse de circular información controvertida y cuyo bloqueo haya sido ordenado por la Superintendencia de Industria y Comercio. 
+  <br><br>
+                7.	Permitir el acceso a la información únicamente a las personas que puedan tener acceso a ella, en los términos señalados en la ley. 
+  <br>
+  <br>
+                8.	Garantizar al titular, en todo tiempo, el pleno y el efectivo ejercicio de su derecho de hábeas data y tramitar las consultas y reclamos presentados, en los términos señalados en la ley.</td>
+  </tr>
+</table>
+
+  <br>
+  <br>
+  <strong>PROCEDIMIENTO PARA CONSULTAS, RECLAMOS Y PETICIONES:</strong> 
+  <br>
+  <br>
+                Los titulares de la información o sus representantes podrán solicitar y consultar sus datos personales y datos sensibles que <strong>PROMOCON S.A.</strong>, posea en sus bases de datos y archivos.
+  <br>
+  <br>
+                El área COMERCIAL como responsable del desarrollo y trámite para el ejercicio de los derechos de los titulares, atenderá y gestionará cualquier solicitud a través de: 
+  <br>
+  <br>
+                Correo electrónico: protecciondatos@promocon.net 
+  <br>
+                Teléfono: 6226250 
+  <br>
+                La página de Internet: www.promocon.net
+  <br>
+  <br>
+                Los colaboradores y trabajadores de <strong>PROMOCON S.A.</strong>, podrán gestionar sus peticiones y reclamos relacionados con los datos personales y datos sensibles por medio del área COMERCIAL.
+  <br>
+  <br>
+  <strong>CONTENIDO DE LA CONSULTA, PETICIÓN O RECLAMO:</strong>
+  <br>
+  <br>
+                La solicitud de petición o reclamo del titular sobre datos personales y datos sensibles deberá contener la siguiente información:
+  <br>
+  <br>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td style="font-family:Verdana, Geneva, sans-serif;" width="95%">1. Identificación del Titular (Nombres y apellidos, número de identificación).
+  <br>
+                2. Datos de localización del titular (dirección y teléfono). 
+  <br>
+                3. Descripción de los hechos que dan lugar a la solicitud o reclamo y documentos y/o pruebas que lo soportan.
+  <br>
+                4. Firma del titular o su representante (si actúa por medio de representante, anexar poder o autorización especial).</td>
+  </tr>
+</table>
+
+  <br>
+  <br>
+  <strong>PROCEDIMIENTO PARA CONSULTA, PETICIÓN O RECLAMO:</strong> 
+  <br>
+  <br>
+                Los Titulares, sus causahabientes o representantes podrán consultar la información personal del Titular que repose en cualquier base de datos o archivos de <strong>PROMOCON S.A.</strong>, quien suministrará estos toda la información contenida en el registro individual o que esté vinculada con la identificación del titular.
+  <br>
+  <br>
+                La consulta será atendida en un término máximo de diez (10) días hábiles contados a partir de la fecha de radicación de la misma, una vez verificado el cumplimiento de los requisitos anteriormente señalados.
+  <br>
+  <br>
+                Cuando no fuere posible atender la consulta dentro de dicho término, se informará al titular, expresando los motivos de la demora y señalando la fecha en que se atenderá su consulta, la cual en ningún caso podrá superar los cinco (5) días hábiles siguientes al vencimiento del primer término.<br>
+  <br>
+                En caso de inconformidad con la respuesta brindada por <strong>PROMOCON S.A.</strong>, el titular o su representante podrá solicitar nuevamente, mediante nueva solicitud de consulta, señalando los motivos de inconformidad.
+  <br>
+  <br>
+                De conformidad con lo dispuesto en el Artículo 16 de la Ley 1581 de 2012, el titular o su representante solamente podrá acudir ante la Superintendencia de Industria y Comercio una vez haya agotado el presente trámite de consulta ante <strong>PROMOCON S.A.</strong> 
+  <br>
+  <br>
+  <strong>CANTIDAD DE BASE DE DATOS</strong>
+  <br>
+  <br>
+  <strong>PROYECTOS, MONTAJES Y COSNTRUCCIONES S.A.</strong>, manejará tres (3) tipos de bases de datos dentro de la organización, los cuales estarán conformados por Proveedores, Clientes, y Empleados.
+  <br>
+  <br>
+  <strong>CANTIDAD DE TITULARES QUE CONTIENE CADA BASE DE DATOS</strong> 
+  <br>
+  <br>
+                Base de Datos                   Cantidad
+  <br>
+                Contable 
+  <br>
+                Recursos Humanos
+  <br>
+                Proveedores y Clientes
+  <br>
+  <br>
+  <strong>ENCARGADOS DEL TRATAMIENTO DE LAS BASES DE DATOS</strong> 
+  <br>
+  <br>
+                La Gerencia Administrativa y Financiera de <strong>PROMOCON S.A.</strong>, ha designado a las siguientes personas como encargadas del tratamiento y manejo de la base de datos dentro de la organización.
+  <br>
+  <br>
+        <table style="font-family:Verdana, Geneva, sans-serif;" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="font-family:Verdana, Geneva, sans-serif;" width="34%">
+CONTACTO<br>
+Adita Arelis Bonilla Gámez<br>
+Deyanira Arias  Sánchez<br>
+Angélica Prieto Castellanos<br>
+</td>
+    <td style="font-family:Verdana, Geneva, sans-serif;" width="33%">
+CORREO<br>
+abonilla@promcon.net<br>
+darias@promocon.net<br>
+aprieto@promocon.net<br>
+</td>
+    <td style="font-family:Verdana, Geneva, sans-serif;" width="33%">
+BASE DE DATOS<br>
+Contabilidad<br>
+Proveedores y Contratistas<br>
+Recursos Humanos<br>
+</td>
+  </tr>
+</table>
+<br>
+<br>
+	
+  <strong>TIPO DE DATOS CONTENIDOS EN CADA BASE DE DATOS</strong> 
+  <br>
+  <br>
+  <strong>BASE DE DATOS CONTABLES</strong> 
+  <br>
+  <br>
+                Para la base de datos de Contabilidad de <strong>PROMOCON S.A.</strong> se deberá registrar los siguientes datos de los Clientes, Proveedores y Empleados: 
+  <br>
+  <br>
+  <strong>Proveedores y Clientes:</strong>
+  <br>
+  <br>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td style="font-family:Verdana, Geneva, sans-serif;" width="95%">•	Registro Único Tributario. <br>
+                •	Número de Identificación Tributaria y/o número de cédula de ciudadanía. <br>
+                •	Razón Social y/o Nombre Completo del Titular<br>
+                •	Representante Legal y/o contacto <br>
+                •	Dirección <br>
+                •	País <br>
+                •	Ciudad <br>
+                •	Teléfonos, Celular, Fax <br>
+                •	Sexo <br>
+                •	Tipo de Personería Jurídica <br>
+                •	Correo electrónico <br>
+                •	Tipo de Actividad Económica <br>
+                •	Certificación Bancaria</td>
+  </tr>
+</table>
+
+  <br>
+  <br>
+                
+  <strong>Empleados:</strong> 
+  <br>
+  <br>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td style="font-family:Verdana, Geneva, sans-serif;" width="95%">•	Número de Identificación<br>
+                •	Nombre Completo <br>
+                •	Sexo <br>
+                •	Fecha de Nacimiento <br>
+                •	Dirección de Residencia <br>
+                •	País, Ciudad <br>
+                •	Teléfono, Celular <br>
+                •	Afiliación Fondo de Salud <br>
+                •	Afiliación Fondo de Pensiones<br>
+                •	Afiliación al Fondo de Cesantías <br>
+                •	Certificación Bancaria</td>
+  </tr>
+</table>
+
+  <br>
+  <br>
+                
+  <strong>BASE DE DATOS RECURSOS HUMANOS</strong>
+  <br>
+  <br>
+                Para la base de datos del área de Recursos Humanos se deberá registrar la siguiente información:
+  <br>
+  <br>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td style="font-family:Verdana, Geneva, sans-serif;" width="95%">•	Nombre Completo del Empleado<br>
+                •	Identificación del Empleado <br>
+                •	Lugar de Expedición <br>
+                •	Cumpleaños <br>
+                •	Fecha de Nacimiento <br>
+                •	Dirección de Residencia <br>
+                •	Teléfono, celular <br>
+                •	Profesión u oficio <br>
+                •	Fecha Ingreso a la empresa <br>
+                •	Tipo de Contrato <br>
+                •	Proyecto <br>
+                •	Cargo <br>
+                •	Salario <br>
+                •	Afiliación EPS <br>
+                •	Afiliación Fondo de Pensiones <br>
+                •	Afiliación ARL <br>
+                •	Afiliación Caja de Compensación <br>
+                •	Hija de Vida <br>
+                •	FA – 07 Comparación HV - Perfil<br>
+                •	Certificados Laborales <br>
+                •	Certificados de Estudio <br>
+                •	Foto <br>
+                •	Libreta Militar <br>
+                •	Certificado Judicial<br>
+                •	Exámenes Médico Ocupacional<br>
+                •	FA – 14 Reporte Ingreso de Personal <br>
+                •	FA – 20 Contrato de Trabajo <br>
+                •	Inducción <br>
+                •	FA – 40 Autorización Tratamiento de Datos Personal <br>
+                •	Otrosí <br>
+                •	Otros Contratos <br>
+                •	Certificación</td>
+  </tr>
+</table>
+  <br>
+  <br>
+                
+  <strong>BASE DE DATOS PROVEEDORES Y CONTRATISTAS</strong> 
+  <br>
+  <br>
+  <strong>PROMOCON S.A.</strong>, mediante formato FA – 1 Hoja de Vida de Proveedores y Contratistas se deberá solicitar por escrito a los titulares la siguiente información: 
+  <br>
+  <br>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td style="font-family:Verdana, Geneva, sans-serif;" width="95%">•	Fecha diligenciamiento <br>
+                •	Nombre o Razón Social <br>
+                •	Número de Identificación Tributaria <br>
+                •	Nombre del Representante Legal <br>
+                •	Cédula de Ciudadanía <br>
+                •	Ciudad de Expedición <br>
+                •	Dirección Comercial <br>
+                •	Ciudad <br>
+                •	País <br>
+                •	Teléfono, Fax <br>
+                •	Correo electrónico<br>
+                •	Encargado en Carpeta <br>
+                •	Tipo de Régimen <br>
+                •	Autorretenedores <br>
+                •	Régimen IVA <br>
+                •	Animo de lucro <br>
+                •	Clase de Empresa <br>
+                •	Comercializadora de Productos<br>
+                •	Productos y/o servicios ofrecidos <br>
+                •	Constitución de la empresa <br>
+                •	Referencias Comerciales <br>
+                •	Información Bancaria <br>
+                •	Certificación de Cámara de Comercio <br>
+                •	RUT <br>
+                •	FA – 40 Autorización de Datos Personales <br>
+                •	Carta de Compromiso</td>
+  </tr>
+</table>
+  <br>
+  <br>
+  <strong>UBICACIÓN FISICA DE LAS BASES DE DATOS</strong> 
+  <br>
+  <br>
+  <strong>Base de Datos Contable:</strong> Se deberá digitalizar en un sistema contable llamado SIIGO S.A. Las copias de los RUT´s y cuentas bancarias deberán estar en físico archivadas en AZ, ubicados en el segundo piso del Departamento de Contabilidad. 
+  <br>
+  <br>
+  <strong>Base de Datos Recursos Humanos:</strong> La información se digitalizará en Excel, en el equipo de la persona responsable de su manejo. La información suministrada en las hojas de vida de los empleados con sus respectivos soportes deberán ser archivados en físico y en AZ, los cuales se ubicarán en el primer piso de la oficina de Recursos Humanos. 
+  <br>
+  <br>
+  <strong>Base de Datos Proveedores y Contratistas:</strong> La información solicitada mediante Formato FA – 1 Hoja de Vida de Proveedores y Contratistas se deberá reposar en físico con sus respetivos soportes archivados en AZ y ubicada en el tercer piso y debidamente digitalizada en Excel en el equipo de la persona responsable de su manejo. 
+  <br>
+  <br>
+  <strong>AUTORIZACION DE LOS TITULARES PARA EL MANEJO DE LA BASE DE DATOS</strong>
+  <br>
+  <br>
+  <strong>PROMOCON S.A.</strong>, deberá contar con la debida autorización y por escrito de los titulares a quienes se les ha recopilado la información en la base de datos.
+  <br>
+  <br>
+  <strong>FORMA DE RECOLECCION DE LOS DATOS PERSONALES</strong>
+  <br>
+  <br>
+  <strong>PROMOCON S.A.</strong>, mediante Formato <strong>FA-40 Autorización Tratamiento de Datos Personales</strong>, recolectará directamente la información del Titular.
+  <br>
+  <br>
+  <strong>TRANSFERENCIA INTERNACIONAL DE DATOS PERSONALES</strong> 
+  <br>
+  <br>
+  <strong>PROMOCON S.A.</strong>, en su calidad de Responsable de la información de base de datos, prohíbe:
+  <br>
+  <br>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5%">&nbsp;</td>
+    <td style="font-family:Verdana, Geneva, sans-serif;" width="95%">1.	Transferir información entre dos responsables de tratamiento en donde uno de los cuales está fuera del país, está prohibido salvo excepciones legales: (autorización expresa e inequívoca, datos médicos, tratados internacionales, transferencias bancarias, salvaguarda de interés público o defensa en proceso judicial). 
+  <br>
+                2.	Entre un responsable en Colombia y un encargado fuera del país, se debe suscribir un contrato de transmisión internacional de acuerdo al Art. 25 del Decreto 1377 de 2013. 
+  <br>
+                3.	Si no hay contrato se debe tener autorización expresa e inequívoca del titular.
+  <br>
+                4.	Si no hay contrato ni autorización se debe solicitar declaración de conformidad a la SIC – Superintendencia de Industria y Comercio.</td>
+  </tr>
+</table>
+  <br>
+  <br>
+  <strong>AVISO DE PRIVACIDAD:</strong> 
+  <br>
+  <br>
+                De acuerdo con lo contemplado en la normatividad vigente y aplicable en materia de protección de datos, <strong>PROMOCON S.A.</strong>, se compromete a dar el tratamiento adecuado a todos y cada uno de los datos personales que ya tiene en sus bases datos y que le sean facilitados y que a su vez son incorporados en nuestras bases de datos y archivos con las finalidades específicas para lo cual fueron entregados. Dichas finalidades se encuentran establecidas en nuestro aviso de privacidad que usted puede consultar en el siguiente link: www.promocon.net
+  <br>
+  <br>
+  <strong>MECANISMOS DE SEGURIDAD DE LA INFORMACIÓN PERSONAL QUE REPOSA EN LAS BASES DE DATOS</strong> 
+  <br>
+  <br>
+  <strong>PROMOCON S.A.</strong>, adoptará las medidas tecnológicas y humanas que sean necesarias y consecuentes con el tipo de información que registra, los procedimientos y medidas a tomar para controlar el acceso a las bases de datos corporativas donde reposa la información de nuestros usuarios. 
+  <br>
+  <br>
+  <strong>VIGENCIA.</strong> 
+  <br>
+  <br>
+                La Política de Tratamiento de Información de <strong>PROMOCON S.A.</strong>, rige a partir del 23 de Septiembre de 2013 y estará supeditada a las finalidades del tratamiento de datos personales y datos sensibles propios del objeto social y la naturaleza de <strong>PROMOCON S.A.</strong></p>
+            
+</div>
+          </div>
+      </div>
+    </section>
+    <!--Fin de la sección-->
+
+    <!--Inicio promocon sostenible-->
+    
+<div>
+        <div style="margin-top: 35px;">
+            <P>&nbsp;</P>>
+        </div>                            
+    </div> 
+    <!--fin promocon sostenible-->
+
+    <!--inicio visión 360-->
+    
+<!--fin visión 360-->
+    <!--inicio proyectos recientes-->
+    
+<!--fin proyectos recientes-->
+    <!--inicio modalidades de trabajo-->
+    
+<!--fin modalidades de trabajo-->
+    <!--seccion servicios-->
+    
+<!--fin servicios-->
+    <!--Nuestros clientes-->
+    
+<!--fin nuestros clientes-->
+
+    <!--div de formulario-->
+    <div class="form-presentation">
+      <div class="container" style="text-align: center">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
+            <img src="img/logo-promocon-positivo.png">            
+            <p>Si está interesado en conocer más sobre nosotros contáctenos…</p>
+            <div class="contact-data">                                  
+              <p><img src="img/icono-movil-promocon.png" ><span>(313) 252 6473</span></p>
+              <p><img src="img/icono-telefono-promocon.png"><span>(571) 622 6250</span></p>
+              <p><img src="img/icono-correo-promocon.png"><span>dcomercial@promocon.net</span></p>
+              <p><img src="img/icono-direccion-promocon.png"><span> CARRERA 47<sup>a</sup> #91 - 32 BOGOTÁ D.C.</span></p>                                                                                              
+            </div> 
+            <div class="separador">
+              <div class="row no-gutters">
+                  <div class="col-4">
+                    <img src="img/linea.png"> 
+                  </div>
+                  <div class="col-4">
+                    <p> o diligencie el formulario </p> 
+                  </div>
+                  <div class="col-4">
+                      <img src="img/linea.png">  
+                  </div>
+              </div>   
+            </div>
+              <form action="enviar.php" method="POST">
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Email">
+                <input type="text" name="phone" placeholder="Teléfono" required>
+                <textarea name="message" rows="2" placeholder="Mensaje"></textarea>
+                <input class="btn-gn btn-red"type="submit" name="submit" value="ENVIAR MENSAJE">
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--fin del formulario y datos de contacto-->    
+
+    <!--footer-->
+    <footer>
+      <div class="main-footer">
+        <div class="container" style="text-align: center">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">            
+              <ul class="up-footer">
+                <li class="linea"><a>(313) 2526473 / (571) 6226250</a></li>
+                <li class="linea"><a>dcomercial@promocon.net</a></li>
+                <li><a>BOGOTÁ D.C.</a></li>                        
+              </ul> 
+              <br>
+              <ul class="sub-footer">
+                <li class="linea"><a> &copy; 2018 Promocon derechos reservados</a></li>
+                <li><a>...</a></li>                                   
+              </ul>        
+            </div>     
+          </div> 
+        </div> 
+      </div>                        
+    </footer> 
+    <!--fin footer -->  
+
+    <!--javascript personalizado para las funcionalidades de inicio-->
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-red", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " w3-red";
+      }
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+          var i;
+          var dots = document.getElementsByClassName("demo");
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block"; 
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-red", "");
+          }           
+          dots[myIndex-1].className += " w3-red";
+          setTimeout(carousel, 8000); // Change image every 2 seconds
+      }  
+      $("#b1").hover(function () {
+      $('#myModal').modal({
+          show: true,
+          backdrop: true
+        })
+       }); 
+      
+       function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script> 
+</body>
+</html>

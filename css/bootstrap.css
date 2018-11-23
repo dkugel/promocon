@@ -560,6 +560,11 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+#txt-legales {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:9px !important; 
+	text-align:left;
+}
 
 @media (min-width: 576px) {
   .container {
@@ -8906,6 +8911,8 @@ a.text-dark:hover, a.text-dark:focus {
 .invisible {
   visibility: hidden !important;
 }
+
+
 
 @media print {
   *,
