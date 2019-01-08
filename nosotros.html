@@ -7,6 +7,7 @@
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
     <!-- Estilos personalizados-->
     <link rel="stylesheet" href="css/portfolio.css" >
     <link rel="stylesheet" href="css/custom.css">
@@ -80,31 +81,31 @@
           <!-- Modal body -->
               <div class="modal-body">
                   <div class="container-fluid">
-                      <div class="row no-gutters">
-                          <div class="col-md-6">
-                              <h1><a href="proyectos-sector.html">POR SECTORES</a></h1><br>
-                              <ul>
-                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Alimentos y bebidas</a></li>
-                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Farmacéuticos y cosméticos</a></li>
-                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Minería</a></li>
-                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Manufactura</a></li>
-                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Agroindustria</a></li>
-                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Corporativo</a></li>
-                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Infraestructura logística</a></li>
-                            </ul>
-                          </div>
-                          <div class="col-md-6">
-                              <h1><a href="proyectos.html">POR TIPO DE PROYECTO</a></h1><br>
-                              <ul>
-                                <li>&nbsp;<a href="proyectos.html" class="mini-bt">Plantas industriales</a></li>
-                                <li>&nbsp;<a href="proyectos.html" class="mini-bt">Almacenamiento a granel</a></li>
-                                <li>&nbsp;<a href="proyectos.html" class="mini-bt">Centros de distribución y logística</a></li>
-                                <li>&nbsp;<a href="proyectos.html" class="mini-bt">Logística de frío</a></li>
-                                <li>&nbsp;<a href="proyectos.html" class="mini-bt">Desarrollo de proyectos inmobiliarios</a></li>
-                                <li>&nbsp;<a href="proyectos.html" class="mini-bt">Construcciones Institucionales</a></li>
-                              </ul>
-                          </div>                            
+                    <div class="row no-gutters">
+                      <div class="col-md-6">
+                        <h1><a href="proyectos-sector.html">POR SECTORES</a></h1><br>
+                        <ul>
+                            <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign_sub('alimentos')">Alimentos y bebidas</a></li>
+                            <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign_sub('farmaceuticos')">Farmacéuticos y cosméticos</a></li>
+                            <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign_sub('mineria')">Minería</a></li>
+                            <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign_sub('manufactura')">Manufactura</a></li>
+                            <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign_sub('agroindustria')">Agroindustria</a></li>
+                            <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign_sub('corporativo')">Corporativo</a></li>
+                            <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign_sub('infraestructura')">Infraestructura logística</a></li>
+                        </ul>
                       </div>
+                      <div class="col-md-6">
+                        <h1><a href="proyectos.html">POR TIPO DE PROYECTO</a></h1><br>
+                        <ul>
+                            <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign('plantas')">Plantas industriales</a></li>
+                            <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign('almacenamiento')">Almacenamiento a granel</a></li>
+                            <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign('centros')">Centros de distribución y logística</a></li>
+                            <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign('logistica')">Logística de frío</a></li>
+                            <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign('inmobiliarios')">Desarrollo de proyectos inmobiliarios</a></li>
+                            <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign('institucionales')">Construcciones Institucionales</a></li>
+                        </ul>
+                      </div>                            
+                    </div>
                   </div>            
               </div>                        
           </div>
@@ -389,22 +390,14 @@
             </div> 
           </div> 
         </div>                        
-      </footer> 
+      </footer>          
       <script>
         $("#b1").hover(function () {
         $('#myModal').modal({
             show: true,
             backdrop: true
-          })
-        });
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        } 
-      </script>       
+            })
+        });         
+    </script>    
 </body>
 </html>

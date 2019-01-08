@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/bootstrap.js"></script>    
-    <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.js"></script>
     <!-- Estilos personalizados-->
     <link rel="stylesheet" href="css/portfolio.css" >
     <link rel="stylesheet" href="css/custom.css">
@@ -17,13 +16,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body >
-	<style type="text/css">
-	 .escondido{ display: none; }
-	</style>
     <header class="contacto">
       <div class="logo-aux">
         <div class="container-fluid">
@@ -85,30 +80,30 @@
           <!-- Modal body -->
               <div class="modal-body">
                   <div class="container-fluid">
-                    <div class="row no-gutters">
-                        <div class="col-md-6">
-                          <h1><a href="proyectos-sector.html">POR SECTORES</a></h1><br>
-                          <ul>
-                              <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign_sub('alimentos')">Alimentos y bebidas</a></li>
-                              <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign_sub('farmaceuticos')">Farmacéuticos y cosméticos</a></li>
-                              <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign_sub('mineria')">Minería</a></li>
-                              <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign_sub('manufactura')">Manufactura</a></li>
-                              <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign_sub('agroindustria')">Agroindustria</a></li>
-                              <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign_sub('corporativo')">Corporativo</a></li>
-                              <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign_sub('infraestructura')">Infraestructura logística</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-md-6">
-                          <h1><a href="proyectos.html">POR TIPO DE PROYECTO</a></h1><br>
-                          <ul>
-                              <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign('plantas')">Plantas industriales</a></li>
-                              <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign('almacenamiento')">Almacenamiento a granel</a></li>
-                              <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign('centros')">Centros de distribución y logística</a></li>
-                              <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign('logistica')">Logística de frío</a></li>
-                              <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign('inmobiliarios')">Desarrollo de proyectos inmobiliarios</a></li>
-                              <li>&nbsp;<a href="#" class="mini-bt" onclick="classAssign('institucionales')">Construcciones Institucionales</a></li>
-                          </ul>
-                        </div>                            
+                      <div class="row no-gutters">
+                          <div class="col-md-6">
+                              <h1><a href="proyectos-sector.html">POR SECTORES</a></h1><br>
+                              <ul>
+                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Alimentos y bebidas</a></li>
+                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Farmacéuticos y cosméticos</a></li>
+                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Minería</a></li>
+                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Manufactura</a></li>
+                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Agroindustria</a></li>
+                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Corporativo</a></li>
+                                <li>&nbsp;<a href="proyectos-sector.html" class="mini-bt">Infraestructura logística</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-6">
+                              <h1><a href="proyectos.html">POR TIPO DE PROYECTO</a></h1><br>
+                                <ul>
+                                    <li>&nbsp;<a href="proyectos.html" class="mini-bt">Plantas industriales</a></li>
+                                    <li>&nbsp;<a href="proyectos.html" class="mini-bt">Almacenamiento a granel</a></li>
+                                    <li>&nbsp;<a href="proyectos.html" class="mini-bt">Centros de distribución y logística</a></li>
+                                    <li>&nbsp;<a href="proyectos.html" class="mini-bt">Logística de frío</a></li>
+                                    <li>&nbsp;<a href="proyectos.html" class="mini-bt">Desarrollo de proyectos inmobiliarios</a></li>
+                                    <li>&nbsp;<a href="proyectos.html" class="mini-bt">Construcciones Institucionales</a></li>
+                                </ul>
+                          </div>                            
                       </div>
                   </div>            
               </div>                        
@@ -160,13 +155,12 @@
                 <div class="col-xs-8 col-md-12 col-lg-8 offset-lg-2">    
                     <!--El formulario llama al archivo enviar.php el cual tiene los scripts de envío del formulario-->          
                     <form action="enviar.php" method="POST">
-                        <input type="text" name="name" placeholder="No llenar, es para evitar spam" class="escondido">
-                        <input type="email" name="email" placeholder="No llenar, es para evitar spam" class="escondido" ">
-						<input type="text" name="name2" placeholder="Nombre" required>
-                        <input type="email" name="email2" placeholder="Email" required>
+                        <input type="text" name="name" placeholder="Nombre" required>
+                        <input type="email" name="email" placeholder="Email" required>
                         <input type="text" name="phone" placeholder="Teléfono" required>
-                        <textarea name="message" rows="2" placeholder="Mensaje" required></textarea>						
-						<div class="g-recaptcha" data-sitekey="6LdLK30UAAAAAPEFLxwrkNIlKCiaQQsQZJ80V-eB"></div>
+                        <textarea name="message" rows="2" placeholder="Mensaje" required></textarea>
+						<input type="text" name="codigo" placeholder="Digite el código de seguridad" required>
+                        <img src="captcha.php"/><br>
                         <input class="btn-gn btn-red"type="submit" name="submit" value="ENVIAR MENSAJE">
                     </form>
                 </div>
@@ -194,14 +188,24 @@
             </div> 
           </div> 
         </div>                        
-      </footer>       
+      </footer>  
+
+      <!--javascript para el menú mobile-->
       <script>
-            $("#b1").hover(function () {
-            $('#myModal').modal({
-                show: true,
-                backdrop: true
-                })
-            }); 
-      </script>    
+        $("#b1").hover(function () {
+        $('#myModal').modal({
+            show: true,
+            backdrop: true
+          })
+        }); 
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+      </script>     
 </body>
 </html>
