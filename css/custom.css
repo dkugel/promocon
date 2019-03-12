@@ -351,3 +351,23 @@ a:hover {color: #0f2b43;}
 @media (max-width:380px){
     .w3-display-bottom{left:31.56% !important;}
 }
+
+
+
+/*Estilos para los tag*/
+#h1-tag{
+    display: inline;
+    color: #0f2b43;    
+    font-size: 1em;    
+    font-weight: normal;
+}
+.vision360{
+    color:#da1929;
+    font-size: 2.2em;
+}
+.vision360 h2{
+    display: inline;
+    color: #0f2b43;
+    font-size: 0.45em;
+    margin-left: 5px;
+}

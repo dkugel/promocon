@@ -3968,7 +3968,12 @@
 </footer>
 
     <script>
-
+        $("#b1").hover(function () {
+        $('#myModal').modal({
+                show: true,
+                backdrop: true
+            })
+        }); 
         getValues()
         if(mytext != undefined){    
             filterSelection(mytext)
