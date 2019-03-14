@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://www.promocon.net/</loc>
+  <lastmod>2019-01-08T19:17:15+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.promocon.net/index.html</loc>
+  <lastmod>2019-01-08T19:17:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.promocon.net/nosotros.html</loc>
+  <lastmod>2019-01-08T19:17:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.promocon.net/servicios.html</loc>
+  <lastmod>2019-01-08T19:17:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.promocon.net/contacto.html</loc>
+  <lastmod>2019-01-08T19:17:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.promocon.net/proyectos-sector.html</loc>
+  <lastmod>2019-01-08T22:31:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.promocon.net/proyectos.html</loc>
+  <lastmod>2019-01-08T22:31:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.promocon.net/legales.html</loc>
+  <lastmod>2019-01-08T19:17:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
